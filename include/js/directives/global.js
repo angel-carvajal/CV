@@ -1,0 +1,62 @@
+angular.module("globalDirectives",[])
+.directive("customeTitle",function(globalVariables){
+	//console.log(globalVariables.hostname);
+	return{
+		restrict:"E",
+		scope:{
+			title:"="
+		},
+		templateUrl:globalVariables.hostname+"include/templates/global/customeTitle.html"
+	}
+})
+.directive("customeSubTitle",function(globalVariables){
+	return{
+		restrict:"E",
+		scope:{
+			subtitle:"="
+		},
+		templateUrl:globalVariables.hostname+"include/templates/global/customeSubTitle.html"
+	}
+})
+.directive("customeLink",function(globalVariables){
+	//console.log(globalVariables.hostname);
+	return{
+		restrict:"E",
+		scope:{
+			link:"=",
+			extra:"="
+		},
+		templateUrl:globalVariables.hostname+"include/templates/global/customeLink.html"
+	}
+})
+.directive("icon",function(globalVariables){
+	//console.log(globalVariables.hostname);
+	return{
+		restrict:"E",
+		scope:{
+			icon:"="
+		},
+		templateUrl:globalVariables.hostname+"include/templates/global/icon.html"
+	}
+})
+.directive("iconButton",function(globalVariables){
+	//console.log(globalVariables.hostname);
+	return{
+		restrict:"E",
+		scope:{
+			icon:"=",
+			id:"="
+		},
+		templateUrl:globalVariables.hostname+"include/templates/global/iconButton.html"
+	}
+})
+.directive("loading",["globalVariables",function(globalVariables){
+	//console.log(globalVariables.hostname);
+	return{
+		restrict:"E",
+		scope:{
+			content:"="
+		},
+		templateUrl:globalVariables.hostname+"include/templates/global/loading.html"
+	}
+}])
