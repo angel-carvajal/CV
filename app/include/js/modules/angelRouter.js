@@ -1,4 +1,4 @@
-angular.module("angelRouter",["ui.router","oc.lazyLoad","lumx","appNavigation","globalDirectives","global"])
+angular.module("angelRouter",["ui.router","oc.lazyLoad","lumx","appNavigation","globalDirectives","global","angular-inview"])
 .config(["$urlRouterProvider",function($urlRouterProvider){
 	$urlRouterProvider.otherwise("/");
 }])
@@ -12,6 +12,7 @@ angular.module("angelRouter",["ui.router","oc.lazyLoad","lumx","appNavigation","
 					return $ocLazyLoad.load(
 						{
 							files:[
+								"../bower_components/animate.css/animate.min.css",
 								"include/style/main.css"
 							]
 						}
@@ -44,6 +45,7 @@ angular.module("angelRouter",["ui.router","oc.lazyLoad","lumx","appNavigation","
 	$state.go("alwaysRequiredFiles");
 
 	//Scope variables definition
+	$scope.viewsLoaded=[false,false,false,false,false,false];
 	$scope.content={};
 	$scope.content={
 		load:{
@@ -115,6 +117,14 @@ angular.module("angelRouter",["ui.router","oc.lazyLoad","lumx","appNavigation","
 	$scope.updateLoad=function(){
 		$scope.load=true;
 		$scope.$apply();
+	};
+
+	$scope.loadAnimate=function(id,element,effect){
+		if(!$scope.viewsLoaded[id]){
+			$(element.inViewTarget).addClass("visible animated "+effect);
+			$scope.viewsLoaded[id]=true;
+		}
+		
 	}
 
 }])
