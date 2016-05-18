@@ -54,9 +54,6 @@ angular.module("globalDirectives",[])
 	//console.log(globalVariables.hostname);
 	return{
 		restrict:"E",
-		scope:{
-			content:"="
-		},
 		templateUrl:globalVariables.hostname+"include/templates/global/loading.html"
-	}
+	};
 }])
