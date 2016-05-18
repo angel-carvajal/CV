@@ -26,15 +26,25 @@ html, body {
   cursor: pointer;
 }
 
+/* line 38, main.scss */
+.hidden {
+  opacity: 0;
+}
+
+/* line 42, main.scss */
+.visible {
+  opacity: 1;
+}
+
 /*------------------------------------*\
     Welcome style
 \*------------------------------------*/
-/* line 46, main.scss */
+/* line 52, main.scss */
 .welcome {
   height: 100%;
 }
 
-/* line 50, main.scss */
+/* line 56, main.scss */
 .welcome__load {
   position: relative;
   width: 100%;
@@ -42,7 +52,7 @@ html, body {
   top: 0px;
 }
 
-/* line 57, main.scss */
+/* line 63, main.scss */
 .welcome__load--actived {
   top: -120px;
   transition: all 0.5s ease;
@@ -50,13 +60,13 @@ html, body {
   -moz-transition: all 0.5s ease;
 }
 
-/* line 62, main.scss */
+/* line 68, main.scss */
 .welcome__title {
   font-weight: 200;
   font-size: 20px;
 }
 
-/* line 67, main.scss */
+/* line 73, main.scss */
 .welcome__title__container {
   display: inline-block;
   position: relative;
@@ -64,24 +74,24 @@ html, body {
   right: 6px;
 }
 
-/* line 75, main.scss */
+/* line 81, main.scss */
 .welcome__image {
   height: 150px;
 }
 
-/* line 79, main.scss */
+/* line 85, main.scss */
 .welcome__image--actived {
   color: red;
 }
 
-/* line 83, main.scss */
+/* line 89, main.scss */
 .welcome__image__container {
   display: inline-block;
   position: relative;
   top: -120px;
 }
 
-/* line 88, main.scss */
+/* line 94, main.scss */
 .welcome__image__container--actived {
   top: 0px;
   transition: all 0.5s ease;
