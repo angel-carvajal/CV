@@ -11,16 +11,17 @@
 		<script src="../bower_components/oclazyload/dist/ocLazyLoad.min.js"></script>
 		<script src="../bower_components/velocity/velocity.min.js"></script>
 		<script src="../bower_components/moment/min/moment-with-locales.min.js"></script>
+		<script src="../bower_components/typed.js/dist/typed.min.js"></script>
 		<script src="../bower_components/lumx/dist/lumx.min.js"></script>
+
+		<!-- Angular services forced -->
+		<script src="include/js/services/navigation.js"></script>
+		<script src="include/js/services/global.js"></script>
+		<script src="include/js/directives/global.js"></script>
 
 		<!-- Angular Modules forced -->
 		<script src="include/js/modules/angelRouter.js"></script>
-		<script src="include/js/modules/navbar.js"></script>
-
-		<!-- Angular services forced -->
-		<script src="include/js/services/navbar.js"></script>
-		<script src="include/js/services/global.js"></script>
-		<script src="include/js/directives/global.js"></script>
+		<script src="include/js/modules/navigation.js"></script>
 
 		<!-- Style forced -->
 		<link href="../bower_components/normalize-css/normalize.css" rel="stylesheet" type="text/css">
@@ -39,22 +40,11 @@
 
 
 
-
-		<div 
-			ng-if="!load"
-			class="{{content.class}}" 
-		>
-
-			<loading content="content.load">
-
-			</loading>
-
-		</div>
-
+		
 		<div ng-show="load">
 			
 			<div 
-				ng-controller="navbarController"
+				ng-controller="navigationController"
 				class="{{content.class}}" 
 			>
 
@@ -68,6 +58,17 @@
 				<ui-view></ui-view>
 
 			</div>
+
+		</div>
+
+		<div 
+			ng-if="!load"
+			class="{{content.class}}" 
+		>
+
+			<loading>
+
+			</loading>
 
 		</div>
 

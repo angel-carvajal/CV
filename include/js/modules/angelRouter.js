@@ -1,4 +1,4 @@
-angular.module("angelRouter",["ui.router","oc.lazyLoad","lumx","appNavbar"])
+angular.module("angelRouter",["ui.router","oc.lazyLoad","lumx","appNavigation","globalDirectives"])
 .config(["$urlRouterProvider",function($urlRouterProvider){
 	$urlRouterProvider.otherwise("/");
 }])
@@ -8,15 +8,15 @@ angular.module("angelRouter",["ui.router","oc.lazyLoad","lumx","appNavbar"])
 		//Lazy load always needed files
 		.state("alwaysRequiredFiles",{
 			resolve:{
-				home:function($ocLazyLoad){
+				home:["$ocLazyLoad",function($ocLazyLoad){
 					return $ocLazyLoad.load(
 						{
 							files:[
-								
+								"include/style/main.css"
 							]
 						}
 					)
-				}
+				}]
 			}
 		})
 		//Default view
@@ -24,7 +24,7 @@ angular.module("angelRouter",["ui.router","oc.lazyLoad","lumx","appNavbar"])
 			url:"/",
 			templateUrl: "include/templates/cv.html",
 			resolve:{
-				home:function($ocLazyLoad){
+				home:["$ocLazyLoad",function($ocLazyLoad){
 					return $ocLazyLoad.load(
 						{
 							name:"appCv",
@@ -34,17 +34,70 @@ angular.module("angelRouter",["ui.router","oc.lazyLoad","lumx","appNavbar"])
 							]
 						}
 					)
-				}
+				}]
 			}
 		})
 }])
 
-.controller("alwaysLoad",["$scope","$state","$timeout",function($scope,$state,$timeout){
+.controller("alwaysLoad",["$scope","$state","$timeout","globalVariables",function($scope,$state,$timeout,globalVariables){
 	//Run state to lazy load files required
 	$state.go("alwaysRequiredFiles");
+
+	//Scope variables definition
+	$scope.content={};
+	$scope.content={
+		load:{
+			title:{
+				title:{
+					text:"Made by ",
+					class:"welcome__title"
+				},
+				class: 	"welcome__title__container"
+			},
+			logo:{
+				image:{
+					src:"ac_logo.png",
+					class:"welcome__image"
+				},
+				class:"welcome__image__container"
+			},
+			host:globalVariables.hostname,
+			class:"welcome__load"
+		},
+		class:"welcome"
+	};
 	$scope.load=false;
+
+	//execute untill template fully loaded with delay 0
 	$timeout(function(){
-		$scope.load=true;
-	},2000);
-	
+		//Typed effect.
+		$(function(){
+			$(".typing").typed({
+				strings: [""+$scope.content.load.title.title.text+""],
+				typeSpeed: 50,
+				showCursor: false,
+				startDelay: 500,
+				callback: function() {
+					//Add class to simulate move
+					$(".welcome__image__container").addClass("welcome__image__container--actived");
+					//Listener of transition - standard
+					$(".welcome__image__container")[0].addEventListener("transitionend",function(){
+						$timeout(function(){
+							$scope.load=true;
+							$scope.$apply();
+						},1500)
+					});
+					//Listener of transition - Safari 3.1 to 6.0
+					$(".welcome__image__container")[0].addEventListener("webkitTransitionEnd",function(){
+						$timeout(function(){
+							$scope.load=true;
+							$scope.$apply();
+						},1500)
+					});
+				}
+			});
+		});
+
+	},0);
+
 }])
