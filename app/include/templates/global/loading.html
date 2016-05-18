@@ -1,17 +1,25 @@
-<div flex-container="row">
+<div class="{{content.load.class}}">
 
 	<div 
-		flex-item="6"
-		class="{{content.load.title}}" 
+		class="{{content.load.title.class}}" 
 	>
+
+		<h1 class="typing {{content.load.title.title.class}}">
+			
+		</h1>
 		
+
 	</div>
 
 	<div 
-		flex-item="6"
-		class="{{content.load.logo}}" 
+		class="{{content.load.logo.class}}" 
 	>
-		
+
+		<img 
+			ng-src="{{content.load.hostname+'include/images/'+content.load.logo.image.src}}"
+			class="{{content.load.logo.image.class}}" 
+		>
+
 	</div>
 
 </div>
