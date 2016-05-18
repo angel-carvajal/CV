@@ -83,21 +83,38 @@ angular.module("angelRouter",["ui.router","oc.lazyLoad","lumx","appNavigation","
 					//Listener of transition - standard
 					$(".welcome__image__container")[0].addEventListener("transitionend",function(){
 						$timeout(function(){
-							$scope.load=true;
-							$scope.$apply();
-						},1500)
+							$(".welcome__load").addClass("welcome__load--actived");
+
+							$(".welcome__load")[0].addEventListener("webkitTransitionEnd",function(){
+								$timeout($scope.updateLoad(),500);
+							});
+							$(".welcome__load")[0].addEventListener("transitionend",function(){
+								$timeout($scope.updateLoad(),500);
+							});
+						},1500);
 					});
 					//Listener of transition - Safari 3.1 to 6.0
 					$(".welcome__image__container")[0].addEventListener("webkitTransitionEnd",function(){
 						$timeout(function(){
-							$scope.load=true;
-							$scope.$apply();
-						},1500)
+							$(".welcome__load").addClass("welcome__load--actived");
+
+							$(".welcome__load")[0].addEventListener("webkitTransitionEnd",function(){
+								$timeout($scope.updateLoad(),500);
+							});
+							$(".welcome__load")[0].addEventListener("transitionend",function(){
+								$timeout($scope.updateLoad(),500);
+							});
+						},1500);
 					});
 				}
 			});
 		});
 
 	},0);
+
+	$scope.updateLoad=function(){
+		$scope.load=true;
+		$scope.$apply();
+	}
 
 }])
