@@ -30,6 +30,7 @@ angular.module("angelRouter",["ui.router","oc.lazyLoad","lumx","appNavigation","
 						{
 							name:"appCv",
 							files:[
+								"include/js/directives/cv.js",
 								"include/js/modules/cv.js",
 								"include/js/services/cv.js"
 							]
