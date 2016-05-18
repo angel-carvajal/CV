@@ -13,6 +13,8 @@
 		<script src="../bower_components/moment/min/moment-with-locales.min.js"></script>
 		<script src="../bower_components/typed.js/dist/typed.min.js"></script>
 		<script src="../bower_components/lumx/dist/lumx.min.js"></script>
+		<script src="../bower_components/angular-inview/angular-inview.js"></script>
+		
 
 		<!-- Angular services forced -->
 		<script src="include/js/services/navigation.js"></script>
@@ -41,7 +43,7 @@
 
 
 		
-		<div ng-show="load">
+		<div ng-if="load">
 			
 			<div 
 				ng-controller="navigationController"
@@ -71,10 +73,6 @@
 			</loading>
 
 		</div>
-
-
-
-
 
 	</body>
 </html>
