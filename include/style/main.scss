@@ -48,10 +48,16 @@
 	}
 
 		.welcome__load{
-			position: absolute;
+			position: relative;
 			width: 100%;
 			text-align: center;
+			top: 0px;
 		}
+
+			.welcome__load#{$actived}{
+				top: -120px;
+				@include effect();
+			}
 
 		.welcome__title{
 			font-weight: 200;
@@ -81,5 +87,5 @@
 			}
 			.welcome__image__container#{$actived}{
 				top: 0px;
-				@include effect($effect:ease)
+				@include effect();
 			}
