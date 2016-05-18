@@ -1,4 +1,4 @@
-angular.module("angelRouter",["ui.router","oc.lazyLoad","lumx","appNavigation","globalDirectives"])
+angular.module("angelRouter",["ui.router","oc.lazyLoad","lumx","appNavigation","globalDirectives","global"])
 .config(["$urlRouterProvider",function($urlRouterProvider){
 	$urlRouterProvider.otherwise("/");
 }])
