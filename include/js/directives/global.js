@@ -57,3 +57,9 @@ angular.module("globalDirectives",[])
 		templateUrl:globalVariables.hostname+"include/templates/global/loading.html"
 	};
 }])
+.directive("navBar",["globalVariables",function(globalVariables){
+	return{
+		restrict:"E",
+		templateUrl:globalVariables.hostname+"include/templates/navbar.html"
+	};
+}])
