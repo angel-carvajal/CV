@@ -1,0 +1,81 @@
+@charset "utf-8";
+/*------------------------------------*\
+    Global style
+\*------------------------------------*/
+/* line 10, main.scss */
+* {
+  font-family: "Roboto";
+}
+
+/* line 14, main.scss */
+hr {
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+
+/* line 19, main.scss */
+html, body {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* line 34, main.scss */
+.link {
+  cursor: pointer;
+}
+
+/*------------------------------------*\
+    Welcome style
+\*------------------------------------*/
+/* line 46, main.scss */
+.welcome {
+  height: 100%;
+}
+
+/* line 50, main.scss */
+.welcome__load {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 56, main.scss */
+.welcome__title {
+  font-weight: 200;
+  font-size: 20px;
+}
+
+/* line 61, main.scss */
+.welcome__title__container {
+  display: inline-block;
+  position: relative;
+  bottom: 56px;
+  right: 6px;
+}
+
+/* line 69, main.scss */
+.welcome__image {
+  height: 150px;
+}
+
+/* line 73, main.scss */
+.welcome__image--actived {
+  color: red;
+}
+
+/* line 77, main.scss */
+.welcome__image__container {
+  display: inline-block;
+  position: relative;
+  top: -120px;
+}
+
+/* line 82, main.scss */
+.welcome__image__container--actived {
+  top: 0px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}

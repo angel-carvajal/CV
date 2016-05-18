@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+//Import configuration
+@import "_config.scss";
+
+/*------------------------------------*\
+    Global style
+\*------------------------------------*/
+	
+	*{
+		font-family: $font-family;
+	}
+
+	hr{
+		border:0;
+		border-top:1px solid $border-color;
+	}
+
+	%window-configuration{
+		height: 100%;
+		min-height: 100%;
+		width: 100%;
+	    overflow-x:hidden;
+	}
+
+	html{
+		@extend %window-configuration;
+	}
+
+	body{
+		@extend %window-configuration;
+	}
+
+	.link{
+		cursor: pointer;
+	}
+
+
+
+
+
+/*------------------------------------*\
+    Welcome style
+\*------------------------------------*/
+
+	.welcome{
+		height: 100%;
+	}
+
+		.welcome__load{
+			position: absolute;
+			width: 100%;
+			text-align: center;
+		}
+
+		.welcome__title{
+			font-weight: 200;
+			font-size: 20px;
+		}
+
+			.welcome__title__container{
+				display: inline-block;
+				position: relative;
+				bottom: 56px;
+				right: 6px;
+			}
+
+
+		.welcome__image{
+			height: 150px;
+		}
+
+			.welcome__image#{$actived}{
+				color:red;
+			}
+
+			.welcome__image__container{
+				display: inline-block;
+				position: relative;
+				top: -120px;
+			}
+			.welcome__image__container#{$actived}{
+				top: 0px;
+				@include effect($effect:ease)
+			}

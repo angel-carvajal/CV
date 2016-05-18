@@ -1,0 +1,12 @@
+//Variables
+$font-family:"Roboto";
+$border-color:#eeeeee;
+$actived:--actived;
+
+
+//Mixins
+@mixin effect($items:all, $time:.3, $effect: ease){
+	transition: $items #{$time}s $effect;
+	-webkit-transition: $items #{$time}s $effect;
+	-moz-transition: $items #{$time}s $effect;
+}
