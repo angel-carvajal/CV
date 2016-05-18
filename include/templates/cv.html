@@ -1,0 +1,69 @@
+<div flex-container="column">
+
+	<div 
+		in-view="loadAnimate(0,$event,content.classToAnimate)" 
+		class="section hidden {{content.class}}" 
+		ng-controller="generalController"
+	>
+
+		<personal-info>
+		</personal-info>
+	 	
+	</div>
+
+	<div 
+		in-view="loadAnimate(1,$event,content.classToAnimate)" 
+		class="section hidden {{content.class}}" 
+		ng-controller="experienceController"
+	>
+
+		<experience-info>
+		</experience-info>
+
+	</div>
+
+	<div 
+		in-view="loadAnimate(2,$event,content.classToAnimate)" 
+		class="section hidden {{content.class}}" 
+		ng-controller="knowledgeController"
+	>
+
+		<knowledge-info>
+		</knowledge-info>
+
+	</div>
+
+	<div
+		in-view="loadAnimate(3,$event,content.classToAnimate)" 
+		class="section hidden {{content.class}}" 
+		ng-controller="projectsController"
+	>
+	
+		<projects-info>
+		</projects-info>
+
+	</div>
+
+	<div
+		in-view="loadAnimate(4,$event,content.classToAnimate)" 
+		class="section hidden {{content.class}}" 
+		ng-controller="coursesController"
+	>
+	
+		<courses-info>
+		</courses-info>
+
+	</div>
+
+	<div
+		in-view="loadAnimate(5,$event,content.classToAnimate)" 
+		class="section hidden {{content.class}}" 
+		ng-controller="extrasController"
+	>
+	
+		<extras-info>
+		</extras-info>
+
+	</div>
+
+</div>
