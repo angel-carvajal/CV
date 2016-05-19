@@ -1,0 +1,71 @@
+<div class="{{content.title.class}}">
+
+	<custome-title title="content.title.title">
+	</custome-title>
+
+	<custome-p paragraph="content.title.paragraph">
+	</custome-p>
+
+	<hr style="width:80%">
+
+</div>
+
+<div flex-container="row" flex-column="12" class="{{content.informationClass}}">
+
+	<div flex-item="2"></div>
+
+	<div flex-item="8">
+		
+		<div flex-container="row" flex-column="12">
+			
+			<div flex-item="4" ng-repeat="info in content.information">
+
+				<div class="{{info.class}}">
+
+					<div class="{{info.title.class}}" ng-if="info.title">
+
+						<custome-title title="info.title.title">
+						</custome-title>
+
+					</div>
+
+					<div class="{{info.paragraph.class}}" ng-if="info.title">
+						<custome-p paragraph="info.paragraph.title">
+						</custome-p>
+					</div>
+
+					<div class="{{info.image.class}}" ng-if="info.image">
+
+						<img 
+							ng-src=	"{{hostname+linkToImages+info.image.src}}"
+							alt= 	"{{info.image.atl}}"
+							class= 	"{{info.image.class}}"
+						>
+
+					</div>
+
+					<div ng-repeat="option in info.options" ng-if="info.options" class="{{option.class}}">
+						
+						<div class="{{option.title.class}}">
+
+							<custome-title title="option.title.title">
+							</custome-title>
+
+						</div>
+
+						<div class="{{option.paragraph.class}}">
+							<custome-p paragraph="option.paragraph.title">
+							</custome-p>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	
+</div>
