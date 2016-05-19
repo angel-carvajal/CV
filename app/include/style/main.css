@@ -2,18 +2,24 @@
 /*------------------------------------*\
     Global style
 \*------------------------------------*/
-/* line 10, main.scss */
+/* line 6, main.scss */
 * {
   font-family: "Roboto";
 }
 
-/* line 14, main.scss */
+/* line 10, main.scss */
 hr {
   border: 0;
   border-top: 1px solid #eeeeee;
 }
 
-/* line 19, main.scss */
+/* line 15, main.scss */
+.lineP {
+  border-width: 5px;
+  border-color: #444a54;
+}
+
+/* line 20, main.scss */
 html, body {
   height: 100%;
   min-height: 100%;
@@ -21,17 +27,17 @@ html, body {
   overflow-x: hidden;
 }
 
-/* line 34, main.scss */
+/* line 35, main.scss */
 .link {
   cursor: pointer;
 }
 
-/* line 38, main.scss */
+/* line 39, main.scss */
 .hidden {
   opacity: 0;
 }
 
-/* line 42, main.scss */
+/* line 43, main.scss */
 .visible {
   opacity: 1;
 }
@@ -39,12 +45,12 @@ html, body {
 /*------------------------------------*\
     Welcome style
 \*------------------------------------*/
-/* line 52, main.scss */
+/* line 53, main.scss */
 .welcome {
   height: 100%;
 }
 
-/* line 56, main.scss */
+/* line 57, main.scss */
 .welcome__load {
   position: relative;
   width: 100%;
@@ -52,7 +58,7 @@ html, body {
   top: 0px;
 }
 
-/* line 63, main.scss */
+/* line 64, main.scss */
 .welcome__load--actived {
   top: -120px;
   transition: all 0.5s ease;
@@ -60,13 +66,13 @@ html, body {
   -moz-transition: all 0.5s ease;
 }
 
-/* line 68, main.scss */
+/* line 69, main.scss */
 .welcome__title {
   font-weight: 200;
   font-size: 20px;
 }
 
-/* line 73, main.scss */
+/* line 74, main.scss */
 .welcome__title__container {
   display: inline-block;
   position: relative;
@@ -74,27 +80,31 @@ html, body {
   right: 6px;
 }
 
-/* line 81, main.scss */
+/* line 82, main.scss */
 .welcome__image {
   height: 150px;
 }
 
-/* line 85, main.scss */
+/* line 86, main.scss */
 .welcome__image--actived {
   color: red;
 }
 
-/* line 89, main.scss */
+/* line 90, main.scss */
 .welcome__image__container {
   display: inline-block;
   position: relative;
   top: -120px;
 }
 
-/* line 94, main.scss */
+/* line 95, main.scss */
 .welcome__image__container--actived {
   top: 0px;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
 }
+
+/*------------------------------------*\
+    General info style
+\*------------------------------------*/
