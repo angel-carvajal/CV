@@ -50,6 +50,16 @@ angular.module("globalDirectives",[])
 		templateUrl:globalVariables.hostname+"include/templates/global/iconButton.html"
 	}
 })
+.directive("customeP",["globalVariables",function(globalVariables){
+	//console.log(globalVariables.hostname);
+	return{
+		restrict:"E",
+		scope:{
+			paragraph:"="
+		},
+		templateUrl:globalVariables.hostname+"include/templates/global/customeP.html"
+	};
+}])
 .directive("loading",["globalVariables",function(globalVariables){
 	//console.log(globalVariables.hostname);
 	return{
