@@ -1,9 +1,10 @@
-<div class="{{content.class}}">
 	<div class="{{content.container.class}}">
 		
 		<div class="{{content.container.title.class}}">
 			<custome-title title="content.container.title.title">
 			</custome-title>
+
+			<hr class="lineS">
 		</div>
 
 		<div class="{{content.container.subTitle.class}}">
@@ -12,4 +13,23 @@
 		</div>
 
 	</div>
-</div>
+
+	<div id="{{content.image.id}}" class="{{content.image.class}}">
+		
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			applyCover();
+			applyResize();
+		});
+		function applyCover(){
+			$(".cover").css({height:($(window).height())+"px"});
+		}
+		function applyResize(){
+			$(window).on('resize', function() 
+			{  
+				$(".cover").css({height:($(window).height())+"px"});
+			}); 
+		}
+	</script>
