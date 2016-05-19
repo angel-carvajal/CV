@@ -2,6 +2,62 @@
 /*------------------------------------*\
     Global style
 \*------------------------------------*/
+/* line 48, _config.scss */
+.cover__container__title, .cover__container__sub-title {
+  color: white;
+}
+
+/* line 72, _config.scss */
+.cover__container__title {
+  font-size: 40px;
+}
+
+/* line 89, _config.scss */
+.cover__container__sub-title {
+  font-size: 14px;
+}
+
+/* line 127, _config.scss */
+.cover__container__title {
+  font-weight: 400;
+}
+
+/* line 130, _config.scss */
+.cover__container__sub-title {
+  font-weight: 500;
+}
+
+/* line 138, _config.scss */
+.cover__container__title, .cover__container__sub-title {
+  padding: 0 20px;
+}
+
+/* line 147, _config.scss */
+.cover__container__sub-title {
+  padding-top: 10px;
+}
+
+/* line 193, _config.scss */
+.cover__container {
+  text-align: center;
+}
+
+/* line 214, _config.scss */
+.cover__container__sub-title {
+  letter-spacing: 2px;
+}
+
+/* line 217, _config.scss */
+.cover__container__title {
+  letter-spacing: -1px;
+}
+
+/* line 230, _config.scss */
+.cover__container {
+  position: relative;
+  top: 40%;
+}
+
 /* line 6, main.scss */
 * {
   font-family: "Roboto";
@@ -103,6 +159,18 @@ html, body {
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
+}
+
+/*------------------------------------*\
+    General info style
+\*------------------------------------*/
+/* line 107, main.scss */
+.cover {
+  height: 650px;
+  background-image: url("../images/welcome-cover_1.4.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
 }
 
 /*------------------------------------*\
