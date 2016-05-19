@@ -2,57 +2,108 @@
 /*------------------------------------*\
     Global style
 \*------------------------------------*/
-/* line 48, _config.scss */
+/* line 40, _config.scss */
+.general-info {
+  background-color: white;
+}
+
+/* line 51, _config.scss */
+.general-info__paragraph, .general-info__profile__option__title, .general-info__profile__option__description, .general-info__goal__paragraph {
+  color: #444a54;
+}
+
+/* line 54, _config.scss */
+.general-info__title, .general-info__profile__title, .general-info__goal__title {
+  color: #009688;
+}
+
+/* line 57, _config.scss */
 .cover__container__title, .cover__container__sub-title {
   color: white;
 }
 
-/* line 72, _config.scss */
-.cover__container__title {
+/* line 62, _config.scss */
+.cover__container__title__container {
+  display: inline-block;
+}
+
+/* line 77, _config.scss */
+.general-info__profile__option__title {
+  font-size: 30px;
+}
+
+/* line 81, _config.scss */
+.general-info__profile__title, .general-info__goal__title {
   font-size: 40px;
 }
 
 /* line 89, _config.scss */
-.cover__container__sub-title {
-  font-size: 14px;
+.cover__container__title, .general-info__title {
+  font-size: 64px;
 }
 
-/* line 127, _config.scss */
+/* line 102, _config.scss */
+.cover__container__sub-title {
+  font-size: 16px;
+}
+
+/* line 131, _config.scss */
+.general-info__paragraph, .general-info__profile__option__description__container, .general-info__goal__paragraph {
+  font-size: 18px;
+}
+
+/* line 136, _config.scss */
 .cover__container__title {
   font-weight: 400;
 }
 
-/* line 130, _config.scss */
+/* line 139, _config.scss */
 .cover__container__sub-title {
   font-weight: 500;
 }
 
-/* line 138, _config.scss */
-.cover__container__title, .cover__container__sub-title {
+/* line 147, _config.scss */
+.cover__container__title, .cover__container__sub-title, .general-info__title__container, .general-info__profile, .general-info__goal {
   padding: 0 20px;
 }
 
-/* line 147, _config.scss */
-.cover__container__sub-title {
+/* line 156, _config.scss */
+.cover__container__sub-title, .general-info__image__container, .general-info__title__container, .general-info__paragraph, .general-info__profile__option__title__container, .general-info__goal__paragraph__container {
   padding-top: 10px;
 }
 
-/* line 193, _config.scss */
-.cover__container {
+/* line 159, _config.scss */
+.general-info__image__container, .general-info__title__container, .general-info__profile__title__container, .general-info__profile__option__description__container, .general-info__goal__title__container {
+  padding-bottom: 10px;
+}
+
+/* line 167, _config.scss */
+.cover__container__title {
+  margin-bottom: 10px;
+}
+
+/* line 173, _config.scss */
+.general-info__image__container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 208, _config.scss */
+.cover__container, .general-info__title__container {
   text-align: center;
 }
 
-/* line 214, _config.scss */
+/* line 229, _config.scss */
 .cover__container__sub-title {
   letter-spacing: 2px;
 }
 
-/* line 217, _config.scss */
+/* line 232, _config.scss */
 .cover__container__title {
   letter-spacing: -1px;
 }
 
-/* line 230, _config.scss */
+/* line 245, _config.scss */
 .cover__container {
   position: relative;
   top: 40%;
@@ -60,40 +111,46 @@
 
 /* line 6, main.scss */
 * {
-  font-family: "Roboto";
+  font-family: "Raleway", sans-serif;
 }
 
 /* line 10, main.scss */
 hr {
   border: 0;
   border-top: 1px solid #eeeeee;
+  display: inline-block;
 }
 
-/* line 15, main.scss */
+/* line 16, main.scss */
 .lineP {
   border-width: 5px;
   border-color: #444a54;
 }
 
 /* line 20, main.scss */
+.lineS {
+  border-width: 5px;
+  border-color: white;
+}
+
+/* line 25, main.scss */
 html, body {
-  height: 100%;
   min-height: 100%;
   width: 100%;
   overflow-x: hidden;
 }
 
-/* line 35, main.scss */
+/* line 39, main.scss */
 .link {
   cursor: pointer;
 }
 
-/* line 39, main.scss */
+/* line 43, main.scss */
 .hidden {
   opacity: 0;
 }
 
-/* line 43, main.scss */
+/* line 47, main.scss */
 .visible {
   opacity: 1;
 }
@@ -101,12 +158,12 @@ html, body {
 /*------------------------------------*\
     Welcome style
 \*------------------------------------*/
-/* line 53, main.scss */
+/* line 57, main.scss */
 .welcome {
   height: 100%;
 }
 
-/* line 57, main.scss */
+/* line 61, main.scss */
 .welcome__load {
   position: relative;
   width: 100%;
@@ -114,7 +171,7 @@ html, body {
   top: 0px;
 }
 
-/* line 64, main.scss */
+/* line 68, main.scss */
 .welcome__load--actived {
   top: -120px;
   transition: all 0.5s ease;
@@ -122,13 +179,13 @@ html, body {
   -moz-transition: all 0.5s ease;
 }
 
-/* line 69, main.scss */
+/* line 73, main.scss */
 .welcome__title {
   font-weight: 200;
   font-size: 20px;
 }
 
-/* line 74, main.scss */
+/* line 78, main.scss */
 .welcome__title__container {
   display: inline-block;
   position: relative;
@@ -136,24 +193,24 @@ html, body {
   right: 6px;
 }
 
-/* line 82, main.scss */
+/* line 86, main.scss */
 .welcome__image {
   height: 150px;
 }
 
-/* line 86, main.scss */
+/* line 90, main.scss */
 .welcome__image--actived {
   color: red;
 }
 
-/* line 90, main.scss */
+/* line 94, main.scss */
 .welcome__image__container {
   display: inline-block;
   position: relative;
   top: -120px;
 }
 
-/* line 95, main.scss */
+/* line 99, main.scss */
 .welcome__image__container--actived {
   top: 0px;
   transition: all 0.5s ease;
@@ -162,17 +219,67 @@ html, body {
 }
 
 /*------------------------------------*\
-    General info style
+    Cover style
 \*------------------------------------*/
-/* line 107, main.scss */
+/* line 111, main.scss */
 .cover {
   height: 650px;
+}
+
+/* line 114, main.scss */
+.cover__image {
   background-image: url("../images/welcome-cover_1.4.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+/* line 122, main.scss */
+.cover__container {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  z-index: 2;
 }
 
 /*------------------------------------*\
     General info style
 \*------------------------------------*/
+/* line 166, main.scss */
+.general-info {
+  padding-bottom: 40px;
+  position: absolute;
+}
+
+/* line 171, main.scss */
+.general-info__image {
+  border-radius: 50%;
+  height: 300px;
+  margin: auto;
+}
+
+/* line 192, main.scss */
+.general-info__title__container {
+  margin-top: 40px;
+}
+
+/* line 201, main.scss */
+.general-info__paragraph {
+  padding-bottom: 40px;
+}
+
+/* line 224, main.scss */
+.general-info__profile__option__title {
+  font-weight: bolder;
+}
+
+/* line 260, main.scss */
+.general-info__goal__paragraph {
+  line-height: 1.5em;
+}

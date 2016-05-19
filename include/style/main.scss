@@ -10,15 +10,19 @@
 	hr{
 		border:0;
 		border-top:1px solid $border-color;
+		display: inline-block;
 	}
 
 	.lineP{
 		border-width: 5px;
 		border-color: $pTx;
 	}
+	.lineS{
+		border-width: 5px;
+		border-color: $tTx;
+	}
 
 	%window-configuration{
-		height: 100%;
 		min-height: 100%;
 		width: 100%;
 	    overflow-x:hidden;
@@ -102,36 +106,44 @@
 
 
 /*------------------------------------*\
-    General info style
+    Cover style
 \*------------------------------------*/
 	.cover{
 		height: 650px;
-		background-image: $cover;
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-		background-position: center center;
 	}
+		.cover__image{
+			background-image: $cover;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-position: center center;
+			@include positionCoordinates($position:fixed,$z:1);
+		}
 
 		.cover__container{
 			@extend %textCenter;
 			@extend %centered;
+			width: 100%;
+			position: absolute;
+			top: 40%;
+			z-index: 2;
 		}
 
 			.cover__container__title{
-				@extend %tm;
+				@extend %txl;
 				@extend %tTx;
 				@extend %fwLight;
 				@extend %sidesSpace;
 				@extend %negSingleSpace;
+				@extend %outBottomSpace;
 			}
 
 				.cover__container__title__container{
-					
+					@extend %inlineBlock;
 				}
 
 
 			.cover__container__sub-title{
-				@extend %sts;
+				@extend %stm;
 				@extend %tTx;
 				@extend %doubleSpace;
 				@extend %fwRegular;
@@ -140,7 +152,7 @@
 			}
 
 				.cover__container__sub-title__container{
-				
+
 				}
 
 
@@ -152,137 +164,115 @@
 \*------------------------------------*/
 
 	.general-info{
-		
+		@extend %pBg;
+		padding-bottom: 40px;
+		position: absolute;
 	}
-
-		.general-info__personal{
-
+		.general-info__image{
+			border-radius: 50%;
+			height: 300px;
+			margin: auto;
 		}
 
-			.general-info__personal__name{
-
+			.general-info__image__container{
+				@extend %topSpace;
+				@extend %bottomSpace;
+				@extend %outBTSpace;
 			}
 
-				.general-info__personal__name__container{
-					
-				}
+		.general-info__information{
+		
+		}
 
+		.general-info__title{
+			@extend %sTx;
+			@extend %txl;
+		}
 
-			.general-info__personal__position{
-				
+			.general-info__title__container{
+				@extend %textCenter;
+				@extend %sidesSpace;
+				@extend %topSpace;
+				@extend %bottomSpace;
+				margin-top: 40px;
 			}
-
-				.general-info__personal__position__container{
-					
-				}
-
-
-			.general-info__personal__profile-picture{
-				
-			}
-
-				.general-info__personal__profile-picture__container{
-					
-				}
-
-
-			.general-info__personal__age{
-				
-			}
-
-				.general-info__personal__age__container{
-					
-				}
-
-
-			.general-info__personal__from{
-				
-			}
-
-				.general-info__personal__from__container{
-					
-				}
-
-
-		.general-info__contact{
 			
+
+		.general-info__paragraph{
+			@extend %pTx;
+			@extend %pxl;
+			@extend %topSpace;
+			padding-bottom: 40px;
 		}
-
-			.general-info__contact__title{
-				
-			}
-
-				.general-info__contact__title__container{
-					
-				}
-
-
-			.general-info__contact__option{
-				
-			}
-				.general-info__contact__option__title{
-					
-				}
-
-					.general-info__contact__option__title__container{
-						
-
-					}
-
-					.general-info__contact__option__title__icon{
-						
-					}
-
 
 		.general-info__profile{
-			
+			@extend %sidesSpace;
 		}
 
 			.general-info__profile__title{
-				
+				@extend %tm;
+				@extend %sTx;
 			}
-
 				.general-info__profile__title__container{
-				
+					@extend %bottomSpace;
 				}
 
 
-			.general-info__profile__description{
-				
+			.general-info__profile__option{
+
 			}
-
-				.general-info__profile__description__container{
-					
+				.general-info__profile__option__title{
+					@extend %ts;
+					@extend %pTx;
+					font-weight: bolder;
 				}
+
+					.general-info__profile__option__title__container{
+						@extend %topSpace;
+
+					}
+
+
+				.general-info__profile__option__description{
+					@extend %pTx;
+				}
+
+					.general-info__profile__option__description__container{
+						@extend %pxl;
+						@extend %bottomSpace;
+					}
 
 
 		.general-info__goal{
-			
+			@extend %sidesSpace;
 		}
 
 			.general-info__goal__title{
-				
+				@extend %tm;
+				@extend %sTx;
 			}
 
 				.general-info__goal__title__container{
-
+					@extend %bottomSpace;
 				}
 
 
-			.general-info__goal__description{
-				
+			.general-info__goal__paragraph{
+				@extend %pxl;
+				@extend %pTx;
+				line-height: 1.5em;
 			}
 
-				.general-info__goal__description__container{
-					
+				.general-info__goal__paragraph__container{
+					@extend %topSpace;
 				}
 
 
 		.general-info__education{
-			
+
 		}
 			.general-info__education__title{
-				
+
 			}
 
 				.general-info__education__title__container{
@@ -291,11 +281,11 @@
 
 
 			.general-info__education__option{
-				
+
 			}
 
 				.general-info__education__option__title{
-					
+
 				}
 
 					.general-info__education__option__title__container{
@@ -304,11 +294,10 @@
 
 
 				.general-info__education__option__description{
-					
+
 				}
 
 					.general-info__education__option__description__container{
-						
 					}
 
 
@@ -317,5 +306,5 @@
 				}
 
 					.general-info__education__option__date__container{
-
+						
 					}

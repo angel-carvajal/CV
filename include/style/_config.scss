@@ -1,5 +1,5 @@
 //Variables
-$font-family:"Roboto";
+$font-family:'Raleway', sans-serif;
 $border-color:#eeeeee;
 $actived:--actived;
 $imagesUrl:"../images/";
@@ -10,6 +10,7 @@ $tBg:#444A54;
 
 //Background imgs
 $cover:url('#{$imagesUrl}welcome-cover_1.4.jpg');
+$profile:url('#{$imagesUrl}me_1.1.jpg');
 
 //Text colors
 $pTx:#444A54;
@@ -22,6 +23,14 @@ $tTx:#FFFFFF;
 		transition: $items #{$time}s $effect;
 		-webkit-transition: $items #{$time}s $effect;
 		-moz-transition: $items #{$time}s $effect;
+	}
+	@mixin positionCoordinates($position,$z,$top:0,$bottom:0,$left:0,$right:0){
+		position: $position;
+		top: $top;
+		bottom: $bottom;
+		left: $left;
+		right: $right;
+		z-index: $z;
 	}
 /*------------------------------------*\
     Global style
@@ -165,6 +174,12 @@ $tTx:#FFFFFF;
 			margin-top: 	10px;
 			margin-bottom: 	10px;
 		}
+		%outRightSpace{
+			margin-right: 10px;
+		}
+		%outLeftSpace{
+			margin-left: 10px;
+		}
 
 	//Borders
 		%allBorders{
@@ -219,7 +234,7 @@ $tTx:#FFFFFF;
 		}
 
 	//Line height
-		%dobleHeight{
+		%doubleHeight{
 			line-height: 2em;
 		}
 		%singleHeight{
