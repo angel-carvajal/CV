@@ -2,10 +2,6 @@
 
 //Import configuration
 @import "_config.scss";
-
-/*------------------------------------*\
-    Global style
-\*------------------------------------*/
 	
 	*{
 		font-family: $font-family;
@@ -14,6 +10,11 @@
 	hr{
 		border:0;
 		border-top:1px solid $border-color;
+	}
+
+	.lineP{
+		border-width: 5px;
+		border-color: $pTx;
 	}
 
 	%window-configuration{
@@ -95,3 +96,180 @@
 				top: 0px;
 				@include effect();
 			}
+
+
+
+
+
+/*------------------------------------*\
+    General info style
+\*------------------------------------*/
+
+	.general-info{
+		
+	}
+
+		.general-info__personal{
+
+		}
+
+			.general-info__personal__name{
+
+			}
+
+				.general-info__personal__name__container{
+					
+				}
+
+
+			.general-info__personal__position{
+				
+			}
+
+				.general-info__personal__position__container{
+					
+				}
+
+
+			.general-info__personal__profile-picture{
+				
+			}
+
+				.general-info__personal__profile-picture__container{
+					
+				}
+
+
+			.general-info__personal__age{
+				
+			}
+
+				.general-info__personal__age__container{
+					
+				}
+
+
+			.general-info__personal__from{
+				
+			}
+
+				.general-info__personal__from__container{
+					
+				}
+
+
+		.general-info__contact{
+			
+		}
+
+			.general-info__contact__title{
+				
+			}
+
+				.general-info__contact__title__container{
+					
+				}
+
+
+			.general-info__contact__option{
+				
+			}
+				.general-info__contact__option__title{
+					
+				}
+
+					.general-info__contact__option__title__container{
+						
+
+					}
+
+					.general-info__contact__option__title__icon{
+						
+					}
+
+
+		.general-info__profile{
+			
+		}
+
+			.general-info__profile__title{
+				
+			}
+
+				.general-info__profile__title__container{
+				
+				}
+
+
+			.general-info__profile__description{
+				
+			}
+
+				.general-info__profile__description__container{
+					
+				}
+
+
+		.general-info__goal{
+			
+		}
+
+			.general-info__goal__title{
+				
+			}
+
+				.general-info__goal__title__container{
+
+				}
+
+
+			.general-info__goal__description{
+				
+			}
+
+				.general-info__goal__description__container{
+					
+				}
+
+
+		.general-info__education{
+			
+		}
+			.general-info__education__title{
+				
+			}
+
+				.general-info__education__title__container{
+
+				}
+
+
+			.general-info__education__option{
+				
+			}
+
+				.general-info__education__option__title{
+					
+				}
+
+					.general-info__education__option__title__container{
+
+					}
+
+
+				.general-info__education__option__description{
+					
+				}
+
+					.general-info__education__option__description__container{
+						
+					}
+
+
+				.general-info__education__option__date{
+					
+				}
+
+					.general-info__education__option__date__container{
+
+					}
