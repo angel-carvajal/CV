@@ -12,8 +12,7 @@ angular.module("angelRouter",["ui.router","oc.lazyLoad","lumx","appNavigation","
 					return $ocLazyLoad.load(
 						{
 							files:[
-								"../bower_components/animate.css/animate.min.css",
-								"include/style/main.css"
+								"../bower_components/animate.css/animate.min.css"
 							]
 						}
 					)
@@ -113,7 +112,7 @@ angular.module("angelRouter",["ui.router","oc.lazyLoad","lumx","appNavigation","
 			});
 		});
 
-	},0);
+	},500);
 
 	$scope.updateLoad=function(){
 		$scope.load=true;
