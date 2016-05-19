@@ -8,19 +8,22 @@ angular.module("cv",[])
 		container:{
 			title:{
 				title:{
-					text: 	"Project Manager, desarrollador Frontend y Backend",
+					text: 	"Angel Carvajal",
 					class: 	"cover__container__title"
 				},
 				class: 	"cover__container__title__container"
 			},
 			subTitle:{
 				title:{
-					text: 	"Aprendiendo. Innovando. Creciendo.",
+					text: 	"Project Manager. Developer.",
 					class: 	"cover__container__sub-title"
 				},
 				class: 	"cover__container__sub-title__container"
 			},
 			class: 	"cover__container"
+		},
+		image:{
+			class: "cover__image"
 		},
 		classToAnimate: "fadeIn",
 		class: 			"cover"
@@ -41,260 +44,108 @@ angular.module("cv",[])
 
 	//Content definition
 	data={
-		personal:{
-			name:{
-				title:{
-					text: 	"Angel Carvajal",
-					class: 	"general-info__personal__name"
-				},
-				class: 	"general-info__personal__name__container"
-			},
-			position:{
-				title:{
-					text: 		"Project Manager, desarrollador Frontend y Backend",
-					divider: 	"lineP",
-					class: 		"general-info__personal__position"
-				},
-				class: 	"general-info__personal__position__container"
-			},
-			picture:{
-				image:{
-					src: 	"profile.jpg",
-					alt: 	"Angel Carvajal",
-					class: 	"general-info__personal__profile-picture"
-				},
-				class: 	"general-info__personal__profile-picture__container"
-			},
-			age:{
-				title:{
-					text: 	age+" años",
-					class: 	"general-info__personal__age"
-				},
-				class:"general-info__personal__age__container"
-			},
-			from:{
-				title:{
-					text: 	"Coahuila, México",
-					class: 	"general-info__personal__from"
-				},
-				class: 	"general-info__personal__from__container"
-			},
-			class: 	"general-info__personal"
-		},
-		contact:{
+		title:{
 			title:{
-				title:{
-					text: 	"Información de contacto",
-					class: 	"general-info__contact__title"
-				},
-				class: 	"general-info__contact__title__container"
+				text: 	"Perfil",
+				class: 	"general-info__title"
 			},
-			options:[
-				{
-					description:{
-						title:{
-							text: 	"866 100 7948",
-							class: 	"general-info__contact__option__title"
-						},
-						class: 	"general-info__contact__option__title__container"
-					},
-					icon:{
-						id: 	"cellphone-android",
-						size: 	iconSize,
-						color: 	iconColor,
-						type: 	iconType,
-						class: 	iconClass
-					},
-					class: 	"general-info__contact__option"
-				},
-				{
-					description:{
-						title:{
-							text: 	"angel_adcm@hotmail.com",
-							class: 	"general-info__contact__option__title"
-						},
-						class: 	"general-info__contact__option__title__container"
-					},
-					icon:{
-						id: 	"email",
-						size: 	iconSize,
-						color: 	iconColor,
-						type: 	iconType,
-						class: 	iconClass
-					},
-					class: 	"general-info__contact__option"
-				},
-				{
-					description:{
-						title:{
-							text: 	"angel_adcm",
-							class: 	"general-info__contact__option__title"
-						},
-						class: 	"general-info__contact__option__title__container"
-					},
-					icon:{
-						id: 	"skype",
-						size: 	iconSize,
-						color: 	iconColor,
-						type: 	iconType,
-						class: 	iconClass
-					},
-					class: 	"general-info__contact__option"
-				},
-				{
-					description:{
-						title:{
-							text: 	"@angdanadcm",
-							class: 	"general-info__contact__option__title"
-						},
-						class: 	"general-info__contact__option__title__container"
-					},
-					icon:{
-						id: 	"twitter",
-						size: 	iconSize,
-						color: 	iconColor,
-						type: 	iconType,
-						class: 	iconClass
-					},
-					class: 	"general-info__contact__option"
-				},
-				{
-					description:{
-						title:{
-							text: 	"angel-carvajal-6b853585",
-							class: 	"general-info__contact__option__title"
-						},
-						class: 	"general-info__contact__option__title__container"
-					},
-					icon:{
-						id: 	"linkedin",
-						size: 	iconSize,
-						color: 	iconColor,
-						type: 	iconType,
-						class: 	iconClass
-					},
-					class: 	"general-info__contact__option"
-				},
-				{
-					description:{
-						title:{
-							text: 	"angeldaniel-adcm",
-							class: 	"general-info__contact__option__title"
-						},
-						class: 	"general-info__contact__option__title__container"
-					},
-					icon:{
-						id: 	"github-circle",
-						size: 	iconSize,
-						color: 	iconColor,
-						type: 	iconType,
-						class: 	iconClass
-					},
-					class: 	"general-info__contact__option"
-				}
-			],
-			class:"general-info__contact"
+			paragraph:{
+				text: 	"Soy un PM, desarrolador Frontend con Angular y Backend con PHP",
+				class: 	"general-info__paragraph"
+			},
+			class: 	"general-info__title__container"
 		},
 		information:[
 			{
 				title:{
 					title:{
-						text: 	"Perfil",
+						text: 	"Acerca de mi",
+						class: 	"general-info__goal__title"
+					},
+					class: 		"general-info__goal__title__container"
+				},
+				paragraph:{
+					title:{
+						text:"Soy un desarrollador frontend y backend apasionado, me gusta estar aprendiendo cosas nuevas e implementarlas. Optimizar al máximo mi código es una prioridad así como también lo es la experiencia de usuario. También soy un Project manager enfocado a entender la necesidad del cliente e impulsar y orientar sus proyectos.",
+						class:"general-info__goal__paragraph",
+					},
+					class:"general-info__goal__paragraph__container"
+				},
+				class: 	"general-info__goal"
+			},
+			{
+				image:{
+					src: 	"me_1.2.jpg",
+					alt: 	"Angel Carvajal",
+					class: 	"general-info__image"
+				},
+				class:"general-info__image__container"
+			},
+			{
+				title:{
+					title:{
+						text: 	"Detalles",
 						class: 	"general-info__profile__title"
 					},
 					class: 	"general-info__profile__title__container"
 				},
 				options:[
 					{
-						paragraph:{
-							text: 	"Administrador de proyectos agiles, desarrollador frontend con angular, desarrollador backend con PHP OO",
-							class: 	"general-info__profile__description"
+						title:{
+							title:{
+								text: 	"Nombre:",
+								class: 	"general-info__profile__option__title"
+							},
+							class: 	"general-info__profile__option__title__container"
 						},
-						class: 	"general-info__profile__description__container"
+						paragraph:{
+							title:{
+								text: 	"Angel Carvajal",
+								class: 	"general-info__profile__option__description"
+							},
+							class: 	"general-info__profile__option__description__container"
+						},
+						class: 	"general-info__profile__option"
+					},
+					{
+						title:{
+							title:{
+								text: 	"Edad:",
+								class: 	"general-info__profile__option__title"
+							},
+							class: 	"general-info__profile__option__title__container"
+						},
+						paragraph:{
+							title:{
+								text: 	age+" años",
+								class: 	"general-info__profile__option__description"
+							},
+							class: 	"general-info__profile__option__description__container"
+						},
+						class: 	"general-info__profile__option"
+					},
+					{
+						title:{
+							title:{
+								text: 	"Locación:",
+								class: 	"general-info__profile__option__title"
+							},
+							class: 	"general-info__profile__option__title__container"
+						},
+						paragraph:{
+							title:{
+								text: 	"Coahuila, México",
+								class: 	"general-info__profile__option__description"
+							},
+							class: 	"general-info__profile__option__description__container"
+						},
+						class: 	"general-info__profile__option"
 					}
 				],
 				class: 	"general-info__profile"
-			},
-			{
-				title:{
-					title:{
-						text: 	"Objetivo",
-						class: 	"general-info__goal__title"
-					},
-					class: 	"general-info__goal__title__container"
-				},
-				options:[
-					{
-						paragraph:{
-							text: 	"Ampliar conocimientos en administración de proyectos agiles, experiencia de usuario y desarrollo frontend y backend",
-							class: 	"general-info__goal__description"
-						},
-						class: 	"general-info__goal__description__container"
-					},
-				],
-				class: 	"general-info__goal"
-			},
-			{
-				title:{
-					title:{
-						text: 	"Educación",
-						class: 	"general-info__education__title"
-					},
-					class: 	"general-info__education__title__container"
-				},
-				options:[
-					{
-						title:{
-							title:{
-								text: 	"ITESM campus Saltillo",
-								class: 	"general-info__education__option__title"
-							},
-							class: 	"general-info__education__option__title__container"
-						},
-						description:{
-							paragraph:{
-								text: 	"Ing. en Tecnologías de Información y Comunicación",
-								class: 	"general-info__education__option__description"
-							},
-							class: 	"general-info__education__option__description__container"
-						},
-						date:{
-							paragraph:{
-								text: 	"(2009-2014)",
-								class: 	"general-info__education__option__date"
-							},
-							class: 	"general-info__education__option__date__container"
-						},
-						class: "general-info__education__option"
-					},
-					{
-						title:{
-							title:{
-								text: 	"CBTis #36",
-								class: 	"general-info__education__option__title"
-							},
-							class: 	"general-info__education__option__title__container"
-						},
-						description:{
-							paragraph:{
-								text: 	"Técnico en Mecatrónica",
-								class: 	"general-info__education__option__description"
-							},
-							class: 	"general-info__education__option__description__container"
-						},
-						date:{
-							paragraph:{
-								text: 	"(2006-2009)",
-								class: 	"general-info__education__option__date"
-							},
-							class: 	"general-info__education__option__date__container"
-						},
-						class: "general-info__education__option"
-					}
-				],
-				class: 	"general-info__education"
-			},
+			}
 		],
+		informationClass: 	"general-info__information",
 		classToAnimate: "bounceInUp",
 		class: 	"general-info"
 	};
