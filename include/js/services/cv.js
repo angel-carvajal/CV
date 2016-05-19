@@ -5,7 +5,25 @@ angular.module("cv",[])
 
 	//Content definition
 	data={
-		
+		container:{
+			title:{
+				title:{
+					text: 	"Project Manager, desarrollador Frontend y Backend",
+					class: 	"cover__container__title"
+				},
+				class: 	"cover__container__title__container"
+			},
+			subTitle:{
+				title:{
+					text: 	"Aprendiendo. Innovando. Creciendo.",
+					class: 	"cover__container__sub-title"
+				},
+				class: 	"cover__container__sub-title__container"
+			},
+			class: 	"cover__container"
+		},
+		classToAnimate: "fadeIn",
+		class: 			"cover"
 	};
 
 	return data;
