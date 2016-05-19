@@ -3,6 +3,17 @@
 	<div 
 		in-view="loadAnimate(0,$event,content.classToAnimate)" 
 		class="section hidden {{content.class}}" 
+		ng-controller="coverController"
+	>
+
+		<cover-info>
+		</cover-info>
+	 	
+	</div>
+
+	<div 
+		in-view="loadAnimate(1,$event,content.classToAnimate)" 
+		class="section hidden {{content.class}}" 
 		ng-controller="generalController"
 	>
 
@@ -12,7 +23,7 @@
 	</div>
 
 	<div 
-		in-view="loadAnimate(1,$event,content.classToAnimate)" 
+		in-view="loadAnimate(2,$event,content.classToAnimate)" 
 		class="section hidden {{content.class}}" 
 		ng-controller="experienceController"
 	>
@@ -23,7 +34,7 @@
 	</div>
 
 	<div 
-		in-view="loadAnimate(2,$event,content.classToAnimate)" 
+		in-view="loadAnimate(3,$event,content.classToAnimate)" 
 		class="section hidden {{content.class}}" 
 		ng-controller="knowledgeController"
 	>
@@ -34,7 +45,7 @@
 	</div>
 
 	<div
-		in-view="loadAnimate(3,$event,content.classToAnimate)" 
+		in-view="loadAnimate(4,$event,content.classToAnimate)" 
 		class="section hidden {{content.class}}" 
 		ng-controller="projectsController"
 	>
@@ -45,24 +56,13 @@
 	</div>
 
 	<div
-		in-view="loadAnimate(4,$event,content.classToAnimate)" 
-		class="section hidden {{content.class}}" 
-		ng-controller="coursesController"
-	>
-	
-		<courses-info>
-		</courses-info>
-
-	</div>
-
-	<div
 		in-view="loadAnimate(5,$event,content.classToAnimate)" 
 		class="section hidden {{content.class}}" 
-		ng-controller="extrasController"
+		ng-controller="footerController"
 	>
 	
-		<extras-info>
-		</extras-info>
+		<footer-info>
+		</footer-info>
 
 	</div>
 

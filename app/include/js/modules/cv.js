@@ -1,10 +1,23 @@
 angular.module("appCv",["cv"])
 //General information controller
-.controller("generalController",["$scope","generalContent",function($scope,generalContent){
+.controller("coverController",["$scope","globalVariables","coverContent",function($scope,globalVariables,coverContent){
+	//Local variables definition
+		
+	//Scope variables definition
+		$scope.content=coverContent;
+		$scope.hostname=globalVariables.hostname;
+		$scope.linkToImages="include/images/"
+	//Controller functions
+
+}])
+//General information controller
+.controller("generalController",["$scope","globalVariables","generalContent",function($scope,globalVariables,generalContent){
 	//Local variables definition
 		
 	//Scope variables definition
 		$scope.content=generalContent;
+		$scope.hostname=globalVariables.hostname;
+		$scope.linkToImages="include/images/"
 	//Controller functions
 
 }])
@@ -32,19 +45,12 @@ angular.module("appCv",["cv"])
 		$scope.content=projectsContent;
 	//Controller functions
 }])
-//Courses information controller
-.controller("coursesController",["$scope","coursesContent",function($scope,coursesContent){
-	//Local variables definition
 
-	//Scope variables definition
-		$scope.content=coursesContent;
-	//Controller functions
-}])
 //Extras information controller
-.controller("extrasController",["$scope","extrasContent",function($scope,extrasContent){
+.controller("footerController",["$scope","footerContent",function($scope,footerContent){
 	//Local variables definition
 
 	//Scope variables definition
-		$scope.content=extrasContent;
+		$scope.content=footerContent;
 	//Controller functions
 }])
