@@ -2,10 +2,14 @@
 $font-family:"Roboto";
 $border-color:#eeeeee;
 $actived:--actived;
+$imagesUrl:"../images/";
 //Background colors
 $pBg:white;
 $sBg:#eeeeee;
 $tBg:#444A54;
+
+//Background imgs
+$cover:url('#{$imagesUrl}welcome-cover_1.4.jpg');
 
 //Text colors
 $pTx:#444A54;
@@ -121,12 +125,12 @@ $tTx:#FFFFFF;
 
 	//font weight
 		%fwLight{
-			font-weight: 200;
+			font-weight: 400;
 		}
 		%fwRegular{
 			font-weight: 500;
 		}
-		%fwMedium{
+		%fwBold{
 			font-weight: 600;
 		}
 
@@ -140,6 +144,13 @@ $tTx:#FFFFFF;
 		%rightSpace{
 			padding-right: 	20px
 		}
+		%topSpace{
+			padding-top: 	10px
+		}
+		%bottomSpace{
+			padding-bottom:	10px
+		}
+
 	//out space from side
 		%outSpace{
 			margin: 		10px 10px;
@@ -203,6 +214,9 @@ $tTx:#FFFFFF;
 		%doubleSpace{
 			letter-spacing: 2px;
 		}
+		%negSingleSpace{
+			letter-spacing: -1px;
+		}
 
 	//Line height
 		%dobleHeight{
@@ -210,4 +224,10 @@ $tTx:#FFFFFF;
 		}
 		%singleHeight{
 			line-height: 1em;
+		}
+
+	//Center element with position
+		%centered{
+			position: relative;
+			top:40%;
 		}

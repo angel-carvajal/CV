@@ -104,6 +104,52 @@
 /*------------------------------------*\
     General info style
 \*------------------------------------*/
+	.cover{
+		height: 650px;
+		background-image: $cover;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-position: center center;
+	}
+
+		.cover__container{
+			@extend %textCenter;
+			@extend %centered;
+		}
+
+			.cover__container__title{
+				@extend %tm;
+				@extend %tTx;
+				@extend %fwLight;
+				@extend %sidesSpace;
+				@extend %negSingleSpace;
+			}
+
+				.cover__container__title__container{
+					
+				}
+
+
+			.cover__container__sub-title{
+				@extend %sts;
+				@extend %tTx;
+				@extend %doubleSpace;
+				@extend %fwRegular;
+				@extend %sidesSpace;
+				@extend %topSpace;
+			}
+
+				.cover__container__sub-title__container{
+				
+				}
+
+
+
+
+
+/*------------------------------------*\
+    General info style
+\*------------------------------------*/
 
 	.general-info{
 		
