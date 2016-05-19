@@ -2,11 +2,212 @@
 $font-family:"Roboto";
 $border-color:#eeeeee;
 $actived:--actived;
+//Background colors
+$pBg:white;
+$sBg:#eeeeee;
+$tBg:#444A54;
+
+//Text colors
+$pTx:#444A54;
+$sTx:#009688;
+$tTx:#FFFFFF;
 
 
 //Mixins
-@mixin effect($items:all, $time:.5, $effect: ease){
-	transition: $items #{$time}s $effect;
-	-webkit-transition: $items #{$time}s $effect;
-	-moz-transition: $items #{$time}s $effect;
-}
+	@mixin effect($items:all, $time:.5, $effect: ease){
+		transition: $items #{$time}s $effect;
+		-webkit-transition: $items #{$time}s $effect;
+		-moz-transition: $items #{$time}s $effect;
+	}
+/*------------------------------------*\
+    Global style
+\*------------------------------------*/
+//Extends
+	//background-colors
+		%pBg{
+			background-color:$pBg;
+		}
+		%sBg{
+			background-color:$sBg;
+		}
+		%tBg{
+			background-color:$tBg;
+		}
+
+	//text colors
+		%pTx{
+			color:$pTx;
+		}
+		%sTx{
+			color:$sTx;
+		}
+		%tTx{
+			color:$tTx;
+		}
+
+	//Displays
+		%inlineBlock{
+			display: inline-block;
+		}
+		%inline{
+			display: inline;
+		}
+		%block{
+			display: block;
+		}
+
+	//font size for titles
+		%txs{
+			font-size: 20px;
+		}
+
+		%ts{
+			font-size: 30px;
+		}
+
+		%tm{
+			font-size: 40px;
+		}
+
+		%tl{
+			font-size: 50px;
+		}
+
+		%txl{
+			font-size: 64px;
+		}
+
+	//font size for subtitles
+		%stxs{
+			font-size: 12px;
+		}
+
+		%sts{
+			font-size: 14px;
+		}
+
+		%stm{
+			font-size: 16px;
+		}
+
+		%stl{
+			font-size: 20px;
+		}
+
+		%stxl{
+			font-size: 22px;
+		}
+
+	//font size for paragraphs
+		%pxs{
+			font-size: 10px;
+		}
+
+		%ps{
+			font-size: 12px;
+		}
+
+		%pm{
+			font-size: 14px;
+		}
+
+		%pl{
+			font-size: 16px;
+		}
+
+		%pxl{
+			font-size: 18px;
+		}
+
+	//font weight
+		%fwLight{
+			font-weight: 200;
+		}
+		%fwRegular{
+			font-weight: 500;
+		}
+		%fwMedium{
+			font-weight: 600;
+		}
+
+	//Space from side
+		%sidesSpace{
+			padding: 		0 20px;
+		}
+		%leftSpace{
+			padding-left: 	20px;
+		}
+		%rightSpace{
+			padding-right: 	20px
+		}
+	//out space from side
+		%outSpace{
+			margin: 		10px 10px;
+		}
+		%outBottomSpace{
+			margin-bottom: 	10px;
+		}
+		%outTopSpace{
+			margin-top: 	10px;
+		}
+		%outBTSpace{
+			margin-top: 	10px;
+			margin-bottom: 	10px;
+		}
+
+	//Borders
+		%allBorders{
+			border: 10px solid $sTx; 
+		}
+		%topBorders{
+			border-top: 10px solid $sTx; 
+		}
+		%bottomBorders{
+			border-bottom: 10px solid $sTx; 
+		}
+		%leftBorders{
+			border-left: 10px solid $sTx; 
+		}
+		%rightBorders{
+			border-right: 10px solid $sTx; 
+		}
+
+	//Text align
+		%textLeft{
+			text-align: left;
+		}
+		%textRight{
+			text-align: right;
+		}
+		%textCenter{
+			text-align: center;
+		}
+		%textJustify{
+			text-align: justify;
+		}
+
+	//Figures
+		%circle{
+			border-radius: 50%;
+		}
+		%undoCircle{
+			border-radius: 0;
+		}
+
+	//Pointers
+		%pointerDefault{
+			cursor: default;
+		}
+
+	//Letter spacing
+		%doubleSpace{
+			letter-spacing: 2px;
+		}
+
+	//Line height
+		%dobleHeight{
+			line-height: 2em;
+		}
+		%singleHeight{
+			line-height: 1em;
+		}
