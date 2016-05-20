@@ -12,7 +12,11 @@ angular.module("angelRouter",["ui.router","oc.lazyLoad","lumx","appNavigation","
 					return $ocLazyLoad.load(
 						{
 							files:[
-								"../bower_components/animate.css/animate.min.css"
+								"include/style/reset.css",
+								"../bower_components/normalize-css/normalize.css",
+								"../bower_components/lumx/dist/lumx.css",
+								"../bower_components/animate.css/animate.min.css",
+								"include/style/main.css"
 							]
 						}
 					)
@@ -70,61 +74,11 @@ angular.module("angelRouter",["ui.router","oc.lazyLoad","lumx","appNavigation","
 	};
 	$scope.load=false;
 
-	//execute untill template fully loaded with delay 0
-	$timeout(function(){
-		//Typed effect.
-		$(function(){
-			$(".typing").typed({
-				strings: [""+$scope.content.load.title.title.text+""],
-				typeSpeed: 50,
-				showCursor: false,
-				startDelay: 500,
-				callback: function() {
-					//Add class to simulate move
-					$(".welcome__image__container").addClass("welcome__image__container--actived");
-					//Listener of transition - standard
-					$(".welcome__image__container")[0].addEventListener("transitionend",function(){
-						$timeout(function(){
-							$(".welcome__load").addClass("welcome__load--actived");
-
-							$(".welcome__load")[0].addEventListener("webkitTransitionEnd",function(){
-								$timeout($scope.updateLoad(),500);
-							});
-							$(".welcome__load")[0].addEventListener("transitionend",function(){
-								$timeout($scope.updateLoad(),500);
-							});
-						},1500);
-					});
-					//Listener of transition - Safari 3.1 to 6.0
-					$(".welcome__image__container")[0].addEventListener("webkitTransitionEnd",function(){
-						$timeout(function(){
-							$(".welcome__load").addClass("welcome__load--actived");
-
-							$(".welcome__load")[0].addEventListener("webkitTransitionEnd",function(){
-								$timeout($scope.updateLoad(),500);
-							});
-							$(".welcome__load")[0].addEventListener("transitionend",function(){
-								$timeout($scope.updateLoad(),500);
-							});
-						},1500);
-					});
-				}
-			});
-		});
-
-	},500);
-
-	$scope.updateLoad=function(){
-		$scope.load=true;
-		$scope.$apply();
-	};
-
 	$scope.loadAnimate=function(id,element,effect){
 		if(!$scope.viewsLoaded[id]){
 			$(element.inViewTarget).addClass("visible animated "+effect);
 			$scope.viewsLoaded[id]=true;
 		}
-		
-	}
+	};
 
 }])
