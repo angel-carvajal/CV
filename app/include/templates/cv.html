@@ -1,69 +1,103 @@
 <div flex-container="column">
 
 	<div 
-		in-view="loadAnimate(0,$event,content.classToAnimate)" 
-		class="section hidden {{content.class}}" 
+		class="{{content.class}}" 
 		ng-controller="coverController"
 	>
+		<div 
+			in-view="loadAnimate(0,$event,content.classToAnimate)"
+			class="section hidden "
+		>
 
-		<cover-info>
-		</cover-info>
+			<cover-info>
+			</cover-info>
+
+		</div>
 	 	
 	</div>
 
 	<div 
-		in-view="loadAnimate(1,$event,content.classToAnimate)" 
-		class="section hidden {{content.class}}" 
+		class="{{content.class}}" 
 		ng-controller="generalController"
 	>
+		<div
+			class="section hidden" 
+			in-view="$parent.loadAnimate(1,$event,content.classToAnimate)"
+		>
 
-		<personal-info>
-		</personal-info>
-	 	
+			<personal-info>
+			</personal-info>
+
+	 	</div>
 	</div>
 
 	<div 
-		in-view="loadAnimate(2,$event,content.classToAnimate)" 
-		class="section hidden {{content.class}}" 
+		class="{{content.class}}" 
 		ng-controller="experienceController"
 	>
+	
+		<div 
+			in-view="loadAnimate(2,$event,content.classToAnimate)"
+			class="section hidden"
+		>
 
-		<experience-info>
-		</experience-info>
+			<experience-info>
+			</experience-info>
+
+		</div>
 
 	</div>
 
 	<div 
-		in-view="loadAnimate(3,$event,content.classToAnimate)" 
-		class="section hidden {{content.class}}" 
+		class="{{content.class}}" 
 		ng-controller="knowledgeController"
 	>
+		
+		<div
+			in-view="loadAnimate(3,$event,content.classToAnimate)"
+			class="section hidden"
+		>
 
-		<knowledge-info>
-		</knowledge-info>
+			<knowledge-info>
+			</knowledge-info>
 
+		</div>
+		
 	</div>
 
 	<div
-		in-view="loadAnimate(4,$event,content.classToAnimate)" 
-		class="section hidden {{content.class}}" 
+		class="{{content.class}}" 
 		ng-controller="projectsController"
 	>
-	
-		<projects-info>
-		</projects-info>
+
+		<div
+			in-view="loadAnimate(4,$event,content.classToAnimate)"
+			class="section hidden"
+		>
+
+			<projects-info>
+			</projects-info>
+
+		</div>
 
 	</div>
 
-	<div
-		in-view="loadAnimate(5,$event,content.classToAnimate)" 
-		class="section hidden {{content.class}}" 
+	<footer
+		
+		class="{{content.class}}" 
 		ng-controller="footerController"
 	>
-	
+
+		<div
+			in-view="$parent.loadAnimate(5,$event,content.classToAnimate)" 
+			class="section hidden"
+		>
+
 		<footer-info>
 		</footer-info>
 
-	</div>
+		</div>
+
+	</footer>
 
 </div>
