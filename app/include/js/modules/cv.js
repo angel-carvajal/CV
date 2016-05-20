@@ -1,6 +1,6 @@
 angular.module("appCv",["cv"])
 //General information controller
-.controller("coverController",["$scope","globalVariables","coverContent",function($scope,globalVariables,coverContent){
+.controller("coverController",["$scope","$uiViewScroll","$timeout","globalVariables","coverContent",function($scope,$uiViewScroll,$timeout,globalVariables,coverContent){
 	//Local variables definition
 		
 	//Scope variables definition
@@ -8,6 +8,10 @@ angular.module("appCv",["cv"])
 		$scope.hostname=globalVariables.hostname;
 		$scope.linkToImages="include/images/"
 	//Controller functions
+		$timeout(function(){
+			$uiViewScroll($(".cover"));
+		},0)
+		
 
 }])
 //General information controller
