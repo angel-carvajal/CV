@@ -1,0 +1,104 @@
+<div class="{{content.title.class}}">
+	
+	<div class="{{content.title.title.class}}">
+		
+		<custome-title title="content.title.title.title">
+		</custome-title>
+
+	</div>
+
+	<div class="{{content.title.paragraph.class}}">
+		
+		<custome-p paragraph="content.title.paragraph.title">
+			
+		</custome-p>
+
+	</div>
+
+	<div class="{{content.title.author.class}}">
+		
+		<custome-p paragraph="content.title.author.title">
+			
+		</custome-p>
+
+	</div>
+
+</div>
+
+<div flex-container="row" flex-column="12">
+	
+	<div flex-item="6" class="{{content.contact.class}}">
+		
+		<div ng-repeat="option in content.contact.options" class="{{option.class}}">
+			
+			<icon icon="option.icon">
+
+			</icon>
+
+			<div class="{{option.title.class}}">
+
+				<custome-title title="option.title.title">
+					
+				</custome-title>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div flex-item="6" class="{{content.social.class}}">
+
+		<div ng-repeat="option in content.social.options" class="{{option.class}}">
+			
+			<a 
+				ng-href="{{option.link.href}}" 
+				target=	"{{option.link.target}}" 
+				class=	"{{option.link.class}}"
+			>
+
+				<icon icon="option.icon">
+				
+				</icon>
+
+				<div class="{{option.title.class}}">
+
+					<custome-title title="option.title.title">
+						
+					</custome-title>
+
+				</div>
+
+			</a>
+
+		</div>
+
+	</div>
+
+</div>
+
+<div class="{{content.signature.class}}">
+
+	<div 
+		class="{{content.signature.title.class}}" 
+	>
+
+		<custome-title title="content.signature.title.title">
+			
+		</custome-title>		
+
+	</div>
+
+	<div 
+		class="{{content.signature.logo.class}}" 
+	>
+	
+		<img 
+			ng-src="{{content.signature.host+'include/images/'+content.signature.logo.image.src}}"
+			class="{{content.signature.logo.image.class}}" 
+		>
+
+	</div>
+
+
+</div>
