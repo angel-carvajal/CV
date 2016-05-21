@@ -32,6 +32,9 @@ $tTx:#FFFFFF;
 		right: $right;
 		z-index: $z;
 	}
+	@mixin borders($side,$color,$size){
+		border-#{$side}:#{$size}px solid $color;
+	}
 /*------------------------------------*\
     Global style
 \*------------------------------------*/
@@ -245,4 +248,19 @@ $tTx:#FFFFFF;
 		%centered{
 			position: relative;
 			top:40%;
+		}
+
+	//Borders
+		%borderBottomP{
+			@include borders($side:bottom,$color:$pBg,$size:1);
+		}
+
+	//Z position
+		%zPositionP{
+			z-index: 1;
+		}
+
+	//Over flow
+		%flowYHidden{
+			overflow-y: hidden;
 		}

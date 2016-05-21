@@ -2,111 +2,151 @@
 /*------------------------------------*\
     Global style
 \*------------------------------------*/
-/* line 40, _config.scss */
+/* line 43, _config.scss */
 .general-info {
   background-color: white;
 }
 
-/* line 51, _config.scss */
+/* line 49, _config.scss */
+.footer {
+  background-color: #444a54;
+}
+
+/* line 54, _config.scss */
 .general-info__paragraph, .general-info__profile__option__title, .general-info__profile__option__description, .general-info__goal__paragraph {
   color: #444a54;
 }
 
-/* line 54, _config.scss */
-.general-info__title, .general-info__profile__title, .general-info__goal__title {
+/* line 57, _config.scss */
+.general-info__title, .general-info__profile__title, .general-info__goal__title, .footer__social__option__link:hover, .footer__social__option__link:hover i {
   color: #009688;
 }
 
-/* line 57, _config.scss */
-.cover__container__title, .cover__container__sub-title {
+/* line 60, _config.scss */
+.cover__container__title, .cover__container__sub-title, .footer {
   color: white;
 }
 
-/* line 62, _config.scss */
-.cover__container__title__container {
+/* line 65, _config.scss */
+.cover__container__title__container, .footer__contact__option__title__container, .footer__social__option__title__container, .footer__signature__title__container, .footer__signature__logo__container {
   display: inline-block;
 }
 
-/* line 77, _config.scss */
+/* line 68, _config.scss */
+.footer__contact__option__title__icon, .footer__social__option__title__icon {
+  display: inline;
+}
+
+/* line 76, _config.scss */
+.footer__contact__option__title, .footer__social__option__title, .footer__signature__title {
+  font-size: 20px;
+}
+
+/* line 80, _config.scss */
 .general-info__profile__option__title {
   font-size: 30px;
 }
 
-/* line 81, _config.scss */
+/* line 84, _config.scss */
 .general-info__profile__title, .general-info__goal__title {
   font-size: 40px;
 }
 
-/* line 89, _config.scss */
-.cover__container__title, .general-info__title {
+/* line 92, _config.scss */
+.cover__container__title, .general-info__title, .footer__title__title {
   font-size: 64px;
 }
 
-/* line 102, _config.scss */
+/* line 105, _config.scss */
 .cover__container__sub-title {
   font-size: 16px;
 }
 
-/* line 131, _config.scss */
-.general-info__paragraph, .general-info__profile__option__description__container, .general-info__goal__paragraph {
+/* line 126, _config.scss */
+.footer__title__author__container {
+  font-size: 14px;
+}
+
+/* line 134, _config.scss */
+.general-info__paragraph, .general-info__profile__option__description__container, .general-info__goal__paragraph, .footer__title__paragraph__container {
   font-size: 18px;
 }
 
-/* line 136, _config.scss */
+/* line 139, _config.scss */
 .cover__container__title {
   font-weight: 400;
 }
 
-/* line 139, _config.scss */
+/* line 142, _config.scss */
 .cover__container__sub-title {
   font-weight: 500;
 }
 
-/* line 147, _config.scss */
+/* line 150, _config.scss */
 .cover__container__title, .cover__container__sub-title, .general-info__title__container, .general-info__profile, .general-info__goal {
   padding: 0 20px;
 }
 
-/* line 156, _config.scss */
-.cover__container__sub-title, .general-info__image__container, .general-info__title__container, .general-info__paragraph, .general-info__profile__option__title__container, .general-info__goal__paragraph__container {
+/* line 159, _config.scss */
+.cover__container__sub-title, .general-info__image__container, .general-info__title__container, .general-info__paragraph, .general-info__profile__option__title__container, .general-info__goal__paragraph__container, .footer__title__paragraph__container, .footer__title__author__container {
   padding-top: 10px;
 }
 
-/* line 159, _config.scss */
-.general-info__image__container, .general-info__title__container, .general-info__profile__title__container, .general-info__profile__option__description__container, .general-info__goal__title__container {
+/* line 162, _config.scss */
+.general-info__image__container, .general-info__title__container, .general-info__profile__title__container, .general-info__profile__option__description__container, .general-info__goal__title__container, .footer__title {
   padding-bottom: 10px;
 }
 
-/* line 167, _config.scss */
+/* line 170, _config.scss */
 .cover__container__title {
   margin-bottom: 10px;
 }
 
-/* line 173, _config.scss */
+/* line 176, _config.scss */
 .general-info__image__container {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/* line 208, _config.scss */
-.cover__container, .general-info__title__container {
+/* line 211, _config.scss */
+.cover__container, .general-info__title__container, .footer__title__title__container, .footer__title__paragraph__container, .footer__title__author__container, .footer__contact__option, .footer__social__option, .footer__signature {
   text-align: center;
 }
 
-/* line 229, _config.scss */
+/* line 227, _config.scss */
+.welcome, .cover, .general-info, .footer__title, .footer__signature {
+  cursor: default;
+}
+
+/* line 232, _config.scss */
 .cover__container__sub-title {
   letter-spacing: 2px;
 }
 
-/* line 232, _config.scss */
+/* line 235, _config.scss */
 .cover__container__title {
   letter-spacing: -1px;
 }
 
-/* line 245, _config.scss */
+/* line 248, _config.scss */
 .cover__container {
   position: relative;
   top: 40%;
+}
+
+/* line 254, _config.scss */
+.cover__container__title__container {
+  border-bottom: 1px solid white;
+}
+
+/* line 259, _config.scss */
+.cover__container, .general-info, .footer {
+  z-index: 1;
+}
+
+/* line 264, _config.scss */
+.welcome, .general-info, .footer {
+  overflow-y: hidden;
 }
 
 /* line 6, main.scss */
@@ -163,7 +203,7 @@ html, body {
   height: 100%;
 }
 
-/* line 61, main.scss */
+/* line 63, main.scss */
 .welcome__load {
   position: relative;
   width: 100%;
@@ -171,7 +211,7 @@ html, body {
   top: 0px;
 }
 
-/* line 68, main.scss */
+/* line 70, main.scss */
 .welcome__load--actived {
   top: -120px;
   transition: all 0.5s ease;
@@ -179,13 +219,13 @@ html, body {
   -moz-transition: all 0.5s ease;
 }
 
-/* line 73, main.scss */
+/* line 75, main.scss */
 .welcome__title {
   font-weight: 200;
   font-size: 20px;
 }
 
-/* line 78, main.scss */
+/* line 80, main.scss */
 .welcome__title__container {
   display: inline-block;
   position: relative;
@@ -193,24 +233,24 @@ html, body {
   right: 6px;
 }
 
-/* line 86, main.scss */
+/* line 88, main.scss */
 .welcome__image {
   height: 150px;
 }
 
-/* line 90, main.scss */
+/* line 92, main.scss */
 .welcome__image--actived {
   color: red;
 }
 
-/* line 94, main.scss */
+/* line 96, main.scss */
 .welcome__image__container {
   display: inline-block;
   position: relative;
   top: -120px;
 }
 
-/* line 99, main.scss */
+/* line 101, main.scss */
 .welcome__image__container--actived {
   top: 0px;
   transition: all 0.5s ease;
@@ -221,12 +261,13 @@ html, body {
 /*------------------------------------*\
     Cover style
 \*------------------------------------*/
-/* line 111, main.scss */
+/* line 113, main.scss */
 .cover {
-  height: 650px;
+  height: 1500px;
+  margin-bottom: 1px;
 }
 
-/* line 114, main.scss */
+/* line 118, main.scss */
 .cover__image {
   background-image: url("../images/welcome-cover_1.4.jpg");
   background-repeat: no-repeat;
@@ -237,49 +278,110 @@ html, body {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 0;
 }
 
-/* line 122, main.scss */
+/* line 126, main.scss */
 .cover__container {
   width: 100%;
   position: absolute;
   top: 40%;
-  z-index: 2;
 }
 
 /*------------------------------------*\
     General info style
 \*------------------------------------*/
-/* line 166, main.scss */
+/* line 171, main.scss */
 .general-info {
   padding-bottom: 40px;
-  position: absolute;
 }
 
-/* line 171, main.scss */
+/* line 178, main.scss */
 .general-info__image {
   border-radius: 50%;
   height: 300px;
   margin: auto;
 }
 
-/* line 192, main.scss */
+/* line 199, main.scss */
 .general-info__title__container {
   margin-top: 40px;
 }
 
-/* line 201, main.scss */
+/* line 208, main.scss */
 .general-info__paragraph {
   padding-bottom: 40px;
 }
 
-/* line 224, main.scss */
+/* line 231, main.scss */
 .general-info__profile__option__title {
   font-weight: bolder;
 }
 
-/* line 260, main.scss */
+/* line 267, main.scss */
 .general-info__goal__paragraph {
   line-height: 1.5em;
+}
+
+/*------------------------------------*\
+    Footer style
+\*------------------------------------*/
+/* line 334, main.scss */
+.footer__title {
+  margin-top: 40px;
+}
+
+/* line 371, main.scss */
+.footer__contact {
+  margin-top: 40px;
+}
+
+/* line 387, main.scss */
+.footer__contact__option__title__container {
+  padding-top: 8px;
+}
+
+/* line 393, main.scss */
+.footer__social {
+  margin-top: 40px;
+}
+
+/* line 409, main.scss */
+.footer__social__option__title__container {
+  padding-top: 8px;
+}
+
+/* line 415, main.scss */
+.footer__social__option__link {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+/* line 418, main.scss */
+.footer__social__option__link:hover, .footer__social__option__link:hover i {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+/* line 423, main.scss */
+.footer__social__option__link i {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+
+/* line 433, main.scss */
+.footer__signature__title {
+  font-weight: 200;
+}
+
+/* line 438, main.scss */
+.footer__signature__title__container {
+  position: relative;
+  bottom: 58px;
+}
+
+/* line 445, main.scss */
+.footer__signature__logo {
+  height: 150px;
 }

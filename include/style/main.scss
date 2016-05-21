@@ -55,7 +55,9 @@
 \*------------------------------------*/
 
 	.welcome{
+		@extend %flowYHidden;
 		height: 100%;
+		@extend %pointerDefault;
 	}
 
 		.welcome__load{
@@ -109,23 +111,25 @@
     Cover style
 \*------------------------------------*/
 	.cover{
-		height: 650px;
+		height: 1500px;
+		margin-bottom: 1px;
+		@extend %pointerDefault;
 	}
 		.cover__image{
 			background-image: $cover;
 			background-repeat: no-repeat;
 			background-size: 100% 100%;
 			background-position: center center;
-			@include positionCoordinates($position:fixed,$z:1);
+			@include positionCoordinates($position:fixed,$z:0);
 		}
 
 		.cover__container{
 			@extend %textCenter;
 			@extend %centered;
+			@extend %zPositionP;
 			width: 100%;
 			position: absolute;
 			top: 40%;
-			z-index: 2;
 		}
 
 			.cover__container__title{
@@ -139,6 +143,7 @@
 
 				.cover__container__title__container{
 					@extend %inlineBlock;
+					@extend %borderBottomP;
 				}
 
 
@@ -165,8 +170,10 @@
 
 	.general-info{
 		@extend %pBg;
+		@extend %zPositionP;
+		@extend %flowYHidden;
+		@extend %pointerDefault;
 		padding-bottom: 40px;
-		position: absolute;
 	}
 		.general-info__image{
 			border-radius: 50%;
@@ -308,3 +315,137 @@
 					.general-info__education__option__date__container{
 						
 					}
+
+
+
+
+
+/*------------------------------------*\
+    Footer style
+\*------------------------------------*/
+
+	.footer{
+		@extend %tBg;
+		@extend %zPositionP;
+		@extend %flowYHidden;
+		@extend %tTx;
+	}
+
+		.footer__title{
+			@extend %bottomSpace;
+			margin-top: 40px;
+			@extend %pointerDefault;
+		}
+
+			.footer__title__title{
+				@extend %txl;
+
+			}
+
+				.footer__title__title__container{
+					@extend %textCenter;
+				}
+
+			.footer__title__paragraph{
+				
+			}
+
+				.footer__title__paragraph__container{
+					@extend %pxl;
+					@extend %textCenter;
+					@extend %topSpace;
+				}
+
+
+			.footer__title__author{
+				
+			}
+
+				.footer__title__author__container{
+					@extend %pm;
+					@extend %textCenter;
+					@extend %topSpace;
+				}
+
+
+		.footer__contact{
+			margin-top: 40px;
+		}
+
+			.footer__contact__option{
+				@extend %textCenter;
+			}
+
+				.footer__contact__option__title{
+					@extend %txs;
+				}
+
+					.footer__contact__option__title__icon{
+						@extend %inline;
+					}
+
+					.footer__contact__option__title__container{
+						@extend %inlineBlock;
+						padding-top: 8px;
+					}
+
+
+		.footer__social{
+			margin-top: 40px;
+		}
+
+			.footer__social__option{
+				@extend %textCenter;
+			}
+
+				.footer__social__option__title{
+					@extend %txs;
+				}
+
+					.footer__social__option__title__icon{
+						@extend %inline;
+					}
+
+					.footer__social__option__title__container{
+						@extend %inlineBlock;
+						padding-top: 8px;
+					}
+
+
+				.footer__social__option__link{
+					@include effect($time:.3);
+
+					&:hover, &:hover i{
+						@extend %sTx;
+						@include effect($time:.3);
+					}
+
+					i{
+						@include effect($time:.3);
+					}
+				}
+
+		.footer__signature{
+			@extend %textCenter;
+			@extend %pointerDefault;
+		}
+
+			.footer__signature__title{
+				@extend %txs;
+				font-weight: 200;
+			}
+
+				.footer__signature__title__container{
+					@extend %inlineBlock;
+					position: relative;
+					bottom: 58px;
+				}
+
+
+			.footer__signature__logo{
+				height: 150px;
+			}	
+			
+				.footer__signature__logo__container{
+					@extend %inlineBlock;
+				}		
