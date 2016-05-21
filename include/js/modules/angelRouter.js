@@ -62,7 +62,7 @@ angular.module("angelRouter",["ui.router","oc.lazyLoad","lumx","appNavigation","
 			},
 			logo:{
 				image:{
-					src:"ac_logo.png",
+					src:"ac_logo_1.1.png",
 					class:"welcome__image"
 				},
 				class:"welcome__image__container"
