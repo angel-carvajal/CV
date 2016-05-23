@@ -141,6 +141,70 @@ angular.module("cv",[])
 				class: 	"general-info__profile"
 			}
 		],
+		education:{
+			title:{
+				title:{
+					text: 	"Educación",
+					class: 	"general-info__education__title"
+				},
+				class: 	"general-info__education__title__container"
+			},
+			options:[
+				{
+					title:{
+						image:{
+							src: 	"tec_mty_logo.jpg",
+							alt: 	"Tecnológico de Monterrey",
+							class: 	"general-info__education__option__logo"
+						},
+						class:"general-info__education__option__logo__container"
+					},
+					paragraph:{
+						title:{
+							text:"Ingeniero en tecnologías de información y comunicación",
+							class:"general-info__education__option__paragraph__title"
+						},
+						subTitle:{
+							text: 	"Saltillo, Coahuila",
+							class: 	"general-info__education__option__paragraph__sub-title"
+						},
+						date:{
+							text: 	"(2009-2014)",
+							class: 	"general-info__education__option__paragraph__date"
+						},
+						class:"general-info__education__option__paragraph"
+					},
+					class:"general-info__education__option"
+				},
+				{
+					title:{
+						image:{
+							src: 	"cbtis_logo_1.1.png",
+							alt: 	"CBTis #36",
+							class: 	"general-info__education__option__logo"
+						},
+						class:"general-info__education__option__logo__container"
+					},
+					paragraph:{
+						title:{
+							text:"Técnico en Mecatrónica",
+							class:"general-info__education__option__paragraph__title"
+						},
+						subTitle:{
+							text: 	"Monclova, Coahuila",
+							class: 	"general-info__education__option__paragraph__sub-title"
+						},
+						date:{
+							text: 	"(2006-2009)",
+							class: 	"general-info__education__option__paragraph__date"
+						},
+						class:"general-info__education__option__paragraph"
+					},
+					class:"general-info__education__option"
+				},
+			],
+			class: 	"general-info__education"
+		},
 		informationClass: 	"general-info__information",
 		classToAnimate: "bounceInUp",
 		class: 	"general-info"
