@@ -69,3 +69,62 @@
 	</div>
 	
 </div>
+
+<div flex-container="row" flex-column="12" >
+
+	
+	<div flex-item="2"></div>
+		
+	<div flex-item="8" class="{{content.education.class}}">
+
+		<div flex-container="column">
+			
+			<div class="{{content.education.title.class}}">
+
+				<custome-title title="content.education.title.title">
+				</custome-title>
+			
+			</div>
+
+			<div ng-repeat="option in content.education.options" class="{{option.class}}">
+				
+				<div flex-container="row" flex-column="12">
+					
+
+					<div flex-item="4" class="{{option.title.class}}">
+						
+						<img 
+							ng-src= "{{hostname+'include/images/'+option.title.image.src}}"
+							alt= 	"{{option.title.image.alt}}"
+							class= 	"{{option.title.image.class}}" 
+						>
+						
+
+					</div>
+
+					<div flex-item="8">
+
+						<div class="{{option.paragraph.class}}">
+
+							<custome-p paragraph="option.paragraph.title">
+							</custome-p>
+
+							<custome-p paragraph="option.paragraph.subTitle">
+							</custome-p>
+
+							<custome-p paragraph="option.paragraph.date">
+							</custome-p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+		
+	</div>
+	
+</div>
