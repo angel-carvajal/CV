@@ -649,7 +649,502 @@ angular.module("cv",[])
 
 	//Content definition
 	data={
-		
+		title:{
+			title:{
+				text: 	"Habilidades",
+				class: 	"knowledge__title"
+			},
+			class: 	"knowledge__title__container"
+		},
+		technologies:{
+			types:[
+				{
+					title:{
+						title:{
+							text: 	"Tecnologías",
+							class: 	"knowledge__technologies__type__title"
+						},
+						class: 	"knowledge__technologies__type__title__container"
+					},
+					techs:{
+						options:[
+							{
+								title:{
+									title:{
+										text: 	"HTML5",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,true],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"CSS3",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,true],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"PHP",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,true],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"MySQL",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,true],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"JSON",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,true],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"Java",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"JavaScript",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"AngularJS",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"Lumx Framework",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"Responsive",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"MVC",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"POO",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"AnimateCSS library",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"SASS",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,false,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"Bootstrap",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,false,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"JQuery",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,false,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"Bower",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,false,false,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"Grunt",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,false,false,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"Node",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,false,false,false,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"Protractor",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,false,false,false,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"RoR",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,false,false,false,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	".NET C#",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,false,false,false,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"SQL",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,false,false,false,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+						],
+						class:"knowledge__technologies__type__techs"
+					},
+					extra:{
+						paragraph:{
+							title:{
+								text: 	"Para este proyecto se utilizó HTML5, CSS3, SASS, JSON, JavaScript, Angular, Lumx, AnimateCSS, JQuery y grunt.",
+								class: 	"knowledge__technologies__type__extra__title"
+							},
+							class: 	"knowledge__technologies__type__extra__title__container"
+						},
+						link:{
+							href: 	"https://github.com/angeldaniel-adcm/CV",
+							text: 	"Ver proyecto en Github",
+							container: 	"knowledge__technologies__type__extra__link__container",
+							class: 	"knowledge__technologies__type__extra__link"
+						},
+						class:"knowledge__technologies__type__extra"
+					},
+					class: "knowledge__technologies__type"
+				},
+				{
+					title:{
+						title:{
+							text: 	"Idiomas",
+							class: 	"knowledge__technologies__type__title"
+						},
+						class: 	"knowledge__technologies__type__title__container"
+					},
+					techs:{
+						options:[
+							{
+								title:{
+									title:{
+										text: 	"Español (Nativo)",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,true],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"Ingles (Toefl 627)",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,true],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+						],
+						class:"knowledge__technologies__type__techs"
+					},
+					class: "knowledge__technologies__type"
+				},
+				{
+					title:{
+						title:{
+							text: 	"Herramientas",
+							class: 	"knowledge__technologies__type__title"
+						},
+						class: 	"knowledge__technologies__type__title__container"
+					},
+					techs:{
+						options:[
+							{
+								title:{
+									title:{
+										text: 	"WAMP",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,true],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"MS Office",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,true],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"Sublime Text 2",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"Sublime Text 3",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"Git",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"Dreamweaver 5.5",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"Ilustrador 5.1",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"CorelDraw",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"Photoshop 5.5",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,false,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"Github",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,false,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+
+						],
+						class:"knowledge__technologies__type__techs"
+					},
+					class: "knowledge__technologies__type"
+				}
+			],
+			class:"knowledge__technologies"
+		},
+		classToAnimate: "bounceInUp",
+		class: 	"knowledge"
 	};
 
 	return data;
