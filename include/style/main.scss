@@ -331,6 +331,134 @@
 
 
 /*------------------------------------*\
+    Kno style
+\*------------------------------------*/
+
+	.knowledge{
+		@extend %pBg;
+		@extend %zPositionP;
+		@extend %flowYHidden;
+		@extend %pointerDefault;
+		position: relative;
+		padding-bottom: 40px;
+	}
+
+		.knowledge__title{
+			@extend %sTx;
+			@extend %txl;
+			padding-bottom: 40px;
+		}
+
+			.knowledge__title__container{
+				@extend %textCenter;
+				@extend %sidesSpace;
+				@extend %topSpace;
+				margin-top: 40px;
+			}
+
+
+		.knowledge__technologies{
+
+		}
+
+			.knowledge__technologies__type{
+				@extend %sidesSpace;
+				@extend %topSpace;
+				@extend %outTopSpace;
+				margin-bottom: 40px;
+			}
+
+				.knowledge__technologies__type__title{
+					@extend %sTx;
+					@extend %tm;
+				}
+
+					.knowledge__technologies__type__title__container{
+						@extend %bottomSpace;
+						@extend %outBottomSpace;
+					}
+
+
+				.knowledge__technologies__type__techs{
+					@extend %sTx;
+					@extend %tm;
+				}
+
+
+					.knowledge__technologies__type__techs__tech{
+						@extend %sidesSpace;
+						@extend %bottomSpace;
+					}
+
+						.knowledge__technologies__type__techs__tech__title{
+							@extend %pTx;
+							@extend %txs;
+							font-weight: bolder;
+						}
+
+							.knowledge__technologies__type__techs__tech__title__container{
+								@extend %inlineBlock;
+							}
+
+						.knowledge__technologies__type__techs__tech__grades{
+							@extend %inlineBlock;
+							height: 30px;
+							float: right;
+						}
+							.knowledge__technologies__type__techs__tech__grades__grade{
+								@extend %inlineBlock;
+								margin: 0px 5px;
+								border: 3px solid #A7A7A7;
+								width: 12px;
+							}
+
+								.knowledge__technologies__type__techs__tech__grades__grade--actived{
+									@extend %fBg;
+								}
+
+
+				.knowledge__technologies__type__extra{
+					@extend %textCenter;
+				}
+
+					.knowledge__technologies__type__extra__title{
+						@extend %pTx;
+						@extend %pxl;
+					}
+
+						.knowledge__technologies__type__extra__title__container{
+							@extend %bottomSpace;
+						}
+
+
+					.knowledge__technologies__type__extra__link{
+						@extend %txs;
+						@extend %tBg;
+						@extend %sidesSpace;
+						@extend %topSpace;
+						@extend %bottomSpace;
+						@include effect($time:.3);
+						&:hover{
+							@extend %sTx;
+							@include effect($time:.3);
+						}
+
+					}
+
+						.knowledge__technologies__type__extra__link__container{
+							@extend %tTx;
+							@extend %topSpace;
+							@extend %bottomSpace;
+							margin-bottom: 40px;
+						}
+
+
+
+
+
+
+
+/*------------------------------------*\
     Footer style
 \*------------------------------------*/
 	

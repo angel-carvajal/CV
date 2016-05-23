@@ -7,6 +7,7 @@ $imagesUrl:"../images/";
 $pBg:white;
 $sBg:#eeeeee;
 $tBg:#444A54;
+$fBg:#009688;
 
 //Background imgs
 $cover:url('#{$imagesUrl}welcome-cover_1.4.jpg');
@@ -48,6 +49,9 @@ $tTx:#FFFFFF;
 		}
 		%tBg{
 			background-color:$tBg;
+		}
+		%fBg{
+			background-color:$fBg;
 		}
 
 	//text colors
