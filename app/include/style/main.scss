@@ -287,6 +287,7 @@
 
 				.general-info__education__title__container{
 					@extend %bottomSpace;
+					@extend %outBottomSpace;
 				}
 
 
@@ -324,6 +325,145 @@
 						@extend %pxl;
 						@extend %pTx;
 					}
+
+
+
+
+
+/*------------------------------------*\
+    Footer style
+\*------------------------------------*/
+	
+	.experience{
+		@extend %sBg;
+		@extend %zPositionP;
+		@extend %flowYHidden;
+		@extend %pointerDefault;
+		position: relative;
+		padding-bottom: 40px;
+		
+	}
+
+		.experience__title{
+			@extend %sTx;
+			@extend %txl;
+			padding-bottom: 40px;
+		}
+
+			.experience__title__container{
+				@extend %textCenter;
+				@extend %sidesSpace;
+				@extend %topSpace;
+				margin-top: 40px;
+			}
+
+
+		.experience__option{
+			@extend %sidesSpace;
+			@extend %topSpace;
+			@extend %outTopSpace;
+			@extend %outBottomSpace;
+			margin-bottom: 40px;
+		}
+
+			.experience__option__title{
+				@extend %bottomSpace;
+				@extend %outBottomSpace;
+			}
+
+				.experience__option__title__position{
+					@extend %tm;
+					@extend %sTx;
+				}
+
+					.experience__option__title__position__container{
+
+					}
+
+
+				.experience__option__title__company{
+					@extend %pTx;
+					@extend %stl;
+					font-weight: bolder;
+				}
+
+					.experience__option__title__company__container{
+
+					}
+
+				.experience__option__title__date{
+					@extend %pTx;
+					@extend %pxl;
+				}
+
+					.experience__option__title__date__container{
+
+					}
+
+
+			.experience__option__information{
+
+			}
+
+				.experience__option__information__description{
+					@extend %pTx;
+					@extend %textJustify;
+					@extend %pxl;
+					line-height: 1.5em;
+				}
+
+					.experience__option__information__description__container{
+						@extend %bottomSpace;
+					}
+
+
+			.experience__option__information__duties{
+
+			}
+
+				.experience__option__information__duties__title{
+					@extend %sTx;
+					@extend %ts;
+				}
+
+					.experience__option__information__duties__title__container{
+
+					}
+
+				.experience__option__information__duties__duty{
+
+				}
+
+					.experience__option__information__duties__duty__title{
+						@extend %pTx;
+						@extend %pl;
+						font-weight: bolder;
+					}
+
+						.experience__option__information__duties__duty__title__container{
+							@extend %inlineBlock;
+							@extend %sidesSpace;
+							@extend %topSpace;
+							@extend %bottomSpace;
+							@extend %outSpace;
+							@extend %pBg;
+						}
+
+
+			.experience__option__information__location{
+				@extend %sTx;
+				@extend %pl;
+				@extend %inlineBlock;
+				font-weight: bolder;
+			}
+
+				.experience__option__information__location__container{
+					@extend %topSpace;
+				}
+
+				.experience__option__information__location__container i{
+					@extend %inline;
+				}
 
 
 

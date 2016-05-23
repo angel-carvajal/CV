@@ -3,8 +3,13 @@
     Global style
 \*------------------------------------*/
 /* line 43, _config.scss */
-.general-info {
+.general-info, .experience__option__information__duties__duty__title__container {
   background-color: white;
+}
+
+/* line 46, _config.scss */
+.experience {
+  background-color: #eeeeee;
 }
 
 /* line 49, _config.scss */
@@ -13,12 +18,12 @@
 }
 
 /* line 54, _config.scss */
-.general-info__paragraph, .general-info__profile__option__title, .general-info__profile__option__description, .general-info__goal__paragraph, .general-info__education__option__paragraph__sub-title, .general-info__education__option__paragraph__date {
+.general-info__paragraph, .general-info__profile__option__title, .general-info__profile__option__description, .general-info__goal__paragraph, .general-info__education__option__paragraph__sub-title, .general-info__education__option__paragraph__date, .experience__option__title__company, .experience__option__title__date, .experience__option__information__description, .experience__option__information__duties__duty__title {
   color: #444a54;
 }
 
 /* line 57, _config.scss */
-.general-info__title, .general-info__profile__title, .general-info__goal__title, .general-info__education__title, .general-info__education__option__paragraph__title, .footer__social__option__link:hover, .footer__social__option__link:hover i {
+.general-info__title, .general-info__profile__title, .general-info__goal__title, .general-info__education__title, .general-info__education__option__paragraph__title, .experience__title, .experience__option__title__position, .experience__option__information__duties__title, .experience__option__information__location, .footer__social__option__link:hover, .footer__social__option__link:hover i {
   color: #009688;
 }
 
@@ -28,12 +33,12 @@
 }
 
 /* line 65, _config.scss */
-.cover__container__title__container, .footer__contact__option__title__container, .footer__social__option__title__container, .footer__signature__title__container, .footer__signature__logo__container {
+.cover__container__title__container, .experience__option__information__duties__duty__title__container, .experience__option__information__location, .footer__contact__option__title__container, .footer__social__option__title__container, .footer__signature__title__container, .footer__signature__logo__container {
   display: inline-block;
 }
 
 /* line 68, _config.scss */
-.footer__contact__option__title__icon, .footer__social__option__title__icon {
+.experience__option__information__location__container i, .footer__contact__option__title__icon, .footer__social__option__title__icon {
   display: inline;
 }
 
@@ -43,17 +48,17 @@
 }
 
 /* line 80, _config.scss */
-.general-info__profile__option__title {
+.general-info__profile__option__title, .experience__option__information__duties__title {
   font-size: 30px;
 }
 
 /* line 84, _config.scss */
-.general-info__profile__title, .general-info__goal__title {
+.general-info__profile__title, .general-info__goal__title, .experience__option__title__position {
   font-size: 40px;
 }
 
 /* line 92, _config.scss */
-.cover__container__title, .general-info__title, .footer__title__title {
+.cover__container__title, .general-info__title, .experience__title, .footer__title__title {
   font-size: 64px;
 }
 
@@ -62,13 +67,23 @@
   font-size: 16px;
 }
 
+/* line 109, _config.scss */
+.experience__option__title__company {
+  font-size: 20px;
+}
+
 /* line 126, _config.scss */
 .footer__title__author__container {
   font-size: 14px;
 }
 
+/* line 130, _config.scss */
+.experience__option__information__duties__duty__title, .experience__option__information__location {
+  font-size: 16px;
+}
+
 /* line 134, _config.scss */
-.general-info__paragraph, .general-info__profile__option__description__container, .general-info__goal__paragraph, .general-info__education__option__paragraph__title, .general-info__education__option__paragraph__sub-title, .general-info__education__option__paragraph__date, .footer__title__paragraph__container {
+.general-info__paragraph, .general-info__profile__option__description__container, .general-info__goal__paragraph, .general-info__education__option__paragraph__title, .general-info__education__option__paragraph__sub-title, .general-info__education__option__paragraph__date, .experience__option__title__date, .experience__option__information__description, .footer__title__paragraph__container {
   font-size: 18px;
 }
 
@@ -83,27 +98,32 @@
 }
 
 /* line 150, _config.scss */
-.cover__container__title, .cover__container__sub-title, .general-info__title__container, .general-info__profile, .general-info__goal, .general-info__education, .general-info__education__option__paragraph {
+.cover__container__title, .cover__container__sub-title, .general-info__title__container, .general-info__profile, .general-info__goal, .general-info__education, .general-info__education__option__paragraph, .experience__title__container, .experience__option, .experience__option__information__duties__duty__title__container {
   padding: 0 20px;
 }
 
 /* line 159, _config.scss */
-.cover__container__sub-title, .general-info__image__container, .general-info__title__container, .general-info__paragraph, .general-info__profile__option__title__container, .general-info__goal__paragraph__container, .general-info__education, .footer__title__paragraph__container, .footer__title__author__container {
+.cover__container__sub-title, .general-info__image__container, .general-info__title__container, .general-info__paragraph, .general-info__profile__option__title__container, .general-info__goal__paragraph__container, .general-info__education, .experience__title__container, .experience__option, .experience__option__information__duties__duty__title__container, .experience__option__information__location__container, .footer__title__paragraph__container, .footer__title__author__container {
   padding-top: 10px;
 }
 
 /* line 162, _config.scss */
-.general-info__image__container, .general-info__title__container, .general-info__profile__title__container, .general-info__profile__option__description__container, .general-info__goal__title__container, .general-info__education__title__container, .general-info__education__option, .footer__title {
+.general-info__image__container, .general-info__title__container, .general-info__profile__title__container, .general-info__profile__option__description__container, .general-info__goal__title__container, .general-info__education__title__container, .general-info__education__option, .experience__option__title, .experience__option__information__description__container, .experience__option__information__duties__duty__title__container, .footer__title {
   padding-bottom: 10px;
 }
 
+/* line 167, _config.scss */
+.experience__option__information__duties__duty__title__container {
+  margin: 10px 10px;
+}
+
 /* line 170, _config.scss */
-.cover__container__title {
+.cover__container__title, .general-info__education__title__container, .experience__option, .experience__option__title {
   margin-bottom: 10px;
 }
 
 /* line 173, _config.scss */
-.general-info__education {
+.general-info__education, .experience__option {
   margin-top: 10px;
 }
 
@@ -114,12 +134,17 @@
 }
 
 /* line 211, _config.scss */
-.cover__container, .general-info__title__container, .footer__title__title__container, .footer__title__paragraph__container, .footer__title__author__container, .footer__contact__option, .footer__social__option, .footer__signature {
+.cover__container, .general-info__title__container, .experience__title__container, .footer__title__title__container, .footer__title__paragraph__container, .footer__title__author__container, .footer__contact__option, .footer__social__option, .footer__signature {
   text-align: center;
 }
 
+/* line 214, _config.scss */
+.experience__option__information__description {
+  text-align: justify;
+}
+
 /* line 227, _config.scss */
-.welcome, .cover, .general-info, .footer__title, .footer__signature {
+.welcome, .cover, .general-info, .experience, .footer__title, .footer__signature {
   cursor: default;
 }
 
@@ -145,12 +170,12 @@
 }
 
 /* line 259, _config.scss */
-.cover__container, .general-info, .footer {
+.cover__container, .general-info, .experience, .footer {
   z-index: 1;
 }
 
 /* line 264, _config.scss */
-.welcome, .general-info, .footer {
+.welcome, .general-info, .experience, .footer {
   overflow-y: hidden;
 }
 
@@ -329,18 +354,18 @@ html, body {
   line-height: 1.5em;
 }
 
-/* line 297, main.scss */
+/* line 298, main.scss */
 .general-info__education__option__logo {
   margin: auto;
   height: 50px;
 }
 
-/* line 311, main.scss */
+/* line 312, main.scss */
 .general-info__education__option__paragraph__title {
   font-weight: bolder;
 }
 
-/* line 317, main.scss */
+/* line 318, main.scss */
 .general-info__education__option__paragraph__sub-title {
   font-weight: bolder;
 }
@@ -348,67 +373,111 @@ html, body {
 /*------------------------------------*\
     Footer style
 \*------------------------------------*/
-/* line 336, main.scss */
+/* line 337, main.scss */
+.experience {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+/* line 347, main.scss */
+.experience__title {
+  padding-bottom: 40px;
+}
+
+/* line 353, main.scss */
+.experience__title__container {
+  margin-top: 40px;
+}
+
+/* line 361, main.scss */
+.experience__option {
+  margin-bottom: 40px;
+}
+
+/* line 384, main.scss */
+.experience__option__title__company {
+  font-weight: bolder;
+}
+
+/* line 408, main.scss */
+.experience__option__information__description {
+  line-height: 1.5em;
+}
+
+/* line 437, main.scss */
+.experience__option__information__duties__duty__title {
+  font-weight: bolder;
+}
+
+/* line 453, main.scss */
+.experience__option__information__location {
+  font-weight: bolder;
+}
+
+/*------------------------------------*\
+    Footer style
+\*------------------------------------*/
+/* line 476, main.scss */
 .footer {
   position: relative;
 }
 
-/* line 344, main.scss */
+/* line 484, main.scss */
 .footer__title {
   margin-top: 40px;
 }
 
-/* line 381, main.scss */
+/* line 521, main.scss */
 .footer__contact {
   margin-top: 40px;
 }
 
-/* line 397, main.scss */
+/* line 537, main.scss */
 .footer__contact__option__title__container {
   padding-top: 8px;
 }
 
-/* line 403, main.scss */
+/* line 543, main.scss */
 .footer__social {
   margin-top: 40px;
 }
 
-/* line 419, main.scss */
+/* line 559, main.scss */
 .footer__social__option__title__container {
   padding-top: 8px;
 }
 
-/* line 425, main.scss */
+/* line 565, main.scss */
 .footer__social__option__link {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
-/* line 428, main.scss */
+/* line 568, main.scss */
 .footer__social__option__link:hover, .footer__social__option__link:hover i {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
-/* line 433, main.scss */
+/* line 573, main.scss */
 .footer__social__option__link i {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
 
-/* line 443, main.scss */
+/* line 583, main.scss */
 .footer__signature__title {
   font-weight: 200;
 }
 
-/* line 448, main.scss */
+/* line 588, main.scss */
 .footer__signature__title__container {
   position: relative;
   bottom: 58px;
 }
 
-/* line 455, main.scss */
+/* line 595, main.scss */
 .footer__signature__logo {
   height: 150px;
 }
