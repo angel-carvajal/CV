@@ -1,0 +1,118 @@
+<div class="{{content.title.class}}">
+
+	<custome-title title="content.title.title">
+	</custome-title>
+
+	<hr style="width:80%;">
+
+</div>
+
+<div ng-repeat="type in content.technologies.types" class="{{content.technologies.class}}">
+	
+	<div flex-container="row" flex-column="12">
+
+		<div flex-item="2">
+			
+		</div>
+
+		<div flex-item="8" class="{{type.class}}">
+
+			<div class="{{type.title.class}}">
+
+				<custome-title title="type.title.title">
+				</custome-title>
+
+			</div>
+
+			<div flex-container="row" flex-column="12" class="{{type.techs.class}}">
+				
+				<div flex-item="6" >
+					
+					<div ng-repeat="tech in type.techs.options" ng-if="$index+1<=(type.techs.options.length+1)/2">
+
+						<div  class="{{tech.class}}">
+							
+							<div class="{{tech.title.class}}">
+
+								<custome-title title="tech.title.title">
+								</custome-title>
+
+							</div>
+
+							<div class="{{tech.gradeClass}}">
+
+								<div 
+									ng-repeat="grade in tech.grades" 
+									class="knowledge__technologies__type__techs__tech__grades__grade {{grade.class}}"
+									style="height:{{grade.size}}%"
+								>
+								</div>
+
+							</div>
+							
+						</div>
+
+					</div>
+
+				</div>
+
+				<div flex-item="6">
+					
+					<div ng-repeat="tech in type.techs.options" ng-if="$index+1>(type.techs.options.length+1)/2" >
+
+						<div class="{{tech.class}}">
+							
+							<div class="{{tech.title.class}}">
+
+								<custome-title title="tech.title.title">
+								</custome-title>
+
+							</div>
+
+							<div class="{{tech.gradeClass}}">
+
+								<div 
+									ng-repeat="grade in tech.grades" 
+									class="knowledge__technologies__type__techs__tech__grades__grade {{grade.class}}"
+									style="height:{{grade.size}}%"
+								>
+								</div>
+
+							</div>
+							
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="{{type.extra.class}}">
+
+		<div class="{{type.extra.paragraph.class}}">
+
+			<custome-p paragraph="type.extra.paragraph.title">
+			</custome-p>
+
+		</div>
+
+		<div class="{{type.extra.link.container}}" ng-if="type.extra">
+
+			<a ng-href="{{type.extra.link.href}}" class="{{type.extra.link.class}}" target="_blank">
+				{{type.extra.link.text}}
+			</a>
+
+		</div>
+
+	</div>
+
+	<div style="text-align:center">
+		<hr style="width:80%;" ng-if="!$last">
+	</div>
+
+</div>

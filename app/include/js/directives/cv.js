@@ -17,6 +17,12 @@ angular.module("cvDirectives",[])
 		templateUrl:globalVariables.hostname+"include/templates/experienceInfo.html"
 	}
 }])
+.directive("knowledgeInfo",["globalVariables",function(globalVariables){
+	return{
+		restrict:"E",
+		templateUrl:globalVariables.hostname+"include/templates/knowledgeInfo.html"
+	}
+}])
 .directive("footerInfo",["globalVariables",function(globalVariables){
 	return{
 		restrict:"E",
