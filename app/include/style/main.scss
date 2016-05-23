@@ -173,6 +173,7 @@
 		@extend %zPositionP;
 		@extend %flowYHidden;
 		@extend %pointerDefault;
+		position: relative;
 		padding-bottom: 40px;
 	}
 		.general-info__image{
@@ -276,44 +277,52 @@
 
 
 		.general-info__education{
-
+			@extend %sidesSpace;
+			@extend %topSpace;
+			@extend %outTopSpace;
 		}
 			.general-info__education__title{
-
+				@extend %sTx;
 			}
 
 				.general-info__education__title__container{
-
+					@extend %bottomSpace;
 				}
 
 
 			.general-info__education__option{
-
+				@extend %bottomSpace;
 			}
 
-				.general-info__education__option__title{
-
+				.general-info__education__option__logo{
+					margin: auto;
+					height: 50px;
 				}
 
-					.general-info__education__option__title__container{
+					.general-info__education__option__logo__container{
 
 					}
 
 
-				.general-info__education__option__description{
-
+				.general-info__education__option__paragraph{
+					@extend %sidesSpace;
 				}
 
-					.general-info__education__option__description__container{
+					.general-info__education__option__paragraph__title{
+						@extend %pxl;
+						@extend %sTx;
+						font-weight: bolder;
 					}
 
+					.general-info__education__option__paragraph__sub-title{
+						@extend %pxl;
+						@extend %pTx;
+						font-weight: bolder;
+					}
 
-				.general-info__education__option__date{
-					
-				}
-
-					.general-info__education__option__date__container{
-						
+					.general-info__education__option__paragraph__date{
+						@extend %pxl;
+						@extend %pTx;
 					}
 
 
@@ -329,6 +338,7 @@
 		@extend %zPositionP;
 		@extend %flowYHidden;
 		@extend %tTx;
+		position: relative;
 	}
 
 		.footer__title{

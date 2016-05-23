@@ -13,12 +13,12 @@
 }
 
 /* line 54, _config.scss */
-.general-info__paragraph, .general-info__profile__option__title, .general-info__profile__option__description, .general-info__goal__paragraph {
+.general-info__paragraph, .general-info__profile__option__title, .general-info__profile__option__description, .general-info__goal__paragraph, .general-info__education__option__paragraph__sub-title, .general-info__education__option__paragraph__date {
   color: #444a54;
 }
 
 /* line 57, _config.scss */
-.general-info__title, .general-info__profile__title, .general-info__goal__title, .footer__social__option__link:hover, .footer__social__option__link:hover i {
+.general-info__title, .general-info__profile__title, .general-info__goal__title, .general-info__education__title, .general-info__education__option__paragraph__title, .footer__social__option__link:hover, .footer__social__option__link:hover i {
   color: #009688;
 }
 
@@ -68,7 +68,7 @@
 }
 
 /* line 134, _config.scss */
-.general-info__paragraph, .general-info__profile__option__description__container, .general-info__goal__paragraph, .footer__title__paragraph__container {
+.general-info__paragraph, .general-info__profile__option__description__container, .general-info__goal__paragraph, .general-info__education__option__paragraph__title, .general-info__education__option__paragraph__sub-title, .general-info__education__option__paragraph__date, .footer__title__paragraph__container {
   font-size: 18px;
 }
 
@@ -83,23 +83,28 @@
 }
 
 /* line 150, _config.scss */
-.cover__container__title, .cover__container__sub-title, .general-info__title__container, .general-info__profile, .general-info__goal {
+.cover__container__title, .cover__container__sub-title, .general-info__title__container, .general-info__profile, .general-info__goal, .general-info__education, .general-info__education__option__paragraph {
   padding: 0 20px;
 }
 
 /* line 159, _config.scss */
-.cover__container__sub-title, .general-info__image__container, .general-info__title__container, .general-info__paragraph, .general-info__profile__option__title__container, .general-info__goal__paragraph__container, .footer__title__paragraph__container, .footer__title__author__container {
+.cover__container__sub-title, .general-info__image__container, .general-info__title__container, .general-info__paragraph, .general-info__profile__option__title__container, .general-info__goal__paragraph__container, .general-info__education, .footer__title__paragraph__container, .footer__title__author__container {
   padding-top: 10px;
 }
 
 /* line 162, _config.scss */
-.general-info__image__container, .general-info__title__container, .general-info__profile__title__container, .general-info__profile__option__description__container, .general-info__goal__title__container, .footer__title {
+.general-info__image__container, .general-info__title__container, .general-info__profile__title__container, .general-info__profile__option__description__container, .general-info__goal__title__container, .general-info__education__title__container, .general-info__education__option, .footer__title {
   padding-bottom: 10px;
 }
 
 /* line 170, _config.scss */
 .cover__container__title {
   margin-bottom: 10px;
+}
+
+/* line 173, _config.scss */
+.general-info__education {
+  margin-top: 10px;
 }
 
 /* line 176, _config.scss */
@@ -293,95 +298,117 @@ html, body {
 \*------------------------------------*/
 /* line 171, main.scss */
 .general-info {
+  position: relative;
   padding-bottom: 40px;
 }
 
-/* line 178, main.scss */
+/* line 179, main.scss */
 .general-info__image {
   border-radius: 50%;
   height: 300px;
   margin: auto;
 }
 
-/* line 199, main.scss */
+/* line 200, main.scss */
 .general-info__title__container {
   margin-top: 40px;
 }
 
-/* line 208, main.scss */
+/* line 209, main.scss */
 .general-info__paragraph {
   padding-bottom: 40px;
 }
 
-/* line 231, main.scss */
+/* line 232, main.scss */
 .general-info__profile__option__title {
   font-weight: bolder;
 }
 
-/* line 267, main.scss */
+/* line 268, main.scss */
 .general-info__goal__paragraph {
   line-height: 1.5em;
+}
+
+/* line 297, main.scss */
+.general-info__education__option__logo {
+  margin: auto;
+  height: 50px;
+}
+
+/* line 311, main.scss */
+.general-info__education__option__paragraph__title {
+  font-weight: bolder;
+}
+
+/* line 317, main.scss */
+.general-info__education__option__paragraph__sub-title {
+  font-weight: bolder;
 }
 
 /*------------------------------------*\
     Footer style
 \*------------------------------------*/
-/* line 334, main.scss */
+/* line 336, main.scss */
+.footer {
+  position: relative;
+}
+
+/* line 344, main.scss */
 .footer__title {
   margin-top: 40px;
 }
 
-/* line 371, main.scss */
+/* line 381, main.scss */
 .footer__contact {
   margin-top: 40px;
 }
 
-/* line 387, main.scss */
+/* line 397, main.scss */
 .footer__contact__option__title__container {
   padding-top: 8px;
 }
 
-/* line 393, main.scss */
+/* line 403, main.scss */
 .footer__social {
   margin-top: 40px;
 }
 
-/* line 409, main.scss */
+/* line 419, main.scss */
 .footer__social__option__title__container {
   padding-top: 8px;
 }
 
-/* line 415, main.scss */
+/* line 425, main.scss */
 .footer__social__option__link {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
-/* line 418, main.scss */
+/* line 428, main.scss */
 .footer__social__option__link:hover, .footer__social__option__link:hover i {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
-/* line 423, main.scss */
+/* line 433, main.scss */
 .footer__social__option__link i {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
 
-/* line 433, main.scss */
+/* line 443, main.scss */
 .footer__signature__title {
   font-weight: 200;
 }
 
-/* line 438, main.scss */
+/* line 448, main.scss */
 .footer__signature__title__container {
   position: relative;
   bottom: 58px;
 }
 
-/* line 445, main.scss */
+/* line 455, main.scss */
 .footer__signature__logo {
   height: 150px;
 }
