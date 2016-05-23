@@ -212,18 +212,438 @@ angular.module("cv",[])
 
 	return data;
 }])
-.factory("knowledgeContent",["globalVariables",function(globalVariables){
+.factory("experienceContent",["globalVariables",function(globalVariables){
 	//Variables declaration
 	var data={};
 
 	//Content definition
 	data={
-		
+		title:{
+			title:{
+				text: 	"Experiencia laboral",
+				class: 	"experience__title"
+			},
+			class:"experience__title__container"
+		},
+		options:[
+			{
+				title:{
+					position:{
+						title:{
+							text:"CEO",
+							class:"experience__option__title__position"
+						},
+						class: 	"experience__option__title__position__container"
+					},
+					company:{
+						title:{
+							text: 	"SaludC y Servicios de TI",
+							class: 	"experience__option__title__company"
+						},
+						class: 	"experience__option__title__company__container"
+					},
+					date:{
+						title:{
+							text: 	"(Marzo 2014 - Actualidad)",
+							class: 	"experience__option__title__date"
+						},
+						class: 	"experience__option__title__date__container"
+					},
+					class: 	"experience__option__title"
+				},
+				information:{
+					description:{
+						title:{
+							text: 	"Básicamente me desempeño en todas las áreas de la empresa. Busco clientes nuevos y trato con clientes actuales lo cual me permite tener facilidad de comunicación con enfoque empresa – cliente. Me encargo del levantamiento de requerimientos y administración de proyectos, desarrollo frontend y backend.",
+							class: 	"experience__option__information__description"
+						},
+						class: 	"experience__option__information__description__container"
+					},
+					duties:{
+						title:{
+							title:{
+								text: 	"Responsabilidades",
+								class: 	"experience__option__information__duties__title"
+							},
+							class: "experience__option__information__duties__title__container",
+						},
+						options:[
+							{
+								title:{
+									text: 	"Administración de proyectos",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Validación de mercado",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Toma de decisiones",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Contratos",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Facturación",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Desarrollo frontend",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Desarrollo backend",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Control de versiones",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Pruebas",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+						],
+						optionsClass: 	"experience__option__information__duties__duty",
+						class: "experience__option__information__duties"
+					},
+					location:{
+						title:{
+							text:  	"Saltillo, Coahuila / Monclova, Coahuila / Monterrey, Nuevo León",
+							class: 	"experience__option__information__location"
+						},
+						class: 	"experience__option__information__location__container"
+					},
+					class: 	"experience__option__information"
+				},
+				class: "experience__option"
+			},
+			{
+				title:{
+					position:{
+						title:{
+							text:"Desarrollador",
+							class:"experience__option__title__position"
+						},
+						class: 	"experience__option__title__position__container"
+					},
+					company:{
+						title:{
+							text: 	"Mubea Saltillo",
+							class: 	"experience__option__title__company"
+						},
+						class: 	"experience__option__title__company__container"
+					},
+					date:{
+						title:{
+							text: 	"(Diciembre 2013 - Marzo 2014)",
+							class: 	"experience__option__title__date"
+						},
+						class: 	"experience__option__title__date__container"
+					},
+					class: 	"experience__option__title"
+				},
+				information:{
+					description:{
+						title:{
+							text: 	"Fui contratado para un proyecto de actualización y traducción de un sistema interno de mejora continua.",
+							class: 	"experience__option__information__description"
+						},
+						class: 	"experience__option__information__description__container"
+					},
+					duties:{
+						title:{
+							title:{
+								text: 	"Responsabilidades",
+								class: 	"experience__option__information__duties__title"
+							},
+							class: "experience__option__information__duties__title__container",
+						},
+						options:[
+							{
+								title:{
+									text: 	"Levantamiento de requerimientos",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Desarrollo frontend",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Desarrollo backend",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Pruebas",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Implementación",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+						],
+						optionsClass: 	"experience__option__information__duties__duty",
+						class: "experience__option__information__duties"
+					},
+					location:{
+						title:{
+							text:  	"Ramos Arizpe, Coahuila",
+							class: 	"experience__option__information__location"
+						},
+						class: 	"experience__option__information__location__container"
+					},
+					class: 	"experience__option__information"
+				},
+				class: "experience__option"
+			},
+			{
+				title:{
+					position:{
+						title:{
+							text:"Desarrollador",
+							class:"experience__option__title__position"
+						},
+						class: 	"experience__option__title__position__container"
+					},
+					company:{
+						title:{
+							text: 	"Francés Online",
+							class: 	"experience__option__title__company"
+						},
+						class: 	"experience__option__title__company__container"
+					},
+					date:{
+						title:{
+							text: 	"(Mayo 2013 - Noviembre 2013)",
+							class: 	"experience__option__title__date"
+						},
+						class: 	"experience__option__title__date__container"
+					},
+					class: 	"experience__option__title"
+				},
+				information:{
+					description:{
+						title:{
+							text: 	"Startup saltillense dedicado a reclutar maestros de francés e impartir clases de francés en línea me contrato para desarrollar su plataforma administrativa, la cual servía como intermediario entre alumnos y maestros. Actualmente el startup se encuentra fuera de operación.",
+							class: 	"experience__option__information__description"
+						},
+						class: 	"experience__option__information__description__container"
+					},
+					duties:{
+						title:{
+							title:{
+								text: 	"Responsabilidades",
+								class: 	"experience__option__information__duties__title"
+							},
+							class: "experience__option__information__duties__title__container",
+						},
+						options:[
+							{
+								title:{
+									text: 	"Desarrollo de requerimientos",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Desarrollo frontend",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Desarrollo backend",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Pruebas",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Diseño",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Implementación",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Soporte técnico de sistemas",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							}
+						],
+						optionsClass: 	"experience__option__information__duties__duty",
+						class: "experience__option__information__duties"
+					},
+					location:{
+						title:{
+							text:  	"Saltillo, Coahuila",
+							class: 	"experience__option__information__location"
+						},
+						class: 	"experience__option__information__location__container"
+					},
+					class: 	"experience__option__information"
+				},
+				class: "experience__option"
+			},
+			{
+				title:{
+					position:{
+						title:{
+							text:"Practicante",
+							class:"experience__option__title__position"
+						},
+						class: 	"experience__option__title__position__container"
+					},
+					company:{
+						title:{
+							text: 	"Macimex",
+							class: 	"experience__option__title__company"
+						},
+						class: 	"experience__option__title__company__container"
+					},
+					date:{
+						title:{
+							text: 	"(Octubre 2012 - Enero 2013)",
+							class: 	"experience__option__title__date"
+						},
+						class: 	"experience__option__title__date__container"
+					},
+					class: 	"experience__option__title"
+				},
+				information:{
+					description:{
+						title:{
+							text: 	"Mi primer ambiente laboral real. Entre como practicante en el área de TI, donde desempeñaba (por supuesto, aparte de soporte técnico) como desarrollador de un servicio de intranet. Era un servicio web para noticias de la empresa y su corporativo.",
+							class: 	"experience__option__information__description"
+						},
+						class: 	"experience__option__information__description__container"
+					},
+					duties:{
+						title:{
+							title:{
+								text: 	"Responsabilidades",
+								class: 	"experience__option__information__duties__title"
+							},
+							class: "experience__option__information__duties__title__container",
+						},
+						options:[
+							{
+								title:{
+									text: 	"Desarrollo de requerimientos",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Desarrollo frontend",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Desarrollo backend",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Diseño",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Soporte técnico",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							}
+						],
+						optionsClass: 	"experience__option__information__duties__duty",
+						class: "experience__option__information__duties"
+					},
+					location:{
+						title:{
+							text:  	"Ramos Arizpe, Coahuila",
+							class: 	"experience__option__information__location"
+						},
+						class: 	"experience__option__information__location__container"
+					},
+					class: 	"experience__option__information"
+				},
+				class: "experience__option"
+			},
+		],
+		classToAnimate: "bounceInUp",
+		class:"experience"
 	};
 
 	return data;
 }])
-.factory("experienceContent",["globalVariables",function(globalVariables){
+.factory("knowledgeContent",["globalVariables",function(globalVariables){
 	//Variables declaration
 	var data={};
 
