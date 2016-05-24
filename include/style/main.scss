@@ -600,6 +600,173 @@
 /*------------------------------------*\
     Footer style
 \*------------------------------------*/
+	
+	.projects{
+		@extend %sBg;
+		@extend %zPositionP;
+		@extend %flowYHidden;
+		@extend %pointerDefault;
+		position: relative;
+		padding-bottom: 40px;
+		
+	}
+
+		.projects__title{
+			@extend %sTx;
+			@extend %txl;
+			padding-bottom: 40px;
+		}
+
+			.projects__title__container{
+				@extend %textCenter;
+				@extend %sidesSpace;
+				@extend %topSpace;
+				margin-top: 40px;
+			}
+
+
+		.projects__option{
+			@extend %sidesSpace;
+			@extend %topSpace;
+			@extend %outTopSpace;
+			@extend %outBottomSpace;
+			margin-bottom: 40px;
+		}
+
+			.projects__option__title{
+				@extend %bottomSpace;
+				@extend %outBottomSpace;
+			}
+
+				.projects__option__title__project{
+					@extend %tm;
+					@extend %sTx;
+				}
+
+					.projects__option__title__project__container{
+
+					}
+
+
+				.projects__option__title__company{
+					@extend %pTx;
+					@extend %stl;
+					font-weight: bolder;
+				}
+
+					.projects__option__title__company__container{
+
+					}
+
+				.projects__option__title__date{
+					@extend %pTx;
+					@extend %pxl;
+				}
+
+					.projects__option__title__date__container{
+
+					}
+
+
+			.projects__option__information{
+
+			}
+
+				.projects__option__information__description{
+					@extend %pTx;
+					@extend %textJustify;
+					@extend %pxl;
+					line-height: 1.5em;
+				}
+
+					.projects__option__information__description__container{
+						@extend %bottomSpace;
+					}
+
+
+			.projects__option__information__techs{
+
+			}
+
+				.projects__option__information__techs__title{
+					@extend %sTx;
+					@extend %ts;
+				}
+
+					.projects__option__information__techs__title__container{
+
+					}
+
+				.projects__option__information__techs__tech{
+
+				}
+
+					.projects__option__information__techs__tech__title{
+						@extend %pTx;
+						@extend %pl;
+						font-weight: bolder;
+					}
+
+						.projects__option__information__techs__tech__title__container{
+							@extend %inlineBlock;
+							@extend %sidesSpace;
+							@extend %topSpace;
+							@extend %bottomSpace;
+							@extend %outSpace;
+							@extend %pBg;
+						}
+
+
+			.projects__option__information__url{
+					@extend %topSpace;
+			}
+
+				.projects__option__information__url i{
+					@extend %inline;
+				}
+
+				.projects__option__information__url__title{
+					@extend %sTx;
+					@extend %pl;
+					@extend %inlineBlock;
+					font-weight: bolder;
+				}
+
+				.projects__option__information__url__link{
+					@extend %sTx;
+					@extend %pl;
+					@extend %inlineBlock;
+					font-weight: bolder;
+					&:hover .projects__option__information__url__title, &:hover i{
+						@extend %pTx;
+						@include effect($time:.3);
+					}
+
+					.projects__option__information__url__title, i{
+						@include effect($time:.3);
+					}
+				}
+
+			
+			.projects__option__information__no-url{
+
+			}
+
+				.projects__option__information__no-url__title{
+					@extend %sTx;
+					@extend %pl;
+					font-weight: bolder;
+				}
+
+				
+
+
+
+
+
+/*------------------------------------*\
+    Footer style
+\*------------------------------------*/
 
 	.footer{
 		@extend %tBg;
