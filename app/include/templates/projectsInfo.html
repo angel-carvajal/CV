@@ -1,0 +1,114 @@
+<div class="{{content.title.class}}">
+
+	<custome-title title="content.title.title">
+	</custome-title>
+
+	<hr style="width:80%; border-color: #A7A7A7;">
+
+</div>
+
+
+<div flex-container="row" flex-column="12">
+
+	<div flex-item="2">
+		
+	</div>
+
+	<div flex-item="8">
+		
+		<div flex-container="column">
+
+			<div ng-repeat="option in content.options" class="{{option.class}}">
+				
+				<div flex-container="row" flex-column="12">
+					
+					<div flex-item="4" class="{{option.title.class}}">
+
+						<div class="{{option.title.project.class}}">
+							
+							<custome-title title="option.title.project.title">
+							</custome-title>
+
+						</div>
+
+						<div class="{{option.title.company.class}}">
+							
+							<custome-p paragraph="option.title.company.title">
+							</custome-p>
+
+						</div>
+
+						<div class="{{option.title.date.class}}">
+
+							<custome-p paragraph="option.title.date.title">
+							</custome-p>
+
+						</div>
+
+					</div>
+
+					<div flex-item="8" class="{{option.information.class}}">
+						
+						<div class="{{option.information.description.class}}">
+
+							<custome-p paragraph="option.information.description.title">
+							</custome-p>
+
+						</div>
+
+						<div class="{{option.information.techs.class}}">
+
+							<div class="{{option.information.techs.title.class}}">
+
+								<custome-title title="option.information.techs.title.title">
+								</custome-title>
+
+							</div>
+
+							<div class="{{option.information.techs.title.optionsClass}}">
+
+								<div ng-repeat="tech in option.information.techs.options" class="{{tech.class}}">
+
+									<custome-p paragraph="tech.title">
+									</custome-p>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="{{option.information.url.class}}" ng-if="option.information.url">
+						<a 
+							ng-href="{{option.information.url.link.href}}" 
+							target="{{option.information.url.link.target}}" 
+							class="{{option.information.url.link.class}}"
+
+						>
+
+							<lx-icon lx-id="link-variant" lx-size="m" lx-color="teal" lx-type="flat">
+							</lx-icon>
+
+							<custome-title title="option.information.url.title">
+							</custome-title>
+
+						</a>
+
+						</div>
+
+						<div class="{{option.information.noUrl.class}}">
+							<custome-title title="option.information.noUrl.title">
+							</custome-title>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	
+</div>

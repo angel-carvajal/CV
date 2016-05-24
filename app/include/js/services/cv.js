@@ -1155,7 +1155,1424 @@ angular.module("cv",[])
 
 	//Content definition
 	data={
-		
+		title:{
+			title:{
+				text: 	"Proyectos",
+				class: 	"projects__title"
+			},
+			class:"projects__title__container"
+		},
+		options:[
+			{
+				title:{
+					project:{
+						title:{
+							text:"Sistema de información",
+							class:"projects__option__title__project"
+						},
+						class: 	"projects__option__title__project__container"
+					},
+					company:{
+						title:{
+							text: 	"Dental X-Ray",
+							class: 	"projects__option__title__company"
+						},
+						class: 	"projects__option__title__company__container"
+					},
+					date:{
+						title:{
+							text: 	"(Marzo 2016 - Actual)",
+							class: 	"projects__option__title__date"
+						},
+						class: 	"projects__option__title__date__container"
+					},
+					class: 	"projects__option__title"
+				},
+				information:{
+					description:{
+						title:{
+							text: 	"Sistema de información para clínica dental para manejo de ingresos, pacientes, doctores, reportes de información, entre otras herramientas.",
+							class: 	"projects__option__information__description"
+						},
+						class: 	"projects__option__information__description__container"
+					},
+					techs:{
+						title:{
+							title:{
+								text: 	"Tecnologías",
+								class: 	"projects__option__information__techs__title"
+							},
+							class: "projects__option__information__techs__title__container",
+						},
+						options:[
+							{
+								title:{
+									text: 	"JavaScript",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"AngularJS",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Lumx",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"HTML 5",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"CSS3",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"JQuery",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Responsive",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"PHP OO",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"RESTfull",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"JSON",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"MySQL",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Illustrador",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Photoshop",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Git",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+						],
+						optionsClass: 	"projects__option__information__techs__tech",
+						class: "projects__option__information__techs"
+					},
+					noUrl:{
+						title:{
+							text:  	"En desarrollo",
+							class: 	"projects__option__information__no-url__title"
+						},
+						class: 	"projects__option__information__no-url"
+					},
+					class: 	"projects__option__information"
+				},
+				class: "projects__option"
+			},
+			{
+				title:{
+					project:{
+						title:{
+							text:"Página web",
+							class:"projects__option__title__project"
+						},
+						class: 	"projects__option__title__project__container"
+					},
+					company:{
+						title:{
+							text: 	"Alfarería el Colibrí",
+							class: 	"projects__option__title__company"
+						},
+						class: 	"projects__option__title__company__container"
+					},
+					date:{
+						title:{
+							text: 	"(Marzo 2016)",
+							class: 	"projects__option__title__date"
+						},
+						class: 	"projects__option__title__date__container"
+					},
+					class: 	"projects__option__title"
+				},
+				information:{
+					description:{
+						title:{
+							text: 	"Página web informativa para empresa ubicada en Saltillo, Coahuila, dedicada a la venta de producto artesanal hecho con barro a mayoreo y menudeo.",
+							class: 	"projects__option__information__description"
+						},
+						class: 	"projects__option__information__description__container"
+					},
+					techs:{
+						title:{
+							title:{
+								text: 	"Tecnologías",
+								class: 	"projects__option__information__techs__title"
+							},
+							class: "projects__option__information__techs__title__container",
+						},
+						options:[
+							{
+								title:{
+									text: 	"JavaScript",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"AngularJS",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Lumx",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"HTML 5",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"CSS3",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"JQuery",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Responsive",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"PHP OO",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"RESTfull",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"JSON",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"MySQL",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Illustrador",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Photoshop",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Git",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Google Analytics",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+						],
+						optionsClass: 	"projects__option__information__techs__tech",
+						class: "projects__option__information__techs"
+					},
+					url:{
+						title:{
+							text:  	"www.alfareriaelcolibri.com",
+							class: 	"projects__option__information__url__title"
+						},
+						link:{
+							href: 	"http://www.alfareriaelcolibri.com/",
+							target: "_blank",
+							class: 	"projects__option__information__url__link"
+						},
+						class: 	"projects__option__information__url"
+					},
+					class: 	"projects__option__information"
+				},
+				class: "projects__option"
+			},
+			{
+				title:{
+					project:{
+						title:{
+							text:"Sistema de información",
+							class:"projects__option__title__project"
+						},
+						class: 	"projects__option__title__project__container"
+					},
+					company:{
+						title:{
+							text: 	"NutricionO",
+							class: 	"projects__option__title__company"
+						},
+						class: 	"projects__option__title__company__container"
+					},
+					date:{
+						title:{
+							text: 	"(Noviembre 2015 - Marzo 2016)",
+							class: 	"projects__option__title__date"
+						},
+						class: 	"projects__option__title__date__container"
+					},
+					class: 	"projects__option__title"
+				},
+				information:{
+					description:{
+						title:{
+							text: 	"Sistema de información para Startup, en Saltillo, Coahuila, dedicado a brindar herramientas para el trabajo de nutriólogos.",
+							class: 	"projects__option__information__description"
+						},
+						class: 	"projects__option__information__description__container"
+					},
+					techs:{
+						title:{
+							title:{
+								text: 	"Tecnologías",
+								class: 	"projects__option__information__techs__title"
+							},
+							class: "projects__option__information__techs__title__container",
+						},
+						options:[
+							{
+								title:{
+									text: 	"JavaScript",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"AngularJS",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Lumx",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"HTML 5",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"CSS3",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"JQuery",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Responsive",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"PHP OO",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"RESTfull",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"JSON",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"MySQL",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Illustrador",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Photoshop",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Git",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+						],
+						optionsClass: 	"projects__option__information__techs__tech",
+						class: "projects__option__information__techs"
+					},
+					noUrl:{
+						title:{
+							text:  	"Detenido por falta de recursos",
+							class: 	"projects__option__information__no-url__title"
+						},
+						class: 	"projects__option__information__no-url"
+					},
+					class: 	"projects__option__information"
+				},
+				class: "projects__option"
+			},
+			{
+				title:{
+					project:{
+						title:{
+							text:"Actualización",
+							class:"projects__option__title__project"
+						},
+						class: 	"projects__option__title__project__container"
+					},
+					company:{
+						title:{
+							text: 	"Mubea USA",
+							class: 	"projects__option__title__company"
+						},
+						class: 	"projects__option__title__company__container"
+					},
+					date:{
+						title:{
+							text: 	"(Marzo 2015 - Julio 2015)",
+							class: 	"projects__option__title__date"
+						},
+						class: 	"projects__option__title__date__container"
+					},
+					class: 	"projects__option__title"
+				},
+				information:{
+					description:{
+						title:{
+							text: 	"Actualización de sistema de información interno de mejora continua para Mubea USA (Florence, Kentucky). Limitado a dar detalles por políticas de privacidad.",
+							class: 	"projects__option__information__description"
+						},
+						class: 	"projects__option__information__description__container"
+					},
+					techs:{
+						title:{
+							title:{
+								text: 	"Tecnologías",
+								class: 	"projects__option__information__techs__title"
+							},
+							class: "projects__option__information__techs__title__container",
+						},
+						options:[
+							{
+								title:{
+									text: 	"JavaScript",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"HTML 5",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"CSS3",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"PHP OO",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"MySQL",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Junos Pulse",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+						],
+						optionsClass: 	"projects__option__information__techs__tech",
+						class: "projects__option__information__techs"
+					},
+					noUrl:{
+						title:{
+							text:  	"Protegido por políticas de privacidad",
+							class: 	"projects__option__information__no-url__title"
+						},
+						class: 	"projects__option__information__no-url"
+					},
+					class: 	"projects__option__information"
+				},
+				class: "projects__option"
+			},
+			{
+				title:{
+					project:{
+						title:{
+							text:"Actualización",
+							class:"projects__option__title__project"
+						},
+						class: 	"projects__option__title__project__container"
+					},
+					company:{
+						title:{
+							text: 	"Mubea México",
+							class: 	"projects__option__title__company"
+						},
+						class: 	"projects__option__title__company__container"
+					},
+					date:{
+						title:{
+							text: 	"(Mayo 2015 - Agosto 2015)",
+							class: 	"projects__option__title__date"
+						},
+						class: 	"projects__option__title__date__container"
+					},
+					class: 	"projects__option__title"
+				},
+				information:{
+					description:{
+						title:{
+							text: 	"Actualización de sistema de información interno de mejora continua para Mubea México (Ramos Arizpe, Coahuila). Limitado a dar detalles por políticas de privacidad.",
+							class: 	"projects__option__information__description"
+						},
+						class: 	"projects__option__information__description__container"
+					},
+					techs:{
+						title:{
+							title:{
+								text: 	"Tecnologías",
+								class: 	"projects__option__information__techs__title"
+							},
+							class: "projects__option__information__techs__title__container",
+						},
+						options:[
+							{
+								title:{
+									text: 	"JavaScript",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"HTML 5",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"CSS3",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"PHP OO",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"MySQL",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Junos Pulse",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+						],
+						optionsClass: 	"projects__option__information__techs__tech",
+						class: "projects__option__information__techs"
+					},
+					noUrl:{
+						title:{
+							text:  	"Protegido por políticas de privacidad",
+							class: 	"projects__option__information__no-url__title"
+						},
+						class: 	"projects__option__information__no-url"
+					},
+					class: 	"projects__option__information"
+				},
+				class: "projects__option"
+			},
+			{
+				title:{
+					project:{
+						title:{
+							text:"Actualización",
+							class:"projects__option__title__project"
+						},
+						class: 	"projects__option__title__project__container"
+					},
+					company:{
+						title:{
+							text: 	"SaludC y Servicios de TI",
+							class: 	"projects__option__title__company"
+						},
+						class: 	"projects__option__title__company__container"
+					},
+					date:{
+						title:{
+							text: 	"(Febrero 2015)",
+							class: 	"projects__option__title__date"
+						},
+						class: 	"projects__option__title__date__container"
+					},
+					class: 	"projects__option__title"
+				},
+				information:{
+					description:{
+						title:{
+							text: 	"Actualización de página web informativa de la empresa SaludC y Servicios de TI. Empresa dedicada al desarrollo de tecnología para el área de Salud (Doctores, dentistas, clínicas, nutriólogos, etc)",
+							class: 	"projects__option__information__description"
+						},
+						class: 	"projects__option__information__description__container"
+					},
+					techs:{
+						title:{
+							title:{
+								text: 	"Tecnologías",
+								class: 	"projects__option__information__techs__title"
+							},
+							class: "projects__option__information__techs__title__container",
+						},
+						options:[
+							{
+								title:{
+									text: 	"JavaScript",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"AngularJS",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Lumx",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"HTML 5",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"CSS3",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"JQuery",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Bootstrap",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Responsive",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"PHP OO",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"RESTfull",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"JSON",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"MySQL",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"CorelDraw",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Google Analytics",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Git",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+						],
+						optionsClass: 	"projects__option__information__techs__tech",
+						class: "projects__option__information__techs"
+					},
+					url:{
+						title:{
+							text:  	"www.saludc.com",
+							class: 	"projects__option__information__url__title"
+						},
+						link:{
+							href: 	"http://www.saludc.com/",
+							target: "_blank",
+							class: 	"projects__option__information__url__link"
+						},
+						class: 	"projects__option__information__url"
+					},
+					class: 	"projects__option__information"
+				},
+				class: "projects__option"
+			},
+			{
+				title:{
+					project:{
+						title:{
+							text:"Página web",
+							class:"projects__option__title__project"
+						},
+						class: 	"projects__option__title__project__container"
+					},
+					company:{
+						title:{
+							text: 	"SS Agencias de Tramitación",
+							class: 	"projects__option__title__company"
+						},
+						class: 	"projects__option__title__company__container"
+					},
+					date:{
+						title:{
+							text: 	"(Enero 2015)",
+							class: 	"projects__option__title__date"
+						},
+						class: 	"projects__option__title__date__container"
+					},
+					class: 	"projects__option__title"
+				},
+				information:{
+					description:{
+						title:{
+							text: 	"Página web informativa para Startup ubicado en Saltillo, Coahuila, dedicado a la tramitación de personas mexicanas con registro civil.",
+							class: 	"projects__option__information__description"
+						},
+						class: 	"projects__option__information__description__container"
+					},
+					techs:{
+						title:{
+							title:{
+								text: 	"Tecnologías",
+								class: 	"projects__option__information__techs__title"
+							},
+							class: "projects__option__information__techs__title__container",
+						},
+						options:[
+							{
+								title:{
+									text: 	"JavaScript",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"HTML 5",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"CSS3",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"JQuery",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Bootstrap",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Responsive",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"PHP",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"JSON",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"MySQL",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"CorelDraw",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Google Analytics",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+						],
+						optionsClass: 	"projects__option__information__techs__tech",
+						class: "projects__option__information__techs"
+					},
+					noUrl:{
+						title:{
+							text:  	"Startup fuera de operación",
+							class: 	"projects__option__information__no-url__title"
+						},
+						class: 	"projects__option__information__no-url"
+					},
+					class: 	"projects__option__information"
+				},
+				class: "projects__option"
+			},
+			{
+				title:{
+					project:{
+						title:{
+							text:"Página web",
+							class:"projects__option__title__project"
+						},
+						class: 	"projects__option__title__project__container"
+					},
+					company:{
+						title:{
+							text: 	"SaludC y Servicios de TI",
+							class: 	"projects__option__title__company"
+						},
+						class: 	"projects__option__title__company__container"
+					},
+					date:{
+						title:{
+							text: 	"(Octubre 2014)",
+							class: 	"projects__option__title__date"
+						},
+						class: 	"projects__option__title__date__container"
+					},
+					class: 	"projects__option__title"
+				},
+				information:{
+					description:{
+						title:{
+							text: 	"Página web informativa de la empresa SaludC y Servicios de TI. Empresa dedicada al desarrollo de tecnología para el área de Salud (Doctores, dentistas, clínicas, nutriólogos, etc)",
+							class: 	"projects__option__information__description"
+						},
+						class: 	"projects__option__information__description__container"
+					},
+					techs:{
+						title:{
+							title:{
+								text: 	"Tecnologías",
+								class: 	"projects__option__information__techs__title"
+							},
+							class: "projects__option__information__techs__title__container",
+						},
+						options:[
+							{
+								title:{
+									text: 	"JavaScript",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"HTML 5",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"CSS3",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"JQuery",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Bootstrap",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Responsive",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"PHP",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"JSON",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"MySQL",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"CorelDraw",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Google Analytics",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+						],
+						optionsClass: 	"projects__option__information__techs__tech",
+						class: "projects__option__information__techs"
+					},
+					noUrl:{
+						title:{
+							text:  	"Version no disponible",
+							class: 	"projects__option__information__no-url__title"
+						},
+						class: 	"projects__option__information__no-url"
+					},
+					class: 	"projects__option__information"
+				},
+				class: "projects__option"
+			},
+			{
+				title:{
+					project:{
+						title:{
+							text:"Actualización",
+							class:"projects__option__title__project"
+						},
+						class: 	"projects__option__title__project__container"
+					},
+					company:{
+						title:{
+							text: 	"Mubea México",
+							class: 	"projects__option__title__company"
+						},
+						class: 	"projects__option__title__company__container"
+					},
+					date:{
+						title:{
+							text: 	"(Julio 2014 - Septiembre 2014)",
+							class: 	"projects__option__title__date"
+						},
+						class: 	"projects__option__title__date__container"
+					},
+					class: 	"projects__option__title"
+				},
+				information:{
+					description:{
+						title:{
+							text: 	"Actualización de sistema de información interno de mejora continua para Mubea México (Ramos Arizpe, Coahuila). Limitado a dar detalles por políticas de privacidad.",
+							class: 	"projects__option__information__description"
+						},
+						class: 	"projects__option__information__description__container"
+					},
+					techs:{
+						title:{
+							title:{
+								text: 	"Tecnologías",
+								class: 	"projects__option__information__techs__title"
+							},
+							class: "projects__option__information__techs__title__container",
+						},
+						options:[
+							{
+								title:{
+									text: 	"JavaScript",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"HTML 5",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"CSS3",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"PHP",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"MySQL",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Junos Pulse",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+						],
+						optionsClass: 	"projects__option__information__techs__tech",
+						class: "projects__option__information__techs"
+					},
+					noUrl:{
+						title:{
+							text:  	"Protegido por políticas de privacidad",
+							class: 	"projects__option__information__no-url__title"
+						},
+						class: 	"projects__option__information__no-url"
+					},
+					class: 	"projects__option__information"
+				},
+				class: "projects__option"
+			},
+			{
+				title:{
+					project:{
+						title:{
+							text:"Actualización",
+							class:"projects__option__title__project"
+						},
+						class: 	"projects__option__title__project__container"
+					},
+					company:{
+						title:{
+							text: 	"Mubea México",
+							class: 	"projects__option__title__company"
+						},
+						class: 	"projects__option__title__company__container"
+					},
+					date:{
+						title:{
+							text: 	"(Diciembre 2013 - Febrero 2014)",
+							class: 	"projects__option__title__date"
+						},
+						class: 	"projects__option__title__date__container"
+					},
+					class: 	"projects__option__title"
+				},
+				information:{
+					description:{
+						title:{
+							text: 	"Actualización de sistema de información interno de mejora continua para Mubea México (Ramos Arizpe, Coahuila). Limitado a dar detalles por políticas de privacidad.",
+							class: 	"projects__option__information__description"
+						},
+						class: 	"projects__option__information__description__container"
+					},
+					techs:{
+						title:{
+							title:{
+								text: 	"Tecnologías",
+								class: 	"projects__option__information__techs__title"
+							},
+							class: "projects__option__information__techs__title__container",
+						},
+						options:[
+							{
+								title:{
+									text: 	"JavaScript",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"HTML 5",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"CSS3",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"PHP",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"MySQL",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Junos Pulse",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+						],
+						optionsClass: 	"projects__option__information__techs__tech",
+						class: "projects__option__information__techs"
+					},
+					noUrl:{
+						title:{
+							text:  	"Protegido por políticas de privacidad",
+							class: 	"projects__option__information__no-url__title"
+						},
+						class: 	"projects__option__information__no-url"
+					},
+					class: 	"projects__option__information"
+				},
+				class: "projects__option"
+			},
+			{
+				title:{
+					project:{
+						title:{
+							text:"Sistema de Información",
+							class:"projects__option__title__project"
+						},
+						class: 	"projects__option__title__project__container"
+					},
+					company:{
+						title:{
+							text: 	"Francés Online",
+							class: 	"projects__option__title__company"
+						},
+						class: 	"projects__option__title__company__container"
+					},
+					date:{
+						title:{
+							text: 	"(Mayo 2013 - Agosto 2013)",
+							class: 	"projects__option__title__date"
+						},
+						class: 	"projects__option__title__date__container"
+					},
+					class: 	"projects__option__title"
+				},
+				information:{
+					description:{
+						title:{
+							text: 	"Sistema de información para Startup ubicado en Saltillo, Coahuila, dedicado a reclutar maestros de francés e impartir clases a usuarios con deseos de aprender francés.",
+							class: 	"projects__option__information__description"
+						},
+						class: 	"projects__option__information__description__container"
+					},
+					techs:{
+						title:{
+							title:{
+								text: 	"Tecnologías",
+								class: 	"projects__option__information__techs__title"
+							},
+							class: "projects__option__information__techs__title__container",
+						},
+						options:[
+							{
+								title:{
+									text: 	"JavaScript",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"HTML 5",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"CSS3",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"JQuery",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"PHP",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"MySQL",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+						],
+						optionsClass: 	"projects__option__information__techs__tech",
+						class: "projects__option__information__techs"
+					},
+					noUrl:{
+						title:{
+							text:  	"Startup fuera de operación",
+							class: 	"projects__option__information__no-url__title"
+						},
+						class: 	"projects__option__information__no-url"
+					},
+					class: 	"projects__option__information"
+				},
+				class: "projects__option"
+			},
+		],
+		classToAnimate: "bounceInUp",
+		class:"projects"
 	};
 
 	return data;
