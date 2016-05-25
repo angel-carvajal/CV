@@ -194,32 +194,6 @@ $tTx:#FFFFFF;
 				font-weight: bolder;
 			}
 
-
-	//background-colors
-		%pBg{
-			background-color:$pBg;
-		}
-		%sBg{
-			background-color:$sBg;
-		}
-		%tBg{
-			background-color:$tBg;
-		}
-		%fBg{
-			background-color:$fBg;
-		}
-
-	//text colors
-		%pTx{
-			color:$pTx;
-		}
-		%sTx{
-			color:$sTx;
-		}
-		%tTx{
-			color:$tTx;
-		}
-
 	//Displays
 		%inlineBlock{
 			display: inline-block;
@@ -229,80 +203,6 @@ $tTx:#FFFFFF;
 		}
 		%block{
 			display: block;
-		}
-
-	//font size for titles
-		%t--xs{
-			font-size: 20px;
-		}
-
-		%t--s{
-			font-size: 30px;
-		}
-
-		%tm{
-			font-size: 30px;
-		}
-
-		%tl{
-			font-size: 50px;
-		}
-
-		%txl{
-			font-size: 40px;
-		}
-
-	//font size for subtitles
-		%stxs{
-			font-size: 12px;
-		}
-
-		%sts{
-			font-size: 14px;
-		}
-
-		%stm{
-			font-size: 16px;
-		}
-
-		%stl{
-			font-size: 20px;
-		}
-
-		%stxl{
-			font-size: 22px;
-		}
-
-	//font size for paragraphs
-		%pxs{
-			font-size: 10px;
-		}
-
-		%ps{
-			font-size: 12px;
-		}
-
-		%pm{
-			font-size: 14px;
-		}
-
-		%pl{
-			font-size: 16px;
-		}
-
-		%pxl{
-			font-size: 18px;
-		}
-
-	//font weight
-		%fwLight{
-			font-weight: 400;
-		}
-		%fwRegular{
-			font-weight: 500;
-		}
-		%fwBold{
-			font-weight: 600;
 		}
 
 	//Space from side
@@ -343,23 +243,6 @@ $tTx:#FFFFFF;
 			margin-left: 10px;
 		}
 
-	//Borders
-		%allBorders{
-			border: 10px solid $sTx; 
-		}
-		%topBorders{
-			border-top: 10px solid $sTx; 
-		}
-		%bottomBorders{
-			border-bottom: 10px solid $sTx; 
-		}
-		%leftBorders{
-			border-left: 10px solid $sTx; 
-		}
-		%rightBorders{
-			border-right: 10px solid $sTx; 
-		}
-
 	//Text align
 		%textLeft{
 			text-align: left;
@@ -372,14 +255,6 @@ $tTx:#FFFFFF;
 		}
 		%textJustify{
 			text-align: justify;
-		}
-
-	//Figures
-		%circle{
-			border-radius: 50%;
-		}
-		%undoCircle{
-			border-radius: 0;
 		}
 
 	//Pointers
@@ -395,23 +270,10 @@ $tTx:#FFFFFF;
 			letter-spacing: -1px;
 		}
 
-	//Line height
-		%doubleHeight{
-			line-height: 2em;
-		}
-		%singleHeight{
-			line-height: 1em;
-		}
-
 	//Center element with position
 		%centered{
 			position: relative;
 			top:40%;
-		}
-
-	//Borders
-		%borderBottomP{
-			@include borders($side:bottom,$color:$pBg,$size:1);
 		}
 
 	//Z position

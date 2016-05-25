@@ -2,7 +2,7 @@
 /*------------------------------------*\
     Global style
 \*------------------------------------*/
-/* line 113, _config.scss */
+/* line 113, C:/wamp/www/CV/app/include/style/_config.scss */
 .general-info, .knowledge, .experience, .projects, .footer {
   overflow-y: hidden;
   cursor: default;
@@ -11,77 +11,77 @@
   padding-bottom: 40px;
 }
 
-/* line 117, _config.scss */
+/* line 117, C:/wamp/www/CV/app/include/style/_config.scss */
 .general-info, .knowledge {
   background-color: white;
 }
 
-/* line 121, _config.scss */
+/* line 121, C:/wamp/www/CV/app/include/style/_config.scss */
 .experience, .projects {
   background-color: #eeeeee;
 }
 
-/* line 125, _config.scss */
+/* line 125, C:/wamp/www/CV/app/include/style/_config.scss */
 .footer {
   background-color: #444a54;
   color: white;
 }
 
-/* line 134, _config.scss */
+/* line 134, C:/wamp/www/CV/app/include/style/_config.scss */
 .general-info__title, .knowledge__title, .experience__title, .projects__title {
   font-size: 40px;
   color: #009688;
 }
 
-/* line 138, _config.scss */
+/* line 138, C:/wamp/www/CV/app/include/style/_config.scss */
 .general-info__profile__title, .general-info__goal__title, .general-info__education__title, .knowledge__technologies__type__title, .experience__option__title__position, .experience__option__information__duties__title, .projects__option__title__project, .projects__option__information__techs__title {
   font-size: 30px;
   color: #009688;
 }
 
-/* line 142, _config.scss */
+/* line 142, C:/wamp/www/CV/app/include/style/_config.scss */
 .experience__option__information__location, .projects__option__information__url__title, .projects__option__information__url__link, .projects__option__information__no-url__title {
   font-size: 16px;
   color: #009688;
   font-weight: bolder;
 }
 
-/* line 146, _config.scss */
+/* line 146, C:/wamp/www/CV/app/include/style/_config.scss */
 .footer__title__title {
   font-size: 40px;
   color: white;
 }
 
-/* line 154, _config.scss */
+/* line 154, C:/wamp/www/CV/app/include/style/_config.scss */
 .general-info__profile__option__title {
   font-size: 30px;
   color: #444a54;
   font-weight: bolder;
 }
 
-/* line 159, _config.scss */
+/* line 159, C:/wamp/www/CV/app/include/style/_config.scss */
 .general-info__education__option__paragraph__title {
   font-size: 18px;
   color: #009688;
   font-weight: bolder;
 }
 
-/* line 169, _config.scss */
+/* line 169, C:/wamp/www/CV/app/include/style/_config.scss */
 .knowledge__technologies__type__techs__tech__title, .experience__option__information__duties__duty__title, .projects__option__information__techs__tech__title {
   font-size: 16px;
   color: #444a54;
   font-weight: bolder;
 }
 
-/* line 179, _config.scss */
-.general-info__goal__paragraph, .experience__option__information__description {
+/* line 179, C:/wamp/www/CV/app/include/style/_config.scss */
+.general-info__goal__paragraph, .experience__option__information__description, .projects__option__information__description {
   font-size: 18px;
   color: #444a54;
   line-height: 1.5em;
   text-align: justify;
 }
 
-/* line 183, _config.scss */
+/* line 183, C:/wamp/www/CV/app/include/style/_config.scss */
 .general-info__paragraph, .general-info__profile__option__description, .general-info__education__option__paragraph__date, .knowledge__technologies__type__extra__title, .experience__option__title__date, .projects__option__title__date {
   font-size: 18px;
   color: #444a54;
@@ -89,7 +89,7 @@
   text-align: inherit;
 }
 
-/* line 187, _config.scss */
+/* line 187, C:/wamp/www/CV/app/include/style/_config.scss */
 .general-info__education__option__paragraph__sub-title, .experience__option__title__company, .projects__option__title__company {
   font-size: 18px;
   color: #444a54;
@@ -98,124 +98,84 @@
   font-weight: bolder;
 }
 
-/* line 199, _config.scss */
-.experience__option__information__duties__duty__title__container, .projects__option__information__techs__tech__title__container {
-  background-color: white;
-}
-
-/* line 208, _config.scss */
-.knowledge__technologies__type__techs__tech__grades__grade--actived {
-  background-color: #009688;
-}
-
-/* line 213, _config.scss */
-.projects__option__information__description, .projects__option__information__url__link:hover .projects__option__information__url__title, .projects__option__information__url__link:hover i {
-  color: #444a54;
-}
-
-/* line 219, _config.scss */
-.knowledge__technologies__type__extra__link__container {
-  color: white;
-}
-
-/* line 224, _config.scss */
+/* line 198, C:/wamp/www/CV/app/include/style/_config.scss */
 .cover__container__title__container, .knowledge__technologies__type__techs__tech__title__container, .knowledge__technologies__type__techs__tech__grades, .knowledge__technologies__type__techs__tech__grades__grade, .experience__option__information__duties__duty__title__container, .experience__option__information__location, .projects__option__information__techs__tech__title__container, .projects__option__information__url__title, .projects__option__information__url__link, .footer__contact__option__title__container, .footer__social__option__title__container, .footer__signature__title__container, .footer__signature__logo__container {
   display: inline-block;
 }
 
-/* line 227, _config.scss */
+/* line 201, C:/wamp/www/CV/app/include/style/_config.scss */
 .experience__option__information__location__container i, .projects__option__information__url i, .footer__contact__option__title__icon, .footer__social__option__title__icon {
   display: inline;
 }
 
-/* line 239, _config.scss */
-.knowledge__technologies__type__techs {
-  font-size: 30px;
-}
-
-/* line 285, _config.scss */
-.footer__title__author__container {
-  font-size: 14px;
-}
-
-/* line 293, _config.scss */
-.projects__option__information__description {
-  font-size: 18px;
-}
-
-/* line 309, _config.scss */
+/* line 209, C:/wamp/www/CV/app/include/style/_config.scss */
 .cover__container__title, .cover__container__sub-title, .general-info__title__container, .general-info__profile, .general-info__goal, .general-info__education, .general-info__education__option__paragraph, .knowledge__title__container, .knowledge__technologies__type, .knowledge__technologies__type__techs__tech, .knowledge__technologies__type__extra__link, .experience__title__container, .experience__option, .experience__option__information__duties__duty__title__container, .projects__title__container, .projects__option, .projects__option__information__techs__tech__title__container {
   padding: 0 20px;
 }
 
-/* line 318, _config.scss */
+/* line 218, C:/wamp/www/CV/app/include/style/_config.scss */
 .cover__container__sub-title, .general-info__image__container, .general-info__title__container, .general-info__paragraph, .general-info__profile__option__title__container, .general-info__goal__paragraph__container, .general-info__education, .knowledge__title__container, .knowledge__technologies__type, .knowledge__technologies__type__extra__link, .knowledge__technologies__type__extra__link__container, .experience__title__container, .experience__option, .experience__option__information__duties__duty__title__container, .experience__option__information__location__container, .projects__title__container, .projects__option, .projects__option__information__techs__tech__title__container, .projects__option__information__url, .footer__title__paragraph__container, .footer__title__author__container {
   padding-top: 10px;
 }
 
-/* line 321, _config.scss */
+/* line 221, C:/wamp/www/CV/app/include/style/_config.scss */
 .general-info__image__container, .general-info__title__container, .general-info__profile__title__container, .general-info__profile__option__description__container, .general-info__goal__title__container, .general-info__education__title__container, .general-info__education__option, .knowledge__technologies__type__title__container, .knowledge__technologies__type__techs__tech, .knowledge__technologies__type__extra__title__container, .knowledge__technologies__type__extra__link, .knowledge__technologies__type__extra__link__container, .experience__option__title, .experience__option__information__description__container, .experience__option__information__duties__duty__title__container, .projects__option__title, .projects__option__information__description__container, .projects__option__information__techs__tech__title__container, .footer__title {
   padding-bottom: 10px;
 }
 
-/* line 326, _config.scss */
+/* line 226, C:/wamp/www/CV/app/include/style/_config.scss */
 .experience__option__information__duties__duty__title__container, .projects__option__information__techs__tech__title__container {
   margin: 10px 10px;
 }
 
-/* line 329, _config.scss */
+/* line 229, C:/wamp/www/CV/app/include/style/_config.scss */
 .cover__container__title, .general-info__education__title__container, .knowledge__technologies__type__title__container, .experience__option, .experience__option__title, .projects__option, .projects__option__title {
   margin-bottom: 10px;
 }
 
-/* line 332, _config.scss */
+/* line 232, C:/wamp/www/CV/app/include/style/_config.scss */
 .general-info__education, .knowledge__technologies__type, .experience__option, .projects__option {
   margin-top: 10px;
 }
 
-/* line 335, _config.scss */
+/* line 235, C:/wamp/www/CV/app/include/style/_config.scss */
 .general-info__image__container {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/* line 370, _config.scss */
+/* line 253, C:/wamp/www/CV/app/include/style/_config.scss */
 .cover__container, .general-info__title__container, .knowledge__title__container, .knowledge__technologies__type__extra, .experience__title__container, .projects__title__container, .footer__title__title__container, .footer__title__paragraph__container, .footer__title__author__container, .footer__contact__option, .footer__social__option, .footer__signature {
   text-align: center;
 }
 
-/* line 373, _config.scss */
-.projects__option__information__description {
-  text-align: justify;
-}
-
-/* line 386, _config.scss */
+/* line 261, C:/wamp/www/CV/app/include/style/_config.scss */
 .welcome, .cover, .footer__title, .footer__signature {
   cursor: default;
 }
 
-/* line 391, _config.scss */
+/* line 266, C:/wamp/www/CV/app/include/style/_config.scss */
 .cover__container__sub-title {
   letter-spacing: 2px;
 }
 
-/* line 394, _config.scss */
+/* line 269, C:/wamp/www/CV/app/include/style/_config.scss */
 .cover__container__title {
   letter-spacing: -1px;
 }
 
-/* line 407, _config.scss */
+/* line 274, C:/wamp/www/CV/app/include/style/_config.scss */
 .cover__container {
   position: relative;
   top: 40%;
 }
 
-/* line 418, _config.scss */
+/* line 280, C:/wamp/www/CV/app/include/style/_config.scss */
 .cover__container {
   z-index: 1;
 }
 
-/* line 423, _config.scss */
+/* line 285, C:/wamp/www/CV/app/include/style/_config.scss */
 .welcome {
   overflow-y: hidden;
 }
@@ -420,6 +380,12 @@ html, body {
   margin-bottom: 40px;
 }
 
+/* line 354, main.scss */
+.knowledge__technologies__type__techs {
+  font-size: 30px;
+  color: inherit;
+}
+
 /* line 372, main.scss */
 .knowledge__technologies__type__techs__tech__grades {
   height: 22px;
@@ -431,6 +397,11 @@ html, body {
   margin: 0px 2px;
   border: 3px solid #009688;
   width: 12px;
+}
+
+/* line 384, main.scss */
+.knowledge__technologies__type__techs__tech__grades__grade--actived {
+  background-color: #009688;
 }
 
 /* line 402, main.scss */
@@ -453,6 +424,8 @@ html, body {
 
 /* line 416, main.scss */
 .knowledge__technologies__type__extra__link__container {
+  font-size: inherit;
+  color: white;
   margin-bottom: 40px;
 }
 
@@ -474,6 +447,11 @@ html, body {
   margin-bottom: 40px;
 }
 
+/* line 523, main.scss */
+.experience__option__information__duties__duty__title__container {
+  background-color: white;
+}
+
 /*------------------------------------*\
     Projects style
 \*------------------------------------*/
@@ -492,18 +470,18 @@ html, body {
   margin-bottom: 40px;
 }
 
-/* line 615, main.scss */
-.projects__option__information__description {
-  line-height: 1.5em;
+/* line 644, main.scss */
+.projects__option__information__techs__tech__title__container {
+  background-color: white;
 }
 
-/* line 673, main.scss */
+/* line 670, main.scss */
 .projects__option__information__url__link:hover .projects__option__information__url__title, .projects__option__information__url__link:hover i {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
-/* line 678, main.scss */
+/* line 675, main.scss */
 .projects__option__information__url__link .projects__option__information__url__title, .projects__option__information__url__link i {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -513,62 +491,62 @@ html, body {
 /*------------------------------------*\
     Footer style
 \*------------------------------------*/
-/* line 707, main.scss */
+/* line 704, main.scss */
 .footer__title {
   margin-top: 40px;
 }
 
-/* line 726, main.scss */
+/* line 723, main.scss */
 .footer__title__paragraph__container {
   font-size: 18px;
   color: inherit;
 }
 
-/* line 737, main.scss */
+/* line 734, main.scss */
 .footer__title__author__container {
   font-size: 14px;
   color: inherit;
 }
 
-/* line 745, main.scss */
+/* line 741, main.scss */
 .footer__contact {
   margin-top: 40px;
 }
 
-/* line 753, main.scss */
+/* line 749, main.scss */
 .footer__contact__option__title {
   font-size: 20px;
   color: inherit;
 }
 
-/* line 761, main.scss */
+/* line 757, main.scss */
 .footer__contact__option__title__container {
   padding-top: 8px;
 }
 
-/* line 767, main.scss */
+/* line 763, main.scss */
 .footer__social {
   margin-top: 40px;
 }
 
-/* line 775, main.scss */
+/* line 771, main.scss */
 .footer__social__option__title {
   font-size: 20px;
   color: inherit;
 }
 
-/* line 783, main.scss */
+/* line 779, main.scss */
 .footer__social__option__title__container {
   padding-top: 8px;
 }
 
-/* line 789, main.scss */
+/* line 785, main.scss */
 .footer__social__option__link {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
-/* line 792, main.scss */
+/* line 788, main.scss */
 .footer__social__option__link:hover, .footer__social__option__link:hover i {
   font-size: inherit;
   color: #009688;
@@ -576,27 +554,27 @@ html, body {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
-/* line 797, main.scss */
+/* line 793, main.scss */
 .footer__social__option__link i {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
 
-/* line 807, main.scss */
+/* line 803, main.scss */
 .footer__signature__title {
   font-size: 20px;
   color: inherit;
   font-weight: 200;
 }
 
-/* line 812, main.scss */
+/* line 808, main.scss */
 .footer__signature__title__container {
   position: relative;
   bottom: 58px;
 }
 
-/* line 819, main.scss */
+/* line 815, main.scss */
 .footer__signature__logo {
   height: 150px;
 }

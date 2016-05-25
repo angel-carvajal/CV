@@ -352,7 +352,7 @@
 
 
 				.knowledge__technologies__type__techs{
-					@extend %t--s;
+					@include text($size:$t--s)
 				}
 
 
@@ -382,7 +382,7 @@
 							}
 
 								.knowledge__technologies__type__techs__tech__grades__grade--actived{
-									@extend %fBg;
+									@include bgColor($bgColor:$bgc--quaternary);
 								}
 
 
@@ -414,10 +414,10 @@
 					}
 
 						.knowledge__technologies__type__extra__link__container{
-							@extend %tTx;
+							@include text($color:$tc--tertiary);
 							@extend %topSpace;
 							@extend %bottomSpace;
-							margin-bottom: 40px;
+							@include customeSpace(margin,bottom,40px);
 						}
 
 
@@ -526,7 +526,7 @@
 							@extend %topSpace;
 							@extend %bottomSpace;
 							@extend %outSpace;
-							@extend %pBg;
+							@include bgColor($bgColor:$bgc--primary);
 						}
 
 
@@ -613,10 +613,7 @@
 			}
 
 				.projects__option__information__description{
-					@extend %pTx;
-					@extend %textJustify;
-					@extend %pxl;
-					line-height: 1.5em;
+					@extend %paragraph--primary;
 				}
 
 					.projects__option__information__description__container{
@@ -650,7 +647,7 @@
 							@extend %topSpace;
 							@extend %bottomSpace;
 							@extend %outSpace;
-							@extend %pBg;
+							@include bgColor($bgColor:$bgc--primary);
 						}
 
 
@@ -735,7 +732,6 @@
 			}
 
 				.footer__title__author__container{
-					@extend %pm;
 					@extend %textCenter;
 					@extend %topSpace;
 					@include text($size:14px);
