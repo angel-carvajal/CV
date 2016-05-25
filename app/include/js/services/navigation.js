@@ -1,108 +1,65 @@
 angular.module("navigation",["global"])
 //Navigation bar content factory
-.factory("navigationContentSpanish",["globalVariables",function(globalVariables){
+.factory("navigationContent",["globalVariables",function(globalVariables){
 	//Variables declaration
 	var data={};
+	var menuIconSize="xl";
+	var menuIconColor="teal";
+	var menuIconType="icon";
+	var menuIconClass="navigation__icon";
 
 	//Content definition
 	data={
+		icon:{
+			icon:{
+				id: 	"menu",
+				size: 	menuIconSize,
+				color: 	menuIconColor,
+				type: 	menuIconType,
+				class: 	menuIconClass
+			},
+			class:"navigation__icon__container"
+		},
 		nav:{
-			option:[
+			options:[
 				{
-					title:{
-						text:"Información general",
-						class:""
-					},
 					link:{
-						action:"general-info",
-						class:""
+						text:  	"Información general",
+						class: 	"navigation__link"
 					},
-					class:""
+					action: "general-info",
 				},
 				{
-					title:{
-						text:"Experiencia laboral",
-						class:""
-					},
 					link:{
-						action:"work-experience",
-						class:""
+						text: "Experiencia laboral",
+						class: 	"navigation__link"
 					},
-					class:""
+					action: "experience",
 				},
 				{
-					title:{
-						text:"Conocimientos",
-						class:""
-					},
 					link:{
-						action:"knowledge",
-						class:""
+						text: "Habilidades",
+						class: 	"navigation__link"
 					},
-					class:""
+					action: "knowledge",
 				},
 				{
-					title:{
-						text:"Proyectos",
-						class:""
-					},
 					link:{
-						action:"projects",
-						class:""
+						text: "Proyectos",
+						class: 	"navigation__link"
 					},
-					class:""
+					action: "projects",
 				},
 				{
-					title:{
-						text:"Cursos",
-						class:""
-					},
 					link:{
-						action:"courses",
-						class:""
+						text: "Contacto",
+						class: 	"navigation__link"
 					},
-					class:""
-				},
-				{
-					title:{
-						text:"Extras",
-						class:""
-					},
-					link:{
-						action:"extras",
-						class:""
-					},
-					class:""
+					action: "footer",
 				},
 			],
-			class:""
 		},
-		class:""
-	};
-	
-	return data;
-}])
-.factory("navigationContentEnglish",["globalVariables",function(globalVariables){
-	//Variables declaration
-	var data={};
-
-	//Content definition
-	data={
-		nav:{
-			option:[
-				{
-					title:{
-						class:""
-					},
-					link:{
-						class:""
-					},
-					class:""
-				},
-			],
-			class:""
-		},
-		class:""
+		class:"navigation"
 	};
 	
 	return data;
