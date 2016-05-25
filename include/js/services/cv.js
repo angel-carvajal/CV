@@ -46,7 +46,7 @@ angular.module("cv",[])
 				class: 	"general-info__title"
 			},
 			paragraph:{
-				text: 	"Soy un PM, desarrolador Frontend con Angular y Backend con PHP",
+				text: 	"Soy un PM, desarrollador Frontend con Angular y Backend con PHP",
 				class: 	"general-info__paragraph"
 			},
 			class: 	"general-info__title__container"
@@ -950,7 +950,7 @@ angular.module("cv",[])
 					extra:{
 						paragraph:{
 							title:{
-								text: 	"Para este proyecto se utilizó HTML5, CSS3, SASS, JSON, JavaScript, Angular, Lumx, AnimateCSS, JQuery y grunt.",
+								text: 	"Para este proyecto se utilizó HTML5, CSS3, SASS, JSON, JavaScript, Angular, Lumx, AnimateCSS, JQuery y Grunt.",
 								class: 	"knowledge__technologies__type__extra__title"
 							},
 							class: 	"knowledge__technologies__type__extra__title__container"
@@ -990,7 +990,7 @@ angular.module("cv",[])
 							{
 								title:{
 									title:{
-										text: 	"Ingles (Toefl 627)",
+										text: 	"Inglés (Toefl 627)",
 										class: 	"knowledge__technologies__type__techs__tech__title"
 									},
 									class: 	"knowledge__technologies__type__techs__tech__title__container"
@@ -1089,7 +1089,7 @@ angular.module("cv",[])
 							{
 								title:{
 									title:{
-										text: 	"Ilustrador 5.1",
+										text: 	"Illustrador 5.1",
 										class: 	"knowledge__technologies__type__techs__tech__title"
 									},
 									class: 	"knowledge__technologies__type__techs__tech__title__container"
@@ -1866,7 +1866,7 @@ angular.module("cv",[])
 				information:{
 					description:{
 						title:{
-							text: 	"Actualización de página web informativa de la empresa SaludC y Servicios de TI. Empresa dedicada al desarrollo de tecnología para el área de Salud (Doctores, dentistas, clínicas, nutriólogos, etc)",
+							text: 	"Actualización de página web informativa de la empresa SaludC y Servicios de TI. Empresa dedicada al desarrollo de tecnología para el área de Salud (Doctores, dentistas, clínicas, nutriólogos, etc.)",
 							class: 	"projects__option__information__description"
 						},
 						class: 	"projects__option__information__description__container"
@@ -2167,7 +2167,7 @@ angular.module("cv",[])
 				information:{
 					description:{
 						title:{
-							text: 	"Página web informativa de la empresa SaludC y Servicios de TI. Empresa dedicada al desarrollo de tecnología para el área de Salud (Doctores, dentistas, clínicas, nutriólogos, etc)",
+							text: 	"Página web informativa de la empresa SaludC y Servicios de TI. Empresa dedicada al desarrollo de tecnología para el área de Salud (Doctores, dentistas, clínicas, nutriólogos, etc.)",
 							class: 	"projects__option__information__description"
 						},
 						class: 	"projects__option__information__description__container"
@@ -2264,7 +2264,7 @@ angular.module("cv",[])
 					},
 					noUrl:{
 						title:{
-							text:  	"Version no disponible",
+							text:  	"Versión no disponible",
 							class: 	"projects__option__information__no-url__title"
 						},
 						class: 	"projects__option__information__no-url"
