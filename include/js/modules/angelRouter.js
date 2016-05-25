@@ -16,7 +16,7 @@ angular.module("angelRouter",["ui.router","oc.lazyLoad","lumx","appNavigation","
 								"../bower_components/normalize-css/normalize.css",
 								"../bower_components/lumx/dist/lumx.css",
 								"../bower_components/animate.css/animate.min.css",
-								"include/style/main.css"
+								"include/style/main.min.css"
 							]
 						}
 					)
@@ -33,9 +33,9 @@ angular.module("angelRouter",["ui.router","oc.lazyLoad","lumx","appNavigation","
 						{
 							name:"appCv",
 							files:[
-								"include/js/directives/cv.js",
-								"include/js/modules/cv.js",
-								"include/js/services/cv.js"
+								"include/js/directives/cv.min.js",
+								"include/js/modules/cv.min.js",
+								"include/js/services/cv.min.js"
 							]
 						}
 					)

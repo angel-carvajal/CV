@@ -1,5 +1,5 @@
 angular.module("globalDirectives",[])
-.directive("customeTitle",function(globalVariables){
+.directive("customeTitle",["globalVariables",function(globalVariables){
 	//console.log(globalVariables.hostname);
 	return{
 		restrict:"E",
@@ -8,8 +8,8 @@ angular.module("globalDirectives",[])
 		},
 		templateUrl:globalVariables.hostname+"include/templates/global/customeTitle.html"
 	}
-})
-.directive("customeSubTitle",function(globalVariables){
+}])
+.directive("customeSubTitle",["globalVariables",function(globalVariables){
 	return{
 		restrict:"E",
 		scope:{
@@ -17,8 +17,8 @@ angular.module("globalDirectives",[])
 		},
 		templateUrl:globalVariables.hostname+"include/templates/global/customeSubTitle.html"
 	}
-})
-.directive("customeLink",function(globalVariables){
+}])
+.directive("customeLink",["globalVariables",function(globalVariables){
 	//console.log(globalVariables.hostname);
 	return{
 		restrict:"E",
@@ -28,8 +28,8 @@ angular.module("globalDirectives",[])
 		},
 		templateUrl:globalVariables.hostname+"include/templates/global/customeLink.html"
 	}
-})
-.directive("icon",function(globalVariables){
+}])
+.directive("icon",["globalVariables",function(globalVariables){
 	//console.log(globalVariables.hostname);
 	return{
 		restrict:"E",
@@ -38,8 +38,8 @@ angular.module("globalDirectives",[])
 		},
 		templateUrl:globalVariables.hostname+"include/templates/global/icon.html"
 	}
-})
-.directive("iconButton",function(globalVariables){
+}])
+.directive("iconButton",["globalVariables",function(globalVariables){
 	//console.log(globalVariables.hostname);
 	return{
 		restrict:"E",
@@ -49,7 +49,7 @@ angular.module("globalDirectives",[])
 		},
 		templateUrl:globalVariables.hostname+"include/templates/global/iconButton.html"
 	}
-})
+}])
 .directive("customeP",["globalVariables",function(globalVariables){
 	//console.log(globalVariables.hostname);
 	return{
