@@ -17,6 +17,35 @@ $profile:url('#{$imagesUrl}me_1.1.jpg');
 $pTx:#444A54;
 $sTx:#009688;
 $tTx:#FFFFFF;
+//Bg Colors
+	$bgc--primary: 		#FFFFFF;
+	$bgc--secondary: 	#eeeeee;
+	$bgc--tertiary: 	#444A54;
+	$bgc--quaternary: 	#009688;
+
+//Text Colors
+	$tc--primary:#444A54;
+	$tc--secondary:#009688;
+	$tc--tertiary:#FFFFFF;
+
+//title sizes
+	$t--xs: 16px;
+	$t--s: 	30px;
+	$t--m: 	40px;
+	$t--l:	50px;
+	$t--xl:	64px;
+//Sub title size
+	$st--xs: 	16px;
+	$st--s: 	18px;
+	$st--m: 	20px;
+	$st--l:		22px;
+	$st--xl:	30px;
+//Paragraph sizes
+	$p--xs: 16px;
+	$p--s: 	18px;
+	$p--m: 	20px;
+	$p--l:	22px;
+	$p--xl:	24px;
 
 
 //Mixins
@@ -25,6 +54,7 @@ $tTx:#FFFFFF;
 		-webkit-transition: $items #{$time}s $effect;
 		-moz-transition: $items #{$time}s $effect;
 	}
+
 	@mixin positionCoordinates($position,$z,$top:0,$bottom:0,$left:0,$right:0){
 		position: $position;
 		top: $top;
@@ -33,13 +63,138 @@ $tTx:#FFFFFF;
 		right: $right;
 		z-index: $z;
 	}
+
 	@mixin borders($side,$color,$size){
 		border-#{$side}:#{$size}px solid $color;
 	}
+
+	@mixin section($position:relative,$zIndex:1,$overFlowY:hidden,$pointer:default,$pBottom:40px){
+		overflow-y: $overFlowY;
+		cursor:$pointer;
+		position: $position;
+		z-index: $zIndex;
+		padding-bottom: $pBottom;
+	}
+
+	@mixin bgColor($bgColor:$pBg){
+		background-color: $bgColor;
+	}
+
+	@mixin text($size:inherit,$color:inherit){
+		font-size: $size;
+		color: $color;
+	}
+	@mixin customeSpace($which,$from,$val){
+		#{$which}-#{$from}:$val;
+	}
+	@mixin container($pTop:0px,$pBottom:0px,$pLeft:0px,$pRight:0px,$mTop:0px,$mBottom:0px,$mLeft:0px,$mRight:0px){
+		padding-top: 	$pTop;
+		padding-bottom: $pBottom;
+		padding-left: 	$pLeft;
+		padding-right: 	$pRight;
+		margin-top: 	$mTop;
+		margin-bottom: 	$mBottom;
+		margin-left: 	$mLeft;
+		margin-right: 	$mRight;
+	}
+
+	@mixin paragraph($size,$color,$line-height:1em,$text-align:inherit){
+		font-size: $size;
+		color: $color;
+		line-height: $line-height;
+		text-align: $text-align;
+	}
+
+	
 /*------------------------------------*\
     Global style
 \*------------------------------------*/
-//Extends
+	//Extends
+		%section{
+			@include section();
+		}
+
+			%section--primary{
+				@include bgColor();
+			}
+
+			%section--secondary{
+				@include bgColor($bgColor:$bgc--secondary);
+			}
+
+			%section--tertiary{
+				@include bgColor($bgColor:$bgc--tertiary);
+				color:$tTx;
+			}
+
+		%title{
+			
+		}
+
+			%title--primary{
+				@include text($size:$t--m,$color:$tc--secondary);
+			}
+
+			%title--secondary{
+				@include text($size:$t--s,$color:$tc--secondary);
+			}
+
+			%title--tertiary{
+				@include text($size:$t--xs,$color:$tc--secondary);
+				font-weight: bolder;
+			}
+			%title--quaternary{
+				@include text($size:$t--m,$color:$tc--tertiary);
+			}
+
+		%sub-title{
+
+		}
+
+			%sub-title--primary{
+				@include text($size:$st--xl,$color:$tc--primary);
+				font-weight: bolder;
+			}
+
+			%sub-title--secondary{
+				@include text($size:$st--s,$color:$tc--secondary);
+				font-weight: bolder;
+			}
+
+			%sub-title--tertiary{
+				@include text($size:$st--s,$color:$tc--primary);
+				font-weight: bolder;
+			}
+
+			%sub-title--quaternary{
+				@include text($size:$st--xs,$color:$tc--primary);
+				font-weight: bolder;
+			}
+
+
+		%paragraph{
+
+		}
+
+			%paragraph--primary{
+				@include paragraph($size:$p--s,$color:$tc--primary,$line-height:1.5em,$text-align:justify);
+			}
+
+			%paragraph--secondary{
+				@include paragraph($size:$p--s,$color:$tc--primary);
+			}
+
+			%paragraph--tertiary{
+				@include paragraph($size:$p--s,$color:$tc--primary);
+				font-weight: bolder;
+			}
+
+			%paragraph--quaternary{
+				@include paragraph($size:$p--xs,$color:$tc--primary);
+				font-weight: bolder;
+			}
+
+
 	//background-colors
 		%pBg{
 			background-color:$pBg;
@@ -77,16 +232,16 @@ $tTx:#FFFFFF;
 		}
 
 	//font size for titles
-		%txs{
+		%t--xs{
 			font-size: 20px;
 		}
 
-		%ts{
+		%t--s{
 			font-size: 30px;
 		}
 
 		%tm{
-			font-size: 40px;
+			font-size: 30px;
 		}
 
 		%tl{
@@ -94,7 +249,7 @@ $tTx:#FFFFFF;
 		}
 
 		%txl{
-			font-size: 64px;
+			font-size: 40px;
 		}
 
 	//font size for subtitles

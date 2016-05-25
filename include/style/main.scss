@@ -133,9 +133,7 @@
 		}
 
 			.cover__container__title{
-				@extend %txl;
-				@extend %tTx;
-				@extend %fwLight;
+				@include text($size:$t--m,$color:$tc--tertiary);
 				@extend %sidesSpace;
 				@extend %negSingleSpace;
 				@extend %outBottomSpace;
@@ -143,15 +141,13 @@
 
 				.cover__container__title__container{
 					@extend %inlineBlock;
-					@extend %borderBottomP;
+					@include borders($side:bottom,$color:$bgc--primary,$size:1);
 				}
 
 
 			.cover__container__sub-title{
-				@extend %stm;
-				@extend %tTx;
+				@include text($size:$t--xs,$color:$tc--tertiary);
 				@extend %doubleSpace;
-				@extend %fwRegular;
 				@extend %sidesSpace;
 				@extend %topSpace;
 			}
@@ -169,12 +165,8 @@
 \*------------------------------------*/
 
 	.general-info{
-		@extend %pBg;
-		@extend %zPositionP;
-		@extend %flowYHidden;
-		@extend %pointerDefault;
-		position: relative;
-		padding-bottom: 40px;
+		@extend %section;
+		@extend %section--primary;
 	}
 		.general-info__image{
 			border-radius: 50%;
@@ -193,8 +185,7 @@
 		}
 
 		.general-info__title{
-			@extend %sTx;
-			@extend %txl;
+			@extend %title--primary;
 		}
 
 			.general-info__title__container{
@@ -202,15 +193,14 @@
 				@extend %sidesSpace;
 				@extend %topSpace;
 				@extend %bottomSpace;
-				margin-top: 40px;
+				@include customeSpace(margin,top,40px)
 			}
 			
 
 		.general-info__paragraph{
-			@extend %pTx;
-			@extend %pxl;
+			@extend %paragraph--secondary;
 			@extend %topSpace;
-			padding-bottom: 40px;
+			@include customeSpace(padding,bottom,40px)
 		}
 
 		.general-info__profile{
@@ -218,8 +208,7 @@
 		}
 
 			.general-info__profile__title{
-				@extend %tm;
-				@extend %sTx;
+				@extend %title--secondary;
 			}
 				.general-info__profile__title__container{
 					@extend %bottomSpace;
@@ -230,9 +219,7 @@
 
 			}
 				.general-info__profile__option__title{
-					@extend %ts;
-					@extend %pTx;
-					font-weight: bolder;
+					@extend %sub-title--primary;
 				}
 
 					.general-info__profile__option__title__container{
@@ -242,11 +229,10 @@
 
 
 				.general-info__profile__option__description{
-					@extend %pTx;
+					@extend %paragraph--secondary
 				}
 
 					.general-info__profile__option__description__container{
-						@extend %pxl;
 						@extend %bottomSpace;
 					}
 
@@ -256,8 +242,7 @@
 		}
 
 			.general-info__goal__title{
-				@extend %tm;
-				@extend %sTx;
+				@extend %title--secondary;
 			}
 
 				.general-info__goal__title__container{
@@ -266,9 +251,7 @@
 
 
 			.general-info__goal__paragraph{
-				@extend %pxl;
-				@extend %pTx;
-				line-height: 1.5em;
+				@extend %paragraph--primary;
 			}
 
 				.general-info__goal__paragraph__container{
@@ -282,7 +265,7 @@
 			@extend %outTopSpace;
 		}
 			.general-info__education__title{
-				@extend %sTx;
+				@extend %title--secondary;
 			}
 
 				.general-info__education__title__container{
@@ -310,20 +293,15 @@
 				}
 
 					.general-info__education__option__paragraph__title{
-						@extend %pxl;
-						@extend %sTx;
-						font-weight: bolder;
+						@extend %sub-title--secondary;
 					}
 
 					.general-info__education__option__paragraph__sub-title{
-						@extend %pxl;
-						@extend %pTx;
-						font-weight: bolder;
+						@extend %paragraph--tertiary;
 					}
 
 					.general-info__education__option__paragraph__date{
-						@extend %pxl;
-						@extend %pTx;
+						@extend %paragraph--secondary;
 					}
 
 
@@ -331,29 +309,24 @@
 
 
 /*------------------------------------*\
-    Kno style
+    Knoledge style
 \*------------------------------------*/
 
 	.knowledge{
-		@extend %pBg;
-		@extend %zPositionP;
-		@extend %flowYHidden;
-		@extend %pointerDefault;
-		position: relative;
-		padding-bottom: 40px;
+		@extend %section;
+		@extend %section--primary;
 	}
 
 		.knowledge__title{
-			@extend %sTx;
-			@extend %txl;
-			padding-bottom: 40px;
+			@extend %title--primary;
+			@include customeSpace(padding,bottom,40px)
 		}
 
 			.knowledge__title__container{
 				@extend %textCenter;
 				@extend %sidesSpace;
 				@extend %topSpace;
-				margin-top: 40px;
+				@include customeSpace(margin,top,40px);
 			}
 
 
@@ -365,12 +338,11 @@
 				@extend %sidesSpace;
 				@extend %topSpace;
 				@extend %outTopSpace;
-				margin-bottom: 40px;
+				@include customeSpace(margin,bottom,40px);
 			}
 
 				.knowledge__technologies__type__title{
-					@extend %sTx;
-					@extend %tm;
+					@extend %title--secondary;
 				}
 
 					.knowledge__technologies__type__title__container{
@@ -380,8 +352,7 @@
 
 
 				.knowledge__technologies__type__techs{
-					@extend %sTx;
-					@extend %tm;
+					@extend %t--s;
 				}
 
 
@@ -391,9 +362,7 @@
 					}
 
 						.knowledge__technologies__type__techs__tech__title{
-							@extend %pTx;
-							@extend %txs;
-							font-weight: bolder;
+							@extend %sub-title--quaternary;
 						}
 
 							.knowledge__technologies__type__techs__tech__title__container{
@@ -402,13 +371,13 @@
 
 						.knowledge__technologies__type__techs__tech__grades{
 							@extend %inlineBlock;
-							height: 30px;
+							height: 22px;
 							float: right;
 						}
 							.knowledge__technologies__type__techs__tech__grades__grade{
 								@extend %inlineBlock;
-								margin: 0px 5px;
-								border: 3px solid #A7A7A7;
+								margin: 0px 2px;
+								border: 3px solid #009688;
 								width: 12px;
 							}
 
@@ -422,8 +391,7 @@
 				}
 
 					.knowledge__technologies__type__extra__title{
-						@extend %pTx;
-						@extend %pxl;
+						@extend %paragraph--secondary
 					}
 
 						.knowledge__technologies__type__extra__title__container{
@@ -432,14 +400,14 @@
 
 
 					.knowledge__technologies__type__extra__link{
-						@extend %txs;
-						@extend %tBg;
 						@extend %sidesSpace;
 						@extend %topSpace;
 						@extend %bottomSpace;
+						@include bgColor($bgColor:$bgc--tertiary);
+						@include text($size:$t--xs,$color:$tc--tertiary);
 						@include effect($time:.3);
 						&:hover{
-							@extend %sTx;
+							@include text($color:$tc--secondary);
 							@include effect($time:.3);
 						}
 
@@ -459,22 +427,16 @@
 
 
 /*------------------------------------*\
-    Footer style
+    Experience style
 \*------------------------------------*/
 	
 	.experience{
-		@extend %sBg;
-		@extend %zPositionP;
-		@extend %flowYHidden;
-		@extend %pointerDefault;
-		position: relative;
-		padding-bottom: 40px;
-		
+		@extend %section;
+		@extend %section--secondary;
 	}
 
 		.experience__title{
-			@extend %sTx;
-			@extend %txl;
+			@extend %title--primary;
 			padding-bottom: 40px;
 		}
 
@@ -500,8 +462,7 @@
 			}
 
 				.experience__option__title__position{
-					@extend %tm;
-					@extend %sTx;
+					@extend %title--secondary;
 				}
 
 					.experience__option__title__position__container{
@@ -510,9 +471,7 @@
 
 
 				.experience__option__title__company{
-					@extend %pTx;
-					@extend %stl;
-					font-weight: bolder;
+					@extend %paragraph--tertiary;
 				}
 
 					.experience__option__title__company__container{
@@ -520,8 +479,7 @@
 					}
 
 				.experience__option__title__date{
-					@extend %pTx;
-					@extend %pxl;
+					@extend %paragraph--secondary;
 				}
 
 					.experience__option__title__date__container{
@@ -534,10 +492,7 @@
 			}
 
 				.experience__option__information__description{
-					@extend %pTx;
-					@extend %textJustify;
-					@extend %pxl;
-					line-height: 1.5em;
+					@extend %paragraph--primary;
 				}
 
 					.experience__option__information__description__container{
@@ -550,8 +505,7 @@
 			}
 
 				.experience__option__information__duties__title{
-					@extend %sTx;
-					@extend %ts;
+					@extend %title--secondary;
 				}
 
 					.experience__option__information__duties__title__container{
@@ -563,9 +517,7 @@
 				}
 
 					.experience__option__information__duties__duty__title{
-						@extend %pTx;
-						@extend %pl;
-						font-weight: bolder;
+						@extend %sub-title--quaternary;
 					}
 
 						.experience__option__information__duties__duty__title__container{
@@ -579,10 +531,8 @@
 
 
 			.experience__option__information__location{
-				@extend %sTx;
-				@extend %pl;
+				@extend %title--tertiary;
 				@extend %inlineBlock;
-				font-weight: bolder;
 			}
 
 				.experience__option__information__location__container{
@@ -598,22 +548,16 @@
 
 
 /*------------------------------------*\
-    Footer style
+    Projects style
 \*------------------------------------*/
 	
 	.projects{
-		@extend %sBg;
-		@extend %zPositionP;
-		@extend %flowYHidden;
-		@extend %pointerDefault;
-		position: relative;
-		padding-bottom: 40px;
-		
+		@extend %section;
+		@extend %section--secondary;
 	}
 
 		.projects__title{
-			@extend %sTx;
-			@extend %txl;
+			@extend %title--primary;
 			padding-bottom: 40px;
 		}
 
@@ -639,8 +583,7 @@
 			}
 
 				.projects__option__title__project{
-					@extend %tm;
-					@extend %sTx;
+					@extend %title--secondary;
 				}
 
 					.projects__option__title__project__container{
@@ -649,9 +592,7 @@
 
 
 				.projects__option__title__company{
-					@extend %pTx;
-					@extend %stl;
-					font-weight: bolder;
+					@extend %paragraph--tertiary;
 				}
 
 					.projects__option__title__company__container{
@@ -659,8 +600,7 @@
 					}
 
 				.projects__option__title__date{
-					@extend %pTx;
-					@extend %pxl;
+					@extend %paragraph--secondary;
 				}
 
 					.projects__option__title__date__container{
@@ -689,8 +629,7 @@
 			}
 
 				.projects__option__information__techs__title{
-					@extend %sTx;
-					@extend %ts;
+					@extend %title--secondary;
 				}
 
 					.projects__option__information__techs__title__container{
@@ -702,9 +641,7 @@
 				}
 
 					.projects__option__information__techs__tech__title{
-						@extend %pTx;
-						@extend %pl;
-						font-weight: bolder;
+						@extend %sub-title--quaternary;
 					}
 
 						.projects__option__information__techs__tech__title__container{
@@ -726,17 +663,13 @@
 				}
 
 				.projects__option__information__url__title{
-					@extend %sTx;
-					@extend %pl;
+					@extend %title--tertiary;
 					@extend %inlineBlock;
-					font-weight: bolder;
 				}
 
 				.projects__option__information__url__link{
-					@extend %sTx;
-					@extend %pl;
+					@extend %title--tertiary;
 					@extend %inlineBlock;
-					font-weight: bolder;
 					&:hover .projects__option__information__url__title, &:hover i{
 						@extend %pTx;
 						@include effect($time:.3);
@@ -753,9 +686,7 @@
 			}
 
 				.projects__option__information__no-url__title{
-					@extend %sTx;
-					@extend %pl;
-					font-weight: bolder;
+					@extend %title--tertiary;
 				}
 
 				
@@ -769,11 +700,8 @@
 \*------------------------------------*/
 
 	.footer{
-		@extend %tBg;
-		@extend %zPositionP;
-		@extend %flowYHidden;
-		@extend %tTx;
-		position: relative;
+		@extend %section;
+		@extend %section--tertiary;
 	}
 
 		.footer__title{
@@ -783,7 +711,7 @@
 		}
 
 			.footer__title__title{
-				@extend %txl;
+				@extend %title--quaternary;
 
 			}
 
@@ -796,9 +724,9 @@
 			}
 
 				.footer__title__paragraph__container{
-					@extend %pxl;
 					@extend %textCenter;
 					@extend %topSpace;
+					@include text($size:$p--s);
 				}
 
 
@@ -810,11 +738,12 @@
 					@extend %pm;
 					@extend %textCenter;
 					@extend %topSpace;
+					@include text($size:14px);
 				}
 
 
 		.footer__contact{
-			margin-top: 40px;
+			@include customeSpace(margin,top,40px);
 		}
 
 			.footer__contact__option{
@@ -822,7 +751,7 @@
 			}
 
 				.footer__contact__option__title{
-					@extend %txs;
+					@include text($size:$p--m);
 				}
 
 					.footer__contact__option__title__icon{
@@ -831,12 +760,12 @@
 
 					.footer__contact__option__title__container{
 						@extend %inlineBlock;
-						padding-top: 8px;
+						@include customeSpace(padding,top,8px);
 					}
 
 
 		.footer__social{
-			margin-top: 40px;
+			@include customeSpace(margin,top,40px);
 		}
 
 			.footer__social__option{
@@ -844,7 +773,7 @@
 			}
 
 				.footer__social__option__title{
-					@extend %txs;
+					@include text($size:$p--m);
 				}
 
 					.footer__social__option__title__icon{
@@ -853,7 +782,7 @@
 
 					.footer__social__option__title__container{
 						@extend %inlineBlock;
-						padding-top: 8px;
+						@include customeSpace(padding,top,8px);
 					}
 
 
@@ -861,7 +790,7 @@
 					@include effect($time:.3);
 
 					&:hover, &:hover i{
-						@extend %sTx;
+						@include text($color:$tc--secondary);
 						@include effect($time:.3);
 					}
 
@@ -876,7 +805,7 @@
 		}
 
 			.footer__signature__title{
-				@extend %txs;
+				@include text($size:$st--m);
 				font-weight: 200;
 			}
 
