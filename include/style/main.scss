@@ -396,6 +396,12 @@
 					.knowledge__technologies__type__techs__tech{
 						@extend %sidesSpace;
 						@extend %bottomSpace;
+						@include effect($time:.1,$effect:linear);
+						&:hover{
+							color:$tc--tertiary;
+							@include bgColor($bgColor:$bgc--secondary);
+							@include effect($time:.1,$effect:linear);
+						}
 					}
 
 						.knowledge__technologies__type__techs__tech__title{
@@ -408,6 +414,7 @@
 
 						.knowledge__technologies__type__techs__tech__grades{
 							@extend %inlineBlock;
+							margin-top: 6px;
 							height: 22px;
 							float: right;
 						}
@@ -556,6 +563,7 @@
 
 					.experience__option__information__duties__duty__title{
 						@extend %sub-title--quaternary;
+						color: inherit;
 					}
 
 						.experience__option__information__duties__duty__title__container{
@@ -564,7 +572,14 @@
 							@extend %topSpace;
 							@extend %bottomSpace;
 							@extend %outSpace;
+							color:$tc--primary;
 							@include bgColor($bgColor:$bgc--primary);
+							@include effect($time:.1,$effect:ease-in-out);
+							&:hover{
+								color:$tc--tertiary;
+								@include bgColor($bgColor:$bgc--quaternary);
+								@include effect($time:.1,$effect:ease-in-out);
+							}
 						}
 
 
@@ -677,6 +692,7 @@
 
 					.projects__option__information__techs__tech__title{
 						@extend %sub-title--quaternary;
+						color: inherit;
 					}
 
 						.projects__option__information__techs__tech__title__container{
@@ -684,8 +700,15 @@
 							@extend %sidesSpace;
 							@extend %topSpace;
 							@extend %bottomSpace;
-							@extend %outSpace;
+							@extend %outSpace;							
+							color:$tc--primary;
 							@include bgColor($bgColor:$bgc--primary);
+							@include effect($time:.1,$effect:ease-in-out);
+							&:hover{
+								color:$tc--tertiary;
+								@include bgColor($bgColor:$bgc--quaternary);
+								@include effect($time:.1,$effect:ease-in-out);
+							}
 						}
 
 

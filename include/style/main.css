@@ -426,25 +426,41 @@ html, body {
   color: inherit;
 }
 
-/* line 409, main.scss */
+/* line 396, main.scss */
+.knowledge__technologies__type__techs__tech {
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+}
+/* line 400, main.scss */
+.knowledge__technologies__type__techs__tech:hover {
+  color: white;
+  background-color: #eeeeee;
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+}
+
+/* line 415, main.scss */
 .knowledge__technologies__type__techs__tech__grades {
+  margin-top: 6px;
   height: 22px;
   float: right;
 }
 
-/* line 414, main.scss */
+/* line 421, main.scss */
 .knowledge__technologies__type__techs__tech__grades__grade {
   margin: 0px 2px;
   border: 3px solid #009688;
   width: 12px;
 }
 
-/* line 421, main.scss */
+/* line 428, main.scss */
 .knowledge__technologies__type__techs__tech__grades__grade--actived {
   background-color: #009688;
 }
 
-/* line 440, main.scss */
+/* line 447, main.scss */
 .knowledge__technologies__type__extra__link {
   background-color: #444a54;
   font-size: 16px;
@@ -453,7 +469,7 @@ html, body {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
-/* line 447, main.scss */
+/* line 454, main.scss */
 .knowledge__technologies__type__extra__link:hover {
   font-size: inherit;
   color: #009688;
@@ -462,7 +478,7 @@ html, body {
   -moz-transition: all 0.3s ease;
 }
 
-/* line 454, main.scss */
+/* line 461, main.scss */
 .knowledge__technologies__type__extra__link__container {
   font-size: inherit;
   color: white;
@@ -472,56 +488,90 @@ html, body {
 /*------------------------------------*\
     Experience style
 \*------------------------------------*/
-/* line 476, main.scss */
+/* line 483, main.scss */
 .experience__title {
   padding-bottom: 40px;
 }
 
-/* line 481, main.scss */
+/* line 488, main.scss */
 .experience__title__container {
   margin-top: 40px;
 }
 
-/* line 489, main.scss */
+/* line 496, main.scss */
 .experience__option {
   margin-bottom: 40px;
 }
 
-/* line 561, main.scss */
+/* line 564, main.scss */
+.experience__option__information__duties__duty__title {
+  color: inherit;
+}
+
+/* line 569, main.scss */
 .experience__option__information__duties__duty__title__container {
+  color: #444a54;
   background-color: white;
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+}
+/* line 578, main.scss */
+.experience__option__information__duties__duty__title__container:hover {
+  color: white;
+  background-color: #009688;
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
 }
 
 /*------------------------------------*\
     Projects style
 \*------------------------------------*/
-/* line 597, main.scss */
+/* line 612, main.scss */
 .projects__title {
   padding-bottom: 40px;
 }
 
-/* line 602, main.scss */
+/* line 617, main.scss */
 .projects__title__container {
   margin-top: 40px;
 }
 
-/* line 610, main.scss */
+/* line 625, main.scss */
 .projects__option {
   margin-bottom: 40px;
 }
 
-/* line 682, main.scss */
-.projects__option__information__techs__tech__title__container {
-  background-color: white;
+/* line 693, main.scss */
+.projects__option__information__techs__tech__title {
+  color: inherit;
 }
 
-/* line 708, main.scss */
+/* line 698, main.scss */
+.projects__option__information__techs__tech__title__container {
+  color: #444a54;
+  background-color: white;
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+}
+/* line 707, main.scss */
+.projects__option__information__techs__tech__title__container:hover {
+  color: white;
+  background-color: #009688;
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+}
+
+/* line 731, main.scss */
 .projects__option__information__url__link:hover .projects__option__information__url__title, .projects__option__information__url__link:hover i {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
-/* line 713, main.scss */
+/* line 736, main.scss */
 .projects__option__information__url__link .projects__option__information__url__title, .projects__option__information__url__link i {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -531,89 +581,89 @@ html, body {
 /*------------------------------------*\
     Footer style
 \*------------------------------------*/
-/* line 743, main.scss */
+/* line 766, main.scss */
 .footer__title {
   margin-top: 40px;
 }
 
-/* line 763, main.scss */
+/* line 786, main.scss */
 .footer__title__paragraph__container {
   font-size: 18px;
   color: inherit;
 }
 
-/* line 774, main.scss */
+/* line 797, main.scss */
 .footer__title__author__container {
   font-size: 14px;
   color: inherit;
 }
 
-/* line 781, main.scss */
+/* line 804, main.scss */
 .footer__contact {
   margin-top: 40px;
 }
 
-/* line 789, main.scss */
+/* line 812, main.scss */
 .footer__contact__option__title {
   font-size: 20px;
   color: inherit;
 }
 
-/* line 797, main.scss */
+/* line 820, main.scss */
 .footer__contact__option__title__container {
   padding-top: 8px;
 }
 
-/* line 803, main.scss */
+/* line 826, main.scss */
 .footer__social {
   margin-top: 40px;
 }
 
-/* line 811, main.scss */
+/* line 834, main.scss */
 .footer__social__option__title {
   font-size: 20px;
   color: inherit;
 }
 
-/* line 819, main.scss */
+/* line 842, main.scss */
 .footer__social__option__title__container {
   padding-top: 8px;
 }
 
-/* line 825, main.scss */
+/* line 848, main.scss */
 .footer__social__option__link {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
-/* line 828, main.scss */
+/* line 851, main.scss */
 .footer__social__option__link:hover, .footer__social__option__link:hover i {
   color: #009688;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
-/* line 833, main.scss */
+/* line 856, main.scss */
 .footer__social__option__link i {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
 
-/* line 843, main.scss */
+/* line 866, main.scss */
 .footer__signature__title {
   font-size: 20px;
   color: inherit;
   font-weight: 200;
 }
 
-/* line 848, main.scss */
+/* line 871, main.scss */
 .footer__signature__title__container {
   position: relative;
   bottom: 38px;
 }
 
-/* line 855, main.scss */
+/* line 878, main.scss */
 .footer__signature__logo {
   height: 100px;
 }
@@ -622,28 +672,28 @@ html, body {
     Tablets and small screen style
 \*------------------------------------*/
 @media (min-width: 481px) {
-  /* line 872, main.scss */
+  /* line 895, main.scss */
   .welcome__image {
     height: 150px;
   }
 
-  /* line 876, main.scss */
+  /* line 899, main.scss */
   .welcome__title__container {
     bottom: 56px;
   }
 
-  /* line 884, main.scss */
+  /* line 907, main.scss */
   .footer__signature__logo {
     height: 150px;
   }
 
-  /* line 888, main.scss */
+  /* line 911, main.scss */
   .footer__signature__title__container {
     bottom: 58px;
   }
 }
 @media (min-width: 801px) and (max-width: 1023px) {
-  /* line 901, main.scss */
+  /* line 924, main.scss */
   .cover__image {
     background-size: 100% 100%;
   }
@@ -652,17 +702,17 @@ html, body {
     Wide Screens style
 \*------------------------------------*/
 @media (min-width: 1024px) {
-  /* line 920, main.scss */
+  /* line 943, main.scss */
   .cover__image {
     background-size: 100% 100%;
   }
 
-  /* line 924, main.scss */
+  /* line 947, main.scss */
   .general-info__profile__option {
     text-align: left;
   }
 
-  /* line 928, main.scss */
+  /* line 951, main.scss */
   .general-info__education__option__paragraph {
     text-align: left;
   }
