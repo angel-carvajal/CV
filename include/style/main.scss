@@ -80,13 +80,13 @@
 			.welcome__title__container{
 				display: inline-block;
 				position: relative;
-				bottom: 56px;
+				bottom: 36px;
 				right: 6px;
 			}
 
 
 		.welcome__image{
-			height: 150px;
+			height: 100px;
 		}
 
 			.welcome__image#{$actived}{
@@ -118,7 +118,7 @@
 		.cover__image{
 			background-image: $cover;
 			background-repeat: no-repeat;
-			background-size: 100% 100%;
+			background-size: auto 100%;
 			background-position: center center;
 			@include positionCoordinates($position:fixed,$z:0);
 		}
@@ -216,7 +216,7 @@
 
 
 			.general-info__profile__option{
-
+				@extend %textCenter;
 			}
 				.general-info__profile__option__title{
 					@extend %sub-title--primary;
@@ -284,12 +284,16 @@
 				}
 
 					.general-info__education__option__logo__container{
+						@extend %bottomSpace;
 
 					}
 
 
 				.general-info__education__option__paragraph{
 					@extend %sidesSpace;
+					@extend %bottomSpace;
+					@extend %outBottomSpace;
+					@extend %textCenter;
 				}
 
 					.general-info__education__option__paragraph__title{
@@ -388,6 +392,7 @@
 
 				.knowledge__technologies__type__extra{
 					@extend %textCenter;
+					@extend %sidesSpace;
 				}
 
 					.knowledge__technologies__type__extra__title{
@@ -684,6 +689,7 @@
 
 				.projects__option__information__no-url__title{
 					@extend %title--tertiary;
+					@extend %topSpace;
 				}
 
 				
@@ -703,6 +709,7 @@
 
 		.footer__title{
 			@extend %bottomSpace;
+			@extend %sidesSpace;
 			margin-top: 40px;
 			@extend %pointerDefault;
 		}
@@ -786,7 +793,7 @@
 					@include effect($time:.3);
 
 					&:hover, &:hover i{
-						@include text($color:$tc--secondary);
+						color:$tc--secondary;
 						@include effect($time:.3);
 					}
 
@@ -808,14 +815,85 @@
 				.footer__signature__title__container{
 					@extend %inlineBlock;
 					position: relative;
-					bottom: 58px;
+					bottom: 38px;
 				}
 
 
 			.footer__signature__logo{
-				height: 150px;
+				height: 100px;
 			}	
 			
 				.footer__signature__logo__container{
 					@extend %inlineBlock;
 				}		
+
+
+
+
+
+/*------------------------------------*\
+    Tablets and small screen style
+\*------------------------------------*/
+
+	@media (min-width: 481px){
+		.welcome__image{
+			height: 150px;
+		}
+
+		.welcome__title__container{
+			bottom: 56px;
+		}
+
+
+		
+
+
+		.footer__signature__logo{
+			height: 150px;
+		}
+
+		.footer__signature__title__container{
+			bottom: 58px;
+		}
+
+		
+	}
+
+	@media (min-width: 481px) and (max-width: 800px){
+
+	}
+
+	@media (min-width: 801px) and (max-width: 1023px){
+
+		.cover__image{
+			background-size: 100% 100%;
+		}
+
+		.general-info__profile__option{
+			@extend %textLeft;
+		}
+
+	}
+
+
+
+
+
+/*------------------------------------*\
+    Wide Screens style
+\*------------------------------------*/
+
+	@media (min-width: 1024px){
+		.cover__image{
+			background-size: 100% 100%;
+		}
+
+		.general-info__profile__option{
+			text-align: left;
+		}
+
+		.general-info__education__option__paragraph{
+			text-align: left;
+		}
+
+	}	
