@@ -51,6 +51,39 @@
 
 
 /*------------------------------------*\
+    Navigation style
+\*------------------------------------*/
+	.navigation{
+		position: fixed;
+		z-index: 4;
+	}
+
+		.navigation__link{
+			font-family: $font-family;
+			@include effect($time:.3);
+			@include text($size:$st--l,$color:#{$tc--tertiary} !important);
+			@include customeSpace(padding,top,30px);
+			@include customeSpace(padding,bottom,30px);
+			&:hover{
+				@include effect($time:.3);
+			}
+		}
+		.dropdown-link:hover:not(.dropdown-link--is-header){
+			@include bgColor($bgColor: #4DB6AC);
+			@include effect($time:.3);
+		}
+		.dropdown-menu--is-open .dropdown-menu__content{
+			@include bgColor($bgColor: $bgc--quaternary);
+		}
+
+
+
+
+
+
+
+
+/*------------------------------------*\
     Welcome style
 \*------------------------------------*/
 

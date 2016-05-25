@@ -227,14 +227,54 @@ html, body {
 }
 
 /*------------------------------------*\
+    Navigation style
+\*------------------------------------*/
+/* line 56, main.scss */
+.navigation {
+  position: fixed;
+  z-index: 4;
+}
+
+/* line 61, main.scss */
+.navigation__link {
+  font-family: "Raleway", sans-serif;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  font-size: 22px;
+  color: white !important;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* line 67, main.scss */
+.navigation__link:hover {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+
+/* line 71, main.scss */
+.dropdown-link:hover:not(.dropdown-link--is-header) {
+  background-color: #4db6ac;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+
+/* line 75, main.scss */
+.dropdown-menu--is-open .dropdown-menu__content {
+  background-color: #009688;
+}
+
+/*------------------------------------*\
     Welcome style
 \*------------------------------------*/
-/* line 57, main.scss */
+/* line 90, main.scss */
 .welcome {
   height: 100%;
 }
 
-/* line 63, main.scss */
+/* line 96, main.scss */
 .welcome__load {
   position: relative;
   width: 100%;
@@ -242,7 +282,7 @@ html, body {
   top: 0px;
 }
 
-/* line 70, main.scss */
+/* line 103, main.scss */
 .welcome__load--actived {
   top: -120px;
   transition: all 0.5s ease;
@@ -250,13 +290,13 @@ html, body {
   -moz-transition: all 0.5s ease;
 }
 
-/* line 75, main.scss */
+/* line 108, main.scss */
 .welcome__title {
   font-weight: 200;
   font-size: 20px;
 }
 
-/* line 80, main.scss */
+/* line 113, main.scss */
 .welcome__title__container {
   display: inline-block;
   position: relative;
@@ -264,24 +304,24 @@ html, body {
   right: 6px;
 }
 
-/* line 88, main.scss */
+/* line 121, main.scss */
 .welcome__image {
   height: 100px;
 }
 
-/* line 92, main.scss */
+/* line 125, main.scss */
 .welcome__image--actived {
   color: red;
 }
 
-/* line 96, main.scss */
+/* line 129, main.scss */
 .welcome__image__container {
   display: inline-block;
   position: relative;
   top: -120px;
 }
 
-/* line 101, main.scss */
+/* line 134, main.scss */
 .welcome__image__container--actived {
   top: 0px;
   transition: all 0.5s ease;
@@ -292,13 +332,13 @@ html, body {
 /*------------------------------------*\
     Cover style
 \*------------------------------------*/
-/* line 113, main.scss */
+/* line 146, main.scss */
 .cover {
   height: 1500px;
   margin-bottom: 1px;
 }
 
-/* line 118, main.scss */
+/* line 151, main.scss */
 .cover__image {
   background-image: url("../images/welcome-cover_1.4.jpg");
   background-repeat: no-repeat;
@@ -312,25 +352,25 @@ html, body {
   z-index: 0;
 }
 
-/* line 126, main.scss */
+/* line 159, main.scss */
 .cover__container {
   width: 100%;
   position: absolute;
   top: 40%;
 }
 
-/* line 135, main.scss */
+/* line 168, main.scss */
 .cover__container__title {
   font-size: 40px;
   color: white;
 }
 
-/* line 142, main.scss */
+/* line 175, main.scss */
 .cover__container__title__container {
   border-bottom: 1px solid white;
 }
 
-/* line 148, main.scss */
+/* line 181, main.scss */
 .cover__container__sub-title {
   font-size: 16px;
   color: white;
@@ -339,24 +379,24 @@ html, body {
 /*------------------------------------*\
     General info style
 \*------------------------------------*/
-/* line 171, main.scss */
+/* line 204, main.scss */
 .general-info__image {
   border-radius: 50%;
   height: 300px;
   margin: auto;
 }
 
-/* line 191, main.scss */
+/* line 224, main.scss */
 .general-info__title__container {
   margin-top: 40px;
 }
 
-/* line 200, main.scss */
+/* line 233, main.scss */
 .general-info__paragraph {
   padding-bottom: 40px;
 }
 
-/* line 281, main.scss */
+/* line 314, main.scss */
 .general-info__education__option__logo {
   margin: auto;
   height: 50px;
@@ -365,46 +405,46 @@ html, body {
 /*------------------------------------*\
     Knoledge style
 \*------------------------------------*/
-/* line 324, main.scss */
+/* line 357, main.scss */
 .knowledge__title {
   padding-bottom: 40px;
 }
 
-/* line 329, main.scss */
+/* line 362, main.scss */
 .knowledge__title__container {
   margin-top: 40px;
 }
 
-/* line 341, main.scss */
+/* line 374, main.scss */
 .knowledge__technologies__type {
   margin-bottom: 40px;
 }
 
-/* line 358, main.scss */
+/* line 391, main.scss */
 .knowledge__technologies__type__techs {
   font-size: 30px;
   color: inherit;
 }
 
-/* line 376, main.scss */
+/* line 409, main.scss */
 .knowledge__technologies__type__techs__tech__grades {
   height: 22px;
   float: right;
 }
 
-/* line 381, main.scss */
+/* line 414, main.scss */
 .knowledge__technologies__type__techs__tech__grades__grade {
   margin: 0px 2px;
   border: 3px solid #009688;
   width: 12px;
 }
 
-/* line 388, main.scss */
+/* line 421, main.scss */
 .knowledge__technologies__type__techs__tech__grades__grade--actived {
   background-color: #009688;
 }
 
-/* line 407, main.scss */
+/* line 440, main.scss */
 .knowledge__technologies__type__extra__link {
   background-color: #444a54;
   font-size: 16px;
@@ -413,7 +453,7 @@ html, body {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
-/* line 414, main.scss */
+/* line 447, main.scss */
 .knowledge__technologies__type__extra__link:hover {
   font-size: inherit;
   color: #009688;
@@ -422,7 +462,7 @@ html, body {
   -moz-transition: all 0.3s ease;
 }
 
-/* line 421, main.scss */
+/* line 454, main.scss */
 .knowledge__technologies__type__extra__link__container {
   font-size: inherit;
   color: white;
@@ -432,22 +472,22 @@ html, body {
 /*------------------------------------*\
     Experience style
 \*------------------------------------*/
-/* line 443, main.scss */
+/* line 476, main.scss */
 .experience__title {
   padding-bottom: 40px;
 }
 
-/* line 448, main.scss */
+/* line 481, main.scss */
 .experience__title__container {
   margin-top: 40px;
 }
 
-/* line 456, main.scss */
+/* line 489, main.scss */
 .experience__option {
   margin-bottom: 40px;
 }
 
-/* line 528, main.scss */
+/* line 561, main.scss */
 .experience__option__information__duties__duty__title__container {
   background-color: white;
 }
@@ -455,33 +495,33 @@ html, body {
 /*------------------------------------*\
     Projects style
 \*------------------------------------*/
-/* line 564, main.scss */
+/* line 597, main.scss */
 .projects__title {
   padding-bottom: 40px;
 }
 
-/* line 569, main.scss */
+/* line 602, main.scss */
 .projects__title__container {
   margin-top: 40px;
 }
 
-/* line 577, main.scss */
+/* line 610, main.scss */
 .projects__option {
   margin-bottom: 40px;
 }
 
-/* line 649, main.scss */
+/* line 682, main.scss */
 .projects__option__information__techs__tech__title__container {
   background-color: white;
 }
 
-/* line 675, main.scss */
+/* line 708, main.scss */
 .projects__option__information__url__link:hover .projects__option__information__url__title, .projects__option__information__url__link:hover i {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
-/* line 680, main.scss */
+/* line 713, main.scss */
 .projects__option__information__url__link .projects__option__information__url__title, .projects__option__information__url__link i {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -491,89 +531,89 @@ html, body {
 /*------------------------------------*\
     Footer style
 \*------------------------------------*/
-/* line 710, main.scss */
+/* line 743, main.scss */
 .footer__title {
   margin-top: 40px;
 }
 
-/* line 730, main.scss */
+/* line 763, main.scss */
 .footer__title__paragraph__container {
   font-size: 18px;
   color: inherit;
 }
 
-/* line 741, main.scss */
+/* line 774, main.scss */
 .footer__title__author__container {
   font-size: 14px;
   color: inherit;
 }
 
-/* line 748, main.scss */
+/* line 781, main.scss */
 .footer__contact {
   margin-top: 40px;
 }
 
-/* line 756, main.scss */
+/* line 789, main.scss */
 .footer__contact__option__title {
   font-size: 20px;
   color: inherit;
 }
 
-/* line 764, main.scss */
+/* line 797, main.scss */
 .footer__contact__option__title__container {
   padding-top: 8px;
 }
 
-/* line 770, main.scss */
+/* line 803, main.scss */
 .footer__social {
   margin-top: 40px;
 }
 
-/* line 778, main.scss */
+/* line 811, main.scss */
 .footer__social__option__title {
   font-size: 20px;
   color: inherit;
 }
 
-/* line 786, main.scss */
+/* line 819, main.scss */
 .footer__social__option__title__container {
   padding-top: 8px;
 }
 
-/* line 792, main.scss */
+/* line 825, main.scss */
 .footer__social__option__link {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
-/* line 795, main.scss */
+/* line 828, main.scss */
 .footer__social__option__link:hover, .footer__social__option__link:hover i {
   color: #009688;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
-/* line 800, main.scss */
+/* line 833, main.scss */
 .footer__social__option__link i {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
 
-/* line 810, main.scss */
+/* line 843, main.scss */
 .footer__signature__title {
   font-size: 20px;
   color: inherit;
   font-weight: 200;
 }
 
-/* line 815, main.scss */
+/* line 848, main.scss */
 .footer__signature__title__container {
   position: relative;
   bottom: 38px;
 }
 
-/* line 822, main.scss */
+/* line 855, main.scss */
 .footer__signature__logo {
   height: 100px;
 }
@@ -582,28 +622,28 @@ html, body {
     Tablets and small screen style
 \*------------------------------------*/
 @media (min-width: 481px) {
-  /* line 839, main.scss */
+  /* line 872, main.scss */
   .welcome__image {
     height: 150px;
   }
 
-  /* line 843, main.scss */
+  /* line 876, main.scss */
   .welcome__title__container {
     bottom: 56px;
   }
 
-  /* line 851, main.scss */
+  /* line 884, main.scss */
   .footer__signature__logo {
     height: 150px;
   }
 
-  /* line 855, main.scss */
+  /* line 888, main.scss */
   .footer__signature__title__container {
     bottom: 58px;
   }
 }
 @media (min-width: 801px) and (max-width: 1023px) {
-  /* line 868, main.scss */
+  /* line 901, main.scss */
   .cover__image {
     background-size: 100% 100%;
   }
@@ -612,17 +652,17 @@ html, body {
     Wide Screens style
 \*------------------------------------*/
 @media (min-width: 1024px) {
-  /* line 887, main.scss */
+  /* line 920, main.scss */
   .cover__image {
     background-size: 100% 100%;
   }
 
-  /* line 891, main.scss */
+  /* line 924, main.scss */
   .general-info__profile__option {
     text-align: left;
   }
 
-  /* line 895, main.scss */
+  /* line 928, main.scss */
   .general-info__education__option__paragraph {
     text-align: left;
   }
