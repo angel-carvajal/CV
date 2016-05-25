@@ -24,7 +24,7 @@ angular.module("globalDirectives",[])
 		restrict:"E",
 		scope:{
 			link:"=",
-			extra:"="
+			extra:"&"
 		},
 		templateUrl:globalVariables.hostname+"include/templates/global/customeLink.html"
 	}

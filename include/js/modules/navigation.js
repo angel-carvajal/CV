@@ -1,9 +1,17 @@
 angular.module("appNavigation",["global","navigation"])
 //Navigation bar controller
-.controller("navigationController",["$scope","navigationContentSpanish","navigationContentEnglish",function($scope,navigationContentSpanish,navigationContentEnglish){
+.controller("navigationController",["$scope","$uiViewScroll","navigationContent",function($scope,$uiViewScroll,navigationContent){
 	//Local variables definition
-	var content = navigationContentSpanish; //Default language content
+	var content = navigationContent; //Default language content
 
 	//Scope variables definition
 	$scope.content=content;
+
+	//Controller functions
+	$scope.scrollTo=function(section){
+		$uiViewScroll($("."+section));
+	}
+	$scope.toggleMenu=function(){
+		
+	}
 }])
