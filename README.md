@@ -75,9 +75,9 @@ Wanna see the resume on action? [http://angeldaniel-adcm.github.io/CV/#/][link]
 ###AngularJS
 
   Used tools from framework:
-  1. Controladores
-  2. Factorías
-  3. Directivas
+  1. Controllers
+  2. Factories
+  3. Directives
   4. [OcLazyLoad][oclazyload]
   5. [inView][inview]
   6. [ui.router][uirouter]
@@ -85,7 +85,7 @@ Wanna see the resume on action? [http://angeldaniel-adcm.github.io/CV/#/][link]
 ###Lumx
 
   Used tools from framework:
-  1. [Iconos][lumx-icons]
+  1. [Icons][lumx-icons]
   2. [dropdown menu][lumx-dropdown]
   3. [Flex boxes][lumx-flex]
   4. [Colors][lumx-colors]
