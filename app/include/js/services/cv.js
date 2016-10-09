@@ -130,7 +130,7 @@ angular.module("cv",[])
 						},
 						paragraph:{
 							title:{
-								text: 	"Coahuila, México",
+								text: 	"Nuevo León, México",
 								class: 	"general-info__profile__option__description"
 							},
 							class: 	"general-info__profile__option__description__container"
