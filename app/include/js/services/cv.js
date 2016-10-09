@@ -230,6 +230,98 @@ angular.module("cv",[])
 				title:{
 					position:{
 						title:{
+							text:"Desarrollador Sr",
+							class:"experience__option__title__position"
+						},
+						class: 	"experience__option__title__position__container"
+					},
+					company:{
+						title:{
+							text: 	"Xinoptix Solutions LLC",
+							class: 	"experience__option__title__company"
+						},
+						class: 	"experience__option__title__company__container"
+					},
+					date:{
+						title:{
+							text: 	"(Junio 2016 - Actualidad)",
+							class: 	"experience__option__title__date"
+						},
+						class: 	"experience__option__title__date__container"
+					},
+					class: 	"experience__option__title"
+				},
+				information:{
+					description:{
+						title:{
+							text: 	"Soy desarrollador senior en Xinoptix, una empresa con corporativo en Dallas, TX y operación en Monterrey, NL. Entre otras responsabilidades también me encargo de buscar talento para reclutarlo.",
+							class: 	"experience__option__information__description"
+						},
+						class: 	"experience__option__information__description__container"
+					},
+					duties:{
+						title:{
+							title:{
+								text: 	"Responsabilidades",
+								class: 	"experience__option__information__duties__title"
+							},
+							class: "experience__option__information__duties__title__container",
+						},
+						options:[
+							{
+								title:{
+									text: 	"RH",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Desarrollo frontend",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Desarrollo backend",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Control de versiones",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+							{
+								title:{
+									text: 	"Pruebas",
+									class: 	"experience__option__information__duties__duty__title"
+								},
+								class:"experience__option__information__duties__duty__title__container"
+							},
+						],
+						optionsClass: 	"experience__option__information__duties__duty",
+						class: "experience__option__information__duties"
+					},
+					location:{
+						title:{
+							text:  	"Monterrey, Nuevo León / Dallas, Texas",
+							class: 	"experience__option__information__location"
+						},
+						class: 	"experience__option__information__location__container"
+					},
+					class: 	"experience__option__information"
+				},
+				class: "experience__option"
+			},
+			{
+				title:{
+					position:{
+						title:{
 							text:"CEO",
 							class:"experience__option__title__position"
 						},
@@ -755,7 +847,7 @@ angular.module("cv",[])
 							{
 								title:{
 									title:{
-										text: 	"AngularJS",
+										text: 	"Angular 1.x",
 										class: 	"knowledge__technologies__type__techs__tech__title"
 									},
 									class: 	"knowledge__technologies__type__techs__tech__title__container"
@@ -815,6 +907,42 @@ angular.module("cv",[])
 							{
 								title:{
 									title:{
+										text: 	"Bower",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"Grunt",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"NodeJS",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
 										text: 	"AnimateCSS library",
 										class: 	"knowledge__technologies__type__techs__tech__title"
 									},
@@ -827,7 +955,43 @@ angular.module("cv",[])
 							{
 								title:{
 									title:{
+										text: 	"EmberJS",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,false,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"Ember CLI",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,false,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
 										text: 	"SASS",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,false,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"ExpressJS",
 										class: 	"knowledge__technologies__type__techs__tech__title"
 									},
 									class: 	"knowledge__technologies__type__techs__tech__title__container"
@@ -863,36 +1027,12 @@ angular.module("cv",[])
 							{
 								title:{
 									title:{
-										text: 	"Bower",
+										text: 	"LESS",
 										class: 	"knowledge__technologies__type__techs__tech__title"
 									},
 									class: 	"knowledge__technologies__type__techs__tech__title__container"
 								},
 								grades:[true,true,false,false,false],
-								gradeClass:"knowledge__technologies__type__techs__tech__grades",
-								class: 	"knowledge__technologies__type__techs__tech"
-							},
-							{
-								title:{
-									title:{
-										text: 	"Grunt",
-										class: 	"knowledge__technologies__type__techs__tech__title"
-									},
-									class: 	"knowledge__technologies__type__techs__tech__title__container"
-								},
-								grades:[true,true,false,false,false],
-								gradeClass:"knowledge__technologies__type__techs__tech__grades",
-								class: 	"knowledge__technologies__type__techs__tech"
-							},
-							{
-								title:{
-									title:{
-										text: 	"Node",
-										class: 	"knowledge__technologies__type__techs__tech__title"
-									},
-									class: 	"knowledge__technologies__type__techs__tech__title__container"
-								},
-								grades:[true,false,false,false,false],
 								gradeClass:"knowledge__technologies__type__techs__tech__grades",
 								class: 	"knowledge__technologies__type__techs__tech"
 							},
@@ -923,7 +1063,7 @@ angular.module("cv",[])
 							{
 								title:{
 									title:{
-										text: 	".NET C#",
+										text: 	"C#",
 										class: 	"knowledge__technologies__type__techs__tech__title"
 									},
 									class: 	"knowledge__technologies__type__techs__tech__title__container"
@@ -936,6 +1076,18 @@ angular.module("cv",[])
 								title:{
 									title:{
 										text: 	"SQL",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,false,false,false,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"MongoDB",
 										class: 	"knowledge__technologies__type__techs__tech__title"
 									},
 									class: 	"knowledge__technologies__type__techs__tech__title__container"
@@ -1077,6 +1229,30 @@ angular.module("cv",[])
 							{
 								title:{
 									title:{
+										text: 	"Github",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
+										text: 	"Bitbucket",
+										class: 	"knowledge__technologies__type__techs__tech__title"
+									},
+									class: 	"knowledge__technologies__type__techs__tech__title__container"
+								},
+								grades:[true,true,true,true,false],
+								gradeClass:"knowledge__technologies__type__techs__tech__grades",
+								class: 	"knowledge__technologies__type__techs__tech"
+							},
+							{
+								title:{
+									title:{
 										text: 	"Dreamweaver 5.5",
 										class: 	"knowledge__technologies__type__techs__tech__title"
 									},
@@ -1125,7 +1301,7 @@ angular.module("cv",[])
 							{
 								title:{
 									title:{
-										text: 	"Github",
+										text: 	"SourceTree",
 										class: 	"knowledge__technologies__type__techs__tech__title"
 									},
 									class: 	"knowledge__technologies__type__techs__tech__title__container"
@@ -1134,6 +1310,7 @@ angular.module("cv",[])
 								gradeClass:"knowledge__technologies__type__techs__tech__grades",
 								class: 	"knowledge__technologies__type__techs__tech"
 							},
+
 
 						],
 						class:"knowledge__technologies__type__techs"
@@ -1167,6 +1344,323 @@ angular.module("cv",[])
 				title:{
 					project:{
 						title:{
+							text:"Web App",
+							class:"projects__option__title__project"
+						},
+						class: 	"projects__option__title__project__container"
+					},
+					company:{
+						title:{
+							text: 	"Red Social",
+							class: 	"projects__option__title__company"
+						},
+						class: 	"projects__option__title__company__container"
+					},
+					date:{
+						title:{
+							text: 	"(Julio 2016 - Actual)",
+							class: 	"projects__option__title__date"
+						},
+						class: 	"projects__option__title__date__container"
+					},
+					class: 	"projects__option__title"
+				},
+				information:{
+					description:{
+						title:{
+							text: 	"Actualización y migración de una Red Social famosa de USA",
+							class: 	"projects__option__information__description"
+						},
+						class: 	"projects__option__information__description__container"
+					},
+					techs:{
+						title:{
+							title:{
+								text: 	"Tecnologías",
+								class: 	"projects__option__information__techs__title"
+							},
+							class: "projects__option__information__techs__title__container",
+						},
+						options:[
+							{
+								title:{
+									text: 	"JavaScript",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"EmberJS",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Ember CLI",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Bootstrap",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"HTML 5",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"LESS",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"MomentJS",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Responsive",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"NodeJS",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"RESTfull",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"JSON",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"ExpressJS",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Git",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							}
+						],
+						optionsClass: 	"projects__option__information__techs__tech",
+						class: "projects__option__information__techs"
+					},
+					noUrl:{
+						title:{
+							text:  	"Protegido por políticas de privacidad",
+							class: 	"projects__option__information__no-url__title"
+						},
+						class: 	"projects__option__information__no-url"
+					},
+					class: 	"projects__option__information"
+				},
+				class: "projects__option"
+			},
+			{
+				title:{
+					project:{
+						title:{
+							text:"Web App",
+							class:"projects__option__title__project"
+						},
+						class: 	"projects__option__title__project__container"
+					},
+					company:{
+						title:{
+							text: 	"xSheets",
+							class: 	"projects__option__title__company"
+						},
+						class: 	"projects__option__title__company__container"
+					},
+					date:{
+						title:{
+							text: 	"(Julio 2016 - Agosto 2016)",
+							class: 	"projects__option__title__date"
+						},
+						class: 	"projects__option__title__date__container"
+					},
+					class: 	"projects__option__title"
+				},
+				information:{
+					description:{
+						title:{
+							text: 	"Aplicación web para registro de horas de trabajo (timesheets)",
+							class: 	"projects__option__information__description"
+						},
+						class: 	"projects__option__information__description__container"
+					},
+					techs:{
+						title:{
+							title:{
+								text: 	"Tecnologías",
+								class: 	"projects__option__information__techs__title"
+							},
+							class: "projects__option__information__techs__title__container",
+						},
+						options:[
+							{
+								title:{
+									text: 	"JavaScript",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"AngularJS",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Bootstrap",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"HTML 5",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"CSS3",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"MomentJS",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Responsive",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"NodeJS",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"RESTfull",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"JSON",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"MySQL",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"ExpressJS",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Kendo UI",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Git",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"JWT",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							},
+							{
+								title:{
+									text: 	"Grunt",
+									class: 	"projects__option__information__techs__tech__title"
+								},
+								class:"projects__option__information__techs__tech__title__container"
+							}
+						],
+						optionsClass: 	"projects__option__information__techs__tech",
+						class: "projects__option__information__techs"
+					},
+					noUrl:{
+						title:{
+							text:  	"Uso interno de Xinoptix",
+							class: 	"projects__option__information__no-url__title"
+						},
+						class: 	"projects__option__information__no-url"
+					},
+					class: 	"projects__option__information"
+				},
+				class: "projects__option"
+			},
+			{
+				title:{
+					project:{
+						title:{
 							text:"Sistema de información",
 							class:"projects__option__title__project"
 						},
@@ -1181,7 +1675,7 @@ angular.module("cv",[])
 					},
 					date:{
 						title:{
-							text: 	"(Marzo 2016 - Actual)",
+							text: 	"(Marzo 2016 - Agosto 2016)",
 							class: 	"projects__option__title__date"
 						},
 						class: 	"projects__option__title__date__container"
