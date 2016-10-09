@@ -336,7 +336,7 @@ angular.module("cv",[])
 					},
 					date:{
 						title:{
-							text: 	"(Marzo 2014 - Actualidad)",
+							text: 	"(Marzo 2014 - Junio 2016)",
 							class: 	"experience__option__title__date"
 						},
 						class: 	"experience__option__title__date__container"
